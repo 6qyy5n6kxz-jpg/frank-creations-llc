@@ -2,7 +2,7 @@ const page = document.body.dataset.page || "";
 const siteRoot = document.body.dataset.siteRoot || ".";
 
 const navItems = [
-  { id: "home", label: "Home", href: "index.html" },
+  { id: "home", label: "Home", href: "/" },
   { id: "music", label: "A Change Of Plans", href: "a-change-of-plans.html" },
   { id: "wine", label: "Wine & Canvas Toledo", href: "wine-and-canvas-toledo.html" },
   { id: "cookies", label: "Cookies & Canvas", href: "cookies-and-canvas.html" },
@@ -89,7 +89,7 @@ if (headerTarget) {
   headerTarget.innerHTML = `
     <header class="site-header">
       <div class="container site-header-inner">
-        <a class="brand-lockup" href="${resolveSitePath("index.html")}">
+        <a class="brand-lockup" href="${resolveSitePath("/")}">
           <img class="brand-mark" src="${resolveSitePath("images/brand-mark.svg")}" alt="Frank Creations LLC abstract brand mark">
           <span>
             <strong>Frank Creations LLC</strong>
