@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Frank Creations LLC</title>
+  <meta name="description" content="Use the Frank Creations LLC contact form to route inquiries for music, paint events, family events, shop products, and general business questions.">
+  <link rel="icon" type="image/svg+xml" href="images/brand-mark.svg">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Contact | Frank Creations LLC">
+  <meta property="og:description" content="Use the Frank Creations LLC contact form to route inquiries for music, paint events, family events, shop products, and general business questions.">
+  <meta property="og:image" content="images/social-preview.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Contact | Frank Creations LLC">
+  <meta name="twitter:description" content="Use the Frank Creations LLC contact form to route inquiries for music, paint events, family events, shop products, and general business questions.">
+  <meta name="twitter:image" content="images/social-preview.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-page="contact" data-site-root=".">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <div data-site-header></div>
+  <main id="main-content">
+    <section class="page-hero page-hero-contact">
+      <div class="container">
+        <p class="eyebrow">Contact</p>
+        <h1>Start a booking or general inquiry from one central page.</h1>
+        <p class="hero-text narrow-copy">Use this form to send booking requests, event inquiries, shop questions, and general business messages for Frank Creations LLC.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container split-layout">
+        <div>
+          <div class="section-heading left-aligned">
+            <p class="eyebrow">Inquiry form</p>
+            <h2>Start with the category</h2>
+            <p>The category dropdown keeps inquiries organized for music, paint events, family programming, shop questions, and general business requests.</p>
+          </div>
+          <form
+            class="stacked-form"
+            data-contact-form
+            data-formspree-endpoint="https://formspree.io/f/xreojwny"
+            data-recipient-email="infotoledo@wineandcanvas.com"
+          >
+            <label class="field">
+              <span>Name</span>
+              <input type="text" name="name" required placeholder="Your full name">
+            </label>
+            <label class="field">
+              <span>Email</span>
+              <input type="email" name="email" required placeholder="you@example.com">
+            </label>
+            <label class="field">
+              <span>Phone</span>
+              <input type="tel" name="phone" placeholder="Optional">
+            </label>
+            <label class="field">
+              <span>Category</span>
+              <select name="category" required>
+                <option value="">Choose a category</option>
+                <option value="A Change Of Plans">A Change Of Plans</option>
+                <option value="Wine & Canvas Toledo">Wine &amp; Canvas Toledo</option>
+                <option value="Cookies & Canvas">Cookies &amp; Canvas</option>
+                <option value="Shop">Shop</option>
+                <option value="General">General</option>
+              </select>
+            </label>
+            <label class="field">
+              <span>Preferred event date</span>
+              <input type="date" name="eventDate">
+            </label>
+            <label class="field">
+              <span>Message</span>
+              <textarea name="message" rows="6" required placeholder="Tell us what you are planning, your group size, venue, product question, or performance request."></textarea>
+            </label>
+            <button class="button button-primary" type="submit">Send Inquiry</button>
+            <p class="form-feedback" data-contact-feedback aria-live="polite"></p>
+          </form>
+        </div>
+        <div class="panel-list">
+          <article class="panel-card">
+            <h3>Form delivery</h3>
+            <p>Submissions from this form are sent to <code>infotoledo@wineandcanvas.com</code>.</p>
+          </article>
+          <article class="panel-card">
+            <h3>Launch setup</h3>
+            <p>Test a real submission and confirm both delivery and confirmation behavior before public launch.</p>
+          </article>
+          <article class="panel-card">
+            <h3>Manual updates</h3>
+            <p>Confirm your response email, booking phone number, privacy language, and expected response time before production launch.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div data-site-footer></div>
+  <script type="module" src="assets/js/main.js"></script>
+  <script type="module" src="assets/js/contact.js"></script>
+</body>
+</html>

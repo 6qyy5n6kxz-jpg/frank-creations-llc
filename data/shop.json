@@ -1,0 +1,38 @@
+{
+  "settings": {
+    "reserveModel": "Reserve - Pay at Pickup",
+    "pickupOnly": true,
+    "pickupCounties": [
+      "Lucas County",
+      "Wood County",
+      "Ottawa County",
+      "Sandusky County",
+      "Fulton County",
+      "Monroe County, MI"
+    ],
+    "defaultPricing": {
+      "painting": 15,
+      "wood-pallet": 18
+    }
+  },
+  "products": [
+    {
+      "id": "duplicate-paintings-assorted",
+      "type": "painting",
+      "category": "Duplicate Paintings",
+      "name": "Duplicate Wine & Canvas Paintings",
+      "description": "Assorted duplicate Wine & Canvas paintings available for local pickup. Reserve online, coordinate pickup directly, and pay at pickup.",
+      "inventory": 4,
+      "pickup": "Local pickup only. Coordinate pickup after reservation."
+    },
+    {
+      "id": "blank-wood-pallet",
+      "type": "wood-pallet",
+      "category": "Blank Wood Pallets",
+      "name": "Blank Wood Pallet",
+      "description": "Blank wood pallet ready for painting projects, workshop prep, or take-home creative use.",
+      "inventory": 6,
+      "pickup": "Local pickup only. Coordinate pickup after reservation."
+    }
+  ]
+}

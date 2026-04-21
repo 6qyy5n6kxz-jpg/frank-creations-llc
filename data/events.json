@@ -1,0 +1,46 @@
+{
+  "events": [
+    {
+      "category": "music",
+      "date": "2026-04-18",
+      "time": "6:00 PM - 9:00 PM",
+      "title": "The Mockingbird on Mill Road",
+      "description": "Special guest Jerry Wittman."
+    },
+    {
+      "category": "music",
+      "date": "2026-04-24",
+      "time": "6:30 PM - 9:00 PM",
+      "title": "Perfect Imperfections",
+      "description": ""
+    },
+    {
+      "category": "music",
+      "date": "2026-05-09",
+      "time": "6:00 PM - 9:00 PM",
+      "title": "The Mockingbird on Mill Road",
+      "description": "Devin with special guests Sylv & Soph."
+    },
+    {
+      "category": "music",
+      "date": "2026-05-17",
+      "time": "10:30 AM - 11:30 AM",
+      "title": "Elmore Church of God Worship Service",
+      "description": "Featuring the message by Kendra with music by Devin and Kendra."
+    },
+    {
+      "category": "music",
+      "date": "2026-05-22",
+      "time": "6:00 PM - 9:00 PM",
+      "title": "The Oak Harbor Golf Course.",
+      "description": ""
+    },
+    {
+      "category": "music",
+      "date": "2026-05-31",
+      "time": "9:30 AM",
+      "title": "St. Pual's UCC Worship Service",
+      "description": ""
+    }
+  ]
+}
