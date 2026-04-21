@@ -3,11 +3,11 @@ const siteRoot = document.body.dataset.siteRoot || ".";
 
 const navItems = [
   { id: "home", label: "Home", href: "/" },
-  { id: "music", label: "A Change Of Plans", href: "a-change-of-plans.html" },
-  { id: "wine", label: "Wine & Canvas Toledo", href: "wine-and-canvas-toledo.html" },
-  { id: "cookies", label: "Cookies & Canvas", href: "cookies-and-canvas.html" },
-  { id: "shop", label: "Shop", href: "shop.html" },
-  { id: "contact", label: "Contact", href: "contact.html" }
+  { id: "music", label: "A Change Of Plans", href: "/a-change-of-plans/" },
+  { id: "wine", label: "Wine & Canvas Toledo", href: "/wine-and-canvas-toledo/" },
+  { id: "cookies", label: "Cookies & Canvas", href: "/cookies-and-canvas/" },
+  { id: "shop", label: "Shop", href: "/shop/" },
+  { id: "contact", label: "Contact", href: "/contact/" }
 ];
 
 const normalizePath = (path) => path.replace(/\/{2,}/g, "/").replace(/\/\.\//g, "/");
@@ -116,14 +116,14 @@ if (footerTarget) {
           </div>
           <div>
             <h3>Explore</h3>
-            <p><a href="${resolveSitePath("wine-and-canvas-toledo.html")}">Wine & Canvas Toledo</a></p>
-            <p><a href="${resolveSitePath("a-change-of-plans.html")}">A Change Of Plans</a></p>
-            <p><a href="${resolveSitePath("cookies-and-canvas.html")}">Cookies & Canvas</a></p>
+            <p><a href="${resolveSitePath("/wine-and-canvas-toledo/")}">Wine & Canvas Toledo</a></p>
+            <p><a href="${resolveSitePath("/a-change-of-plans/")}">A Change Of Plans</a></p>
+            <p><a href="${resolveSitePath("/cookies-and-canvas/")}">Cookies & Canvas</a></p>
           </div>
           <div>
             <h3>Plan an event</h3>
-            <p><a href="${resolveSitePath("contact.html")}">Send a booking inquiry</a></p>
-            <p><a href="${resolveSitePath("shop.html")}">Browse local pickup items</a></p>
+            <p><a href="${resolveSitePath("/contact/")}">Send a booking inquiry</a></p>
+            <p><a href="${resolveSitePath("/shop/")}">Browse local pickup items</a></p>
           </div>
         </div>
         <p>&copy; <span data-current-year></span> Frank Creations LLC. Built as a static site for GitHub Pages.</p>

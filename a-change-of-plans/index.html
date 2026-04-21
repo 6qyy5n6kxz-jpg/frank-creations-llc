@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Change Of Plans | Frank Creations LLC</title>
+  <meta name="description" content="Acoustic duo featuring dual vocals, guitar, and piano. Explore A Change Of Plans live dates, song list, requests, tips, and booking info.">
+  <link rel="icon" type="image/svg+xml" href="../images/brand-mark.svg">
+  <link rel="canonical" href="https://frankcreationsllc.com/a-change-of-plans/" />
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="A Change Of Plans | Frank Creations LLC">
+  <meta property="og:description" content="Acoustic duo featuring dual vocals, guitar, and piano. Explore A Change Of Plans live dates, song list, requests, tips, and booking info.">
+  <meta property="og:image" content="../images/social-preview.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="A Change Of Plans | Frank Creations LLC">
+  <meta name="twitter:description" content="Acoustic duo featuring dual vocals, guitar, and piano. Explore A Change Of Plans live dates, song list, requests, tips, and booking info.">
+  <meta name="twitter:image" content="../images/social-preview.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body data-page="music" data-site-root="..">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <div data-site-header></div>
+  <main id="main-content">
+    <section class="page-hero page-hero-music">
+      <div class="container">
+        <img class="music-hero-logo" src="../images/colored-logo.svg" alt="A Change Of Plans logo">
+        <p class="eyebrow">A Change Of Plans</p>
+        <h1>Acoustic duo featuring dual vocals, guitar, and piano.</h1>
+        <p class="hero-text narrow-copy">House band at The Mockingbird on Mill Road, A Change Of Plans covers a wide range of music from the 70s to today, including rock, country, easy listening, and Christian favorites.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container split-layout">
+        <div>
+          <div class="section-heading left-aligned">
+            <p class="eyebrow">Upcoming schedule</p>
+            <h2>Where to catch the duo next</h2>
+            <p>Upcoming public shows, guest appearances, and worship-service dates for A Change Of Plans.</p>
+          </div>
+          <div class="event-summary" data-events-summary></div>
+        </div>
+        <div class="panel-list" data-events-list data-event-category="music" aria-live="polite"></div>
+      </div>
+    </section>
+
+<section class="section section-highlight">
+  <div class="container song-catalog">
+    <div class="song-catalog-top">
+      <div class="song-catalog-controls">
+        <label class="field">
+          <span>Search songs</span>
+          <input id="song-search" type="search" placeholder="Search by song, artist, or instrument (e.g. Landslide, Beatles, piano)" autocomplete="off">
+        </label>
+        <div class="song-meta" data-song-meta></div>
+      </div>
+      <div class="section-heading left-aligned song-catalog-heading">
+        <p class="eyebrow">Song list</p>
+        <h2>Search the live setlist</h2>
+        <p>Use the search field or quick filters to browse by title, artist, or instrument. This section is powered by <code>data/songs.json</code>.</p>
+      </div>
+    </div>
+    <div class="song-filter-row" role="group" aria-label="Filter songs by instrument">
+      <button class="song-filter-button is-active" type="button" data-song-filter="all">All</button>
+      <button class="song-filter-button" type="button" data-song-filter="guitar">Guitar</button>
+      <button class="song-filter-button" type="button" data-song-filter="piano">Piano</button>
+    </div>
+    <div class="song-list song-list-catalog" data-song-list aria-live="polite"></div>
+    <div class="button-row button-row-centered" data-song-actions hidden>
+      <button class="button button-secondary" type="button" data-song-show-more>Show more</button>
+    </div>
+  </div>
+</section>
+
+    <section class="section">
+      <div class="container card-grid request-grid">
+        <article class="content-card request-card">
+          <p class="eyebrow">Song requests</p>
+          <h2>Request a song</h2>
+          <form
+            class="stacked-form"
+            data-song-request-form
+            data-formspree-endpoint="https://formspree.io/f/xwvwygzl"
+          >
+            <label class="field">
+              <span>Your name</span>
+              <input type="text" name="name" placeholder="Jamie from Perrysburg" required>
+            </label>
+            <label class="field">
+              <span>Requested song</span>
+              <input type="text" name="song" placeholder="Landslide" required>
+            </label>
+            <label class="field">
+              <span>Notes</span>
+              <textarea name="notes" rows="3" placeholder="First dance, sing-along, surprise request, etc."></textarea>
+            </label>
+            <button class="button button-primary" type="submit">Send Song Request</button>
+            <p class="form-feedback" data-song-request-feedback aria-live="polite"></p>
+          </form>
+        </article>
+
+        <article class="content-card compact-info-card">
+          <p class="eyebrow">Digital tip jar</p>
+          <h2>Support the music</h2>
+          <p>Tips are always appreciated.</p>
+          <ul class="action-list">
+            <li class="icon-row">
+              <svg class="icon-inline" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4.5 6.25c0-1.24 1.01-2.25 2.25-2.25h10.5c1.24 0 2.25 1.01 2.25 2.25v11.5c0 1.24-1.01 2.25-2.25 2.25H6.75A2.25 2.25 0 0 1 4.5 17.75V6.25Zm4.37 2.5 2.95 6.67h.34l2.97-6.67h-1.77l-1.33 3.24c-.18.44-.27.73-.33 1h-.04c-.06-.27-.15-.56-.33-1L10.64 8.75H8.87Z"/>
+              </svg>
+              <span><strong>Venmo:</strong> <code>@DevinFrank-2</code></span>
+            </li>
+            <li class="icon-row">
+              <svg class="icon-inline" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M17.78 6.68c.38.65.57 1.43.57 2.34 0 4.22-3.45 9.87-6.22 9.87h-2.6L5.7 5.11h3.18l1.95 8.35c1.15-1.64 2.55-4.2 2.55-5.92 0-.95-.32-1.61-.67-2.09l5.07 1.23Z"/>
+              </svg>
+              <span><strong>Cash App:</strong> <code>$WNCToledoDevin</code></span>
+            </li>
+          </ul>
+          <div class="button-row">
+            <a class="button button-secondary" href="https://venmo.com/DevinFrank-2" target="_blank" rel="noreferrer">Tip on Venmo</a>
+            <a class="button button-secondary" href="https://cash.app/$WNCToledoDevin" target="_blank" rel="noreferrer">Tip on Cash App</a>
+          </div>
+        </article>
+
+        <article class="content-card compact-info-card">
+          <p class="eyebrow">Follow along</p>
+          <h2>Social media</h2>
+          <p>Follow for live dates and clips.</p>
+          <ul class="action-list">
+            <li class="icon-row">
+              <svg class="icon-inline" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M13.35 20v-6.38h2.14l.32-2.49h-2.46V9.54c0-.72.2-1.21 1.23-1.21h1.31V6.1c-.23-.03-1-.1-1.89-.1-1.87 0-3.16 1.14-3.16 3.24v1.89H9v2.49h2.03V20h2.32Z"/>
+              </svg>
+              <span><strong>Facebook:</strong> <a class="text-link" href="https://www.facebook.com/AChangeOfPlans419" target="_blank" rel="noreferrer">AChangeOfPlans419</a></span>
+            </li>
+            <li class="icon-row">
+              <svg class="icon-inline" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M7.5 3h9A4.5 4.5 0 0 1 21 7.5v9a4.5 4.5 0 0 1-4.5 4.5h-9A4.5 4.5 0 0 1 3 16.5v-9A4.5 4.5 0 0 1 7.5 3Zm0 1.5A3 3 0 0 0 4.5 7.5v9a3 3 0 0 0 3 3h9a3 3 0 0 0 3-3v-9a3 3 0 0 0-3-3h-9Zm9.38 1.88a1.12 1.12 0 1 1 0 2.24 1.12 1.12 0 0 1 0-2.24ZM12 7.5A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 0 1 12 7.5Zm0 1.5A3 3 0 1 0 15 12a3 3 0 0 0-3-3Z"/>
+              </svg>
+              <span><strong>Instagram:</strong> <a class="text-link" href="https://www.instagram.com/AChangeofPlansduo" target="_blank" rel="noreferrer">@AChangeofPlansduo</a></span>
+            </li>
+          </ul>
+        </article>
+
+        <article class="content-card">
+          <p class="eyebrow">Live photos</p>
+          <h2>Performance highlights</h2>
+          <div class="photo-grid">
+            <figure class="photo-card">
+              <img src="../images/a-change-of-plans-live-1.jpg" alt="A Change Of Plans performing together at a downtown venue.">
+            </figure>
+            <figure class="photo-card">
+              <img src="../images/a-change-of-plans-live-2.jpg" alt="A Change Of Plans performing a live acoustic set with vocals and keys.">
+            </figure>
+            <figure class="photo-card">
+              <img src="../images/a-change-of-plans-live-3.jpg" alt="A Change Of Plans at a formal performance setup with keyboard and vocals.">
+            </figure>
+          </div>
+          <p class="helper-text">Recent performance images from live appearances and event setups.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container cta-banner">
+        <div>
+          <p class="eyebrow">Booking</p>
+          <h2>Need live music for your venue or event?</h2>
+          <p>Use the contact page for date requests, venue details, private events, and performance inquiries.</p>
+        </div>
+        <a class="button button-primary" href="/contact/">Book A Change Of Plans</a>
+      </div>
+    </section>
+  </main>
+  <div data-site-footer></div>
+  <script type="module" src="../assets/js/main.js"></script>
+  <script type="module" src="../assets/js/events.js"></script>
+  <script type="module" src="../assets/js/songs.js"></script>
+</body>
+</html>
