@@ -728,6 +728,26 @@ img.is-image-fallback {
   gap: 1rem;
 }
 
+.promo-social-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  width: fit-content;
+  padding: 0.55rem 0.85rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid rgba(109, 31, 66, 0.12);
+  color: var(--plum-700);
+  font-weight: 800;
+  box-shadow: 0 10px 24px rgba(57, 31, 36, 0.08);
+}
+
+.promo-social-badge span {
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.82em;
+}
+
 .promo-title {
   font-size: clamp(2.4rem, 3.4vw, 5rem);
 }
@@ -749,6 +769,17 @@ img.is-image-fallback {
 
 .promo-visual-card {
   min-height: 20rem;
+}
+
+.module-social-promo .promo-visual-card {
+  border-color: rgba(109, 31, 66, 0.18);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.3);
+}
+
+.promo-social-cta-line {
+  margin: -0.15rem 0 0;
+  color: var(--plum-700);
+  font-weight: 800;
 }
 
 .stats-grid {

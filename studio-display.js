@@ -531,7 +531,7 @@ function buildFallbackPromo(data) {
   const fallbackImage = createPosterAsset({
     title: data.posterTitle || data.title,
     subtitle: data.posterSubtitle || data.eyebrow,
-    tag: data.posterTag || "Studio Promo",
+    tag: data.posterTag || (data.type === "social" ? "Social Feature" : "Studio Promo"),
     palette: data.posterPalette || (data.theme === "sun" ? "kids" : "dateNight")
   });
 
@@ -566,7 +566,8 @@ function buildFallbackStudioDisplayData() {
       "No Experience Needed",
       "BYOB Fun",
       "Wine Glass Painting",
-      "Local Pickup Art"
+      "Local Pickup Art",
+      "📸 Share your art with #ToledoPaintAndSip"
     ],
     upcomingEvents: [
       buildFallbackEvent({
@@ -729,6 +730,27 @@ function buildFallbackStudioDisplayData() {
         posterSubtitle: "Playful, colorful, and family-friendly",
         posterTag: "Kids Promo",
         posterPalette: "kids"
+      }),
+      buildFallbackPromo({
+        id: "social-feature",
+        type: "social",
+        theme: "plum",
+        eyebrow: "Social Feature",
+        title: "Show off your masterpiece!",
+        body: "Use #ToledoPaintAndSip for a chance to be featured 🎨✨",
+        quote: "Tag your crew, post your canvas, and let Toledo see what you made tonight.",
+        chips: ["📸 Share your art", "#ToledoPaintAndSip", "Feature chance"],
+        ctaLabel: "Loved tonight? Book your next class",
+        ctaUrl: qrLinks.booking,
+        stats: [
+          { value: "#ToledoPaintAndSip", label: "Use the studio hashtag" },
+          { value: "Tag your crew", label: "Show off the night" },
+          { value: "Feature chance", label: "You might land on screen" }
+        ],
+        posterTitle: "Show Off Your Art",
+        posterSubtitle: "#ToledoPaintAndSip",
+        posterTag: "Social Feature",
+        posterPalette: "dateNight"
       })
     ],
     actionRail: {
@@ -756,7 +778,14 @@ function buildFallbackStudioDisplayData() {
         }
       ]
     },
-    rotationModules: [],
+    rotationModules: [
+      { id: "events-grid", label: "Upcoming Events", type: "events-grid", weight: 3, theme: "event" },
+      { id: "events-spotlight", label: "Featured Event", type: "events-spotlight", weight: 2, theme: "event" },
+      { id: "featured-art", label: "Featured Art", type: "featured-art", weight: 1, theme: "art" },
+      { id: "promo-private-party", label: "Private Parties", type: "promo", promoId: "private-party", weight: 1, theme: "plum" },
+      { id: "promo-cookies-canvas", label: "Cookies & Canvas", type: "promo", promoId: "cookies-canvas", weight: 1, theme: "sun" },
+      { id: "promo-social-feature", label: "Social Feature", type: "promo", promoId: "social-feature", weight: 1, theme: "plum" }
+    ],
     meta: {
       mode: "backup",
       statusLabel: "Using backup content",
@@ -1248,7 +1277,15 @@ function normalizeArtCollection(payload, defaultUrl) {
     .slice(0, CONFIG.artLimit);
 }
 
-function buildDefaultPromoStats(theme) {
+function buildDefaultPromoStats(theme, type = "promo") {
+  if (type === "social") {
+    return [
+      { value: "#ToledoPaintAndSip", label: "Use the studio hashtag" },
+      { value: "Tag your crew", label: "Show off the night" },
+      { value: "Feature chance", label: "You might land on screen" }
+    ];
+  }
+
   if (theme === "sun") {
     return [
       { value: "Kid-friendly", label: "Low-pressure format" },
@@ -1264,7 +1301,7 @@ function buildDefaultPromoStats(theme) {
   ];
 }
 
-function normalizeStatsList(value, theme) {
+function normalizeStatsList(value, theme, type = "promo") {
   const list = Array.isArray(value) ? value : [];
   const stats = list
     .map((item) => {
@@ -1278,12 +1315,24 @@ function normalizeStatsList(value, theme) {
     })
     .filter(Boolean);
 
-  return stats.length ? stats : buildDefaultPromoStats(theme);
+  return stats.length ? stats : buildDefaultPromoStats(theme, type);
 }
 
 function inferPromoTheme(rawTitle, rawBody) {
   const haystack = `${rawTitle} ${rawBody}`.toLowerCase();
   return haystack.includes("kid") || haystack.includes("cookie") ? "sun" : "plum";
+}
+
+function inferPromoType(source, title, body) {
+  const explicitType = String(firstUsable(source?.type, source?.promo_type, source?.module_type) || "").toLowerCase();
+  if (explicitType === "social") {
+    return "social";
+  }
+
+  const haystack = `${title} ${body} ${firstUsable(source?.cta_label, "")}`.toLowerCase();
+  return haystack.includes("#toledopaintandsip") || haystack.includes("chance to be featured") || haystack.includes("show off your masterpiece")
+    ? "social"
+    : "promo";
 }
 
 function inferPromoUrl(theme, qrLinks) {
@@ -1300,6 +1349,10 @@ function inferPromoLabel(theme, title) {
   }
 
   return "Scan to Plan Your Party";
+}
+
+function inferSocialPromoCtaLabel() {
+  return "Loved tonight? Book your next class";
 }
 
 function normalizePromoItem(raw, qrLinks, index = 0) {
@@ -1327,6 +1380,7 @@ function normalizePromoItem(raw, qrLinks, index = 0) {
     source?.subtitle,
     source?.category
   )) || "Studio Promo";
+  const promoType = inferPromoType(source, title, body);
   const theme = firstUsable(source?.theme, source?.color_theme) || inferPromoTheme(title, body);
   const chips = uniqueStrings(normalizeStringList(firstUsable(source?.chips, source?.promo_tags, source?.services)).slice(0, 4));
   const ctaUrl = normalizeUrl(firstUsable(
@@ -1334,8 +1388,10 @@ function normalizePromoItem(raw, qrLinks, index = 0) {
     source?.url,
     source?.link,
     source?.permalink
-  )) || inferPromoUrl(theme, qrLinks);
-  const ctaLabel = stripHtml(firstUsable(source?.cta_label, source?.button_label)) || inferPromoLabel(theme, title);
+  )) || (promoType === "social" ? qrLinks.booking : inferPromoUrl(theme, qrLinks));
+  const ctaLabel = stripHtml(firstUsable(source?.cta_label, source?.button_label)) || (promoType === "social"
+    ? inferSocialPromoCtaLabel()
+    : inferPromoLabel(theme, title));
   const quote = truncateText(stripHtml(extractRenderedText(firstUsable(
     source?.quote,
     source?.pull_quote,
@@ -1344,7 +1400,7 @@ function normalizePromoItem(raw, qrLinks, index = 0) {
   const fallbackImage = createPosterAsset({
     title,
     subtitle: eyebrow,
-    tag: theme === "sun" ? "Kids Promo" : "Studio Promo",
+    tag: promoType === "social" ? "Social Feature" : theme === "sun" ? "Kids Promo" : "Studio Promo",
     palette: theme === "sun" ? "kids" : "dateNight"
   });
 
@@ -1354,20 +1410,26 @@ function normalizePromoItem(raw, qrLinks, index = 0) {
 
   return {
     id: normalizeToId(firstUsable(source?.slug, source?.id, title)),
-    type: "promo",
+    type: promoType,
     theme: theme === "sun" ? "sun" : "plum",
     eyebrow,
     title,
-    body: body || "Creative, welcoming, and built for groups that want an easy yes.",
-    quote: quote || (theme === "sun"
+    body: body || (promoType === "social"
+      ? "Use #ToledoPaintAndSip for a chance to be featured 🎨✨"
+      : "Creative, welcoming, and built for groups that want an easy yes."),
+    quote: quote || (promoType === "social"
+      ? "Tag your crew, post your canvas, and let Toledo see what you made tonight."
+      : theme === "sun"
       ? "No experience? Perfect. Proud smiles count as success here."
       : "Bring the group. We’ll bring the brushes, the setup, and the easy fun."),
-    chips: chips.length ? chips : (theme === "sun"
+    chips: chips.length ? chips : (promoType === "social"
+      ? ["📸 Share your art", "#ToledoPaintAndSip", "Feature chance"]
+      : theme === "sun"
       ? ["Kids Birthdays", "Family Outings", "School Break Fun"]
       : ["Birthdays", "Bridal Showers", "Team Events"]),
     ctaLabel,
     ctaUrl,
-    stats: normalizeStatsList(firstUsable(source?.stats, source?.promo_stats), theme),
+    stats: normalizeStatsList(firstUsable(source?.stats, source?.promo_stats), theme, promoType),
     image: resolveImageUrl(source) || fallbackImage,
     fallbackImage,
     priority: toNumber(firstUsable(source?.display_priority, source?.priority, source?.menu_order)) ?? index + 1
@@ -1637,32 +1699,52 @@ function ensureArtShape(item, qrLinks) {
 
 function ensurePromoShape(item, qrLinks) {
   const title = stripHtml(firstUsable(item?.title, "Studio Promo"));
+  const promoType = item?.type === "social" ? "social" : "promo";
   const theme = item?.theme === "sun" ? "sun" : "plum";
   const fallbackImage = item?.fallbackImage || createPosterAsset({
     title,
     subtitle: stripHtml(firstUsable(item?.eyebrow, "Studio Promo")),
-    tag: theme === "sun" ? "Kids Promo" : "Private Events",
+    tag: promoType === "social" ? "Social Feature" : theme === "sun" ? "Kids Promo" : "Private Events",
     palette: theme === "sun" ? "kids" : "dateNight"
   });
 
   return {
     id: normalizeToId(firstUsable(item?.id, title)),
-    type: "promo",
+    type: promoType,
     theme,
     eyebrow: stripHtml(firstUsable(item?.eyebrow, "Studio Promo")),
     title,
-    body: stripHtml(firstUsable(item?.body, "Creative, welcoming, and easy to book.")),
-    quote: stripHtml(firstUsable(item?.quote, theme === "sun"
+    body: stripHtml(firstUsable(item?.body, promoType === "social"
+      ? "Use #ToledoPaintAndSip for a chance to be featured 🎨✨"
+      : "Creative, welcoming, and easy to book.")),
+    quote: stripHtml(firstUsable(item?.quote, promoType === "social"
+      ? "Tag your crew, post your canvas, and let Toledo see what you made tonight."
+      : theme === "sun"
       ? "No experience? Perfect. Proud smiles count as success here."
       : "Bring the group. We’ll bring the brushes, the setup, and the easy fun.")),
     chips: uniqueStrings(normalizeStringList(item?.chips).slice(0, 4)),
-    ctaLabel: stripHtml(firstUsable(item?.ctaLabel, inferPromoLabel(theme, title))),
-    ctaUrl: normalizeUrl(firstUsable(item?.ctaUrl, inferPromoUrl(theme, qrLinks))) || inferPromoUrl(theme, qrLinks),
-    stats: normalizeStatsList(item?.stats, theme),
+    ctaLabel: stripHtml(firstUsable(item?.ctaLabel, promoType === "social" ? inferSocialPromoCtaLabel() : inferPromoLabel(theme, title))),
+    ctaUrl: normalizeUrl(firstUsable(item?.ctaUrl, promoType === "social" ? qrLinks.booking : inferPromoUrl(theme, qrLinks))) || (promoType === "social" ? qrLinks.booking : inferPromoUrl(theme, qrLinks)),
+    stats: normalizeStatsList(item?.stats, theme, promoType),
     image: normalizeUrl(item?.image) || item?.image || fallbackImage,
     fallbackImage,
     priority: toNumber(item?.priority) || 1
   };
+}
+
+function ensureSocialPromo(promos, fallbackPromos) {
+  const socialPromo = promos.find((promo) => promo?.type === "social");
+  if (socialPromo) {
+    return promos;
+  }
+
+  const fallbackSocialPromo = fallbackPromos.find((promo) => promo?.type === "social");
+  if (!fallbackSocialPromo) {
+    return promos;
+  }
+
+  const trimmedPromos = promos.slice(0, Math.max(0, CONFIG.promoLimit - 1));
+  return [...trimmedPromos, fallbackSocialPromo];
 }
 
 function buildActionRail(actionRail, qrLinks, fallbackActionRail) {
@@ -1748,7 +1830,13 @@ function buildDefaultRotationModules(data) {
     });
   }
 
-  data.promos.slice(0, 2).forEach((promo) => {
+  const promoCandidates = data.promos.filter((promo) => promo.type !== "social").slice(0, 2);
+  const socialPromo = data.promos.find((promo) => promo.type === "social");
+  const promosForRotation = socialPromo && !promoCandidates.some((promo) => promo.id === socialPromo.id)
+    ? [...promoCandidates, socialPromo]
+    : promoCandidates;
+
+  promosForRotation.forEach((promo) => {
     modules.push({
       id: `promo-${promo.id}`,
       label: promo.eyebrow || promo.title,
@@ -1808,6 +1896,16 @@ function finalizeDisplayData(data, fallbackData) {
     .map((promo) => ensurePromoShape(promo, data.qrLinks))
     .sort((left, right) => left.priority - right.priority)
     .slice(0, CONFIG.promoLimit);
+  data.promos = ensureSocialPromo(data.promos, fallbackData.promos)
+    .sort((left, right) => left.priority - right.priority)
+    .slice(0, CONFIG.promoLimit);
+
+  if (
+    data.promos.some((promo) => promo.type === "social")
+    && !data.tickerItems.some((item) => String(item).includes("#ToledoPaintAndSip"))
+  ) {
+    data.tickerItems = [...data.tickerItems, "📸 Share your art with #ToledoPaintAndSip"];
+  }
 
   data.actionRail = buildActionRail(data.actionRail, data.qrLinks, fallbackData.actionRail);
   data.rotationModules = buildRotationModules(data);
@@ -2352,10 +2450,21 @@ function renderPromoModule(data, promoId) {
     return "";
   }
 
+  const socialBadge = promo.type === "social"
+    ? `<div class="promo-social-badge" aria-label="Social feature">📸 <span>Social Feature</span></div>`
+    : "";
+  const socialCtaLine = promo.type === "social" && promo.ctaLabel
+    ? `<p class="promo-social-cta-line">${escapeHtml(promo.ctaLabel)}</p>`
+    : "";
+  const promoAction = promo.type === "social"
+    ? ""
+    : `<a class="module-action" href="${escapeHtml(promo.ctaUrl)}" target="_blank" rel="noreferrer">${escapeHtml(promo.ctaLabel)}</a>`;
+
   return `
-    <article class="module theme-${escapeHtml(promo.theme)}">
+    <article class="module theme-${escapeHtml(promo.theme)}${promo.type === "social" ? " module-social-promo" : ""}">
       <div class="module-shell promo-layout">
         <div class="promo-panel">
+          ${socialBadge}
           <p class="module-eyebrow">${escapeHtml(promo.eyebrow)}</p>
           <h3 class="promo-title">${escapeHtml(promo.title)}</h3>
           <p class="promo-copy-text">${escapeHtml(promo.body)}</p>
@@ -2363,7 +2472,8 @@ function renderPromoModule(data, promoId) {
             ${promo.chips.map((chip) => `<span class="promo-chip">${escapeHtml(chip)}</span>`).join("")}
           </div>
           <p class="module-quote">${escapeHtml(promo.quote)}</p>
-          <a class="module-action" href="${escapeHtml(promo.ctaUrl)}" target="_blank" rel="noreferrer">${escapeHtml(promo.ctaLabel)}</a>
+          ${socialCtaLine}
+          ${promoAction}
         </div>
         <div class="promo-visual">
           <figure class="promo-visual-card">
