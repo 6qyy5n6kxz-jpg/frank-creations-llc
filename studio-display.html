@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wine &amp; Canvas Toledo | Studio Display</title>
+  <meta name="description" content="Fullscreen studio display for Wine &amp; Canvas Toledo featuring upcoming classes, private parties, featured pickup art, and QR-driven calls to action.">
+  <meta name="theme-color" content="#6d1f42">
+  <link rel="icon" type="image/svg+xml" href="images/brand-mark.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="studio-display.css">
+</head>
+<body>
+  <a class="skip-link" href="#studio-main">Skip to studio display</a>
+  <div class="studio-shell">
+    <header class="studio-header">
+      <div class="brand-lockup">
+        <div class="brand-mark-wrap">
+          <img class="brand-mark" src="images/wine-and-canvas-toledo-logo.jpg" alt="Wine &amp; Canvas Toledo logo">
+        </div>
+        <div class="brand-copy">
+          <p class="eyebrow">Wine &amp; Canvas Toledo</p>
+          <h1>Paint. Sip. Repeat.</h1>
+          <p class="brand-subtitle">In-studio favorites, private party ideas, and pickup-ready art for the guest who is already having a good time.</p>
+        </div>
+      </div>
+      <div class="header-promo" aria-hidden="true">
+        <span class="header-pill">No experience needed</span>
+        <span class="header-pill header-pill-soft">Seats dry fast</span>
+      </div>
+      <div class="header-meta">
+        <div class="meta-card">
+          <span class="meta-label">Studio Time</span>
+          <strong class="meta-value" data-clock>--:--</strong>
+          <span class="meta-detail" data-date-line>Loading today</span>
+        </div>
+        <div class="meta-card">
+          <span class="meta-label">Freshness</span>
+          <strong class="meta-value meta-value-small" data-freshness>Waiting for data</strong>
+          <span class="meta-detail">Auto-refresh every 5 minutes</span>
+          <span class="meta-status meta-status-loading" data-data-mode data-mode="loading">Loading data</span>
+        </div>
+      </div>
+    </header>
+
+    <main id="studio-main" class="studio-main">
+      <section class="display-stage" aria-labelledby="stage-title">
+        <div class="stage-topbar">
+          <div>
+            <p class="eyebrow">Studio Display</p>
+            <h2 id="stage-title" data-stage-label>Now Booking</h2>
+          </div>
+          <div class="stage-progress-wrap" aria-hidden="true">
+            <span class="stage-progress-label" data-stage-count>1 of 1</span>
+            <div class="stage-progress">
+              <span class="stage-progress-bar" data-stage-progress></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="stage-frame">
+          <div class="stage-content" data-stage-content>
+            <article class="module-placeholder module-placeholder-loading">
+              <div class="module-shell">
+                <p class="module-eyebrow">Loading</p>
+                <h3 class="module-title">Loading tonight&rsquo;s creative lineup...</h3>
+                <p class="module-copy">Pulling upcoming events, featured art, and studio promos from WordPress.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="stage-footer">
+          <div class="stage-dots" data-stage-dots aria-label="Rotating content modules"></div>
+          <p class="stage-footer-copy">Your next masterpiece is one scan away.</p>
+        </div>
+      </section>
+
+      <aside class="action-rail" aria-labelledby="action-rail-title">
+        <div class="rail-intro">
+          <p class="eyebrow">Scan to book</p>
+          <h2 id="action-rail-title">Already having fun? Book the next one before the paint dries.</h2>
+        </div>
+
+        <div class="rail-primary" data-primary-qr></div>
+
+        <div class="rail-secondary-grid" data-secondary-ctas></div>
+
+        <div class="rail-reassurance">
+          <p class="rail-section-label">Why guests say yes</p>
+          <ul class="reassurance-list" data-reassurance-list></ul>
+        </div>
+
+        <div class="rail-note">
+          <p class="rail-section-label">Studio Notes</p>
+          <p data-rail-note>Public classes, private parties, and pickup-ready pieces all live here so the next yes feels easy.</p>
+        </div>
+      </aside>
+    </main>
+
+    <footer class="studio-ticker" aria-label="Studio highlights">
+      <div class="ticker-track" data-ticker-track></div>
+    </footer>
+  </div>
+
+  <noscript>
+    <div class="noscript-banner">This studio display uses JavaScript for rotating content, clock updates, and QR placeholders.</div>
+  </noscript>
+
+  <script src="studio-display.js" defer></script>
+</body>
+</html>
