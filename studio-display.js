@@ -239,6 +239,20 @@ function formatShortDate(dateString) {
   return formatDate(dateString, { year: undefined });
 }
 
+function formatSourceTimestamp(value) {
+  const date = parseDateValue(value);
+  if (!date) {
+    return "";
+  }
+
+  return new Intl.DateTimeFormat("en-US", {
+    month: "short",
+    day: "numeric",
+    hour: "numeric",
+    minute: "2-digit"
+  }).format(date);
+}
+
 function formatPrice(value) {
   return new Intl.NumberFormat("en-US", {
     style: "currency",
@@ -451,6 +465,10 @@ const WORDPRESS_CONFIG = {
   artShopUrl: RUNTIME_CONFIG.artShopUrl || "https://frankcreationsllc.com/shop/"
 };
 
+const EVENT_SNAPSHOT_CONFIG = {
+  url: RUNTIME_CONFIG.eventSnapshotUrl || "data/studio-display-events.json"
+};
+
 const state = {
   data: null,
   rotationSequence: [],
@@ -495,6 +513,27 @@ function resolveQrLinks(overrides = {}) {
     privateParty: normalizeUrl(firstUsable(overrides.privateParty, overrides.party)) || WORDPRESS_CONFIG.privatePartyUrl,
     artShop: normalizeUrl(firstUsable(overrides.artShop, overrides.shop)) || WORDPRESS_CONFIG.artShopUrl
   };
+}
+
+function getBookingOrigin() {
+  try {
+    return new URL(WORDPRESS_CONFIG.bookingUrl).origin;
+  } catch (error) {
+    return "";
+  }
+}
+
+function shouldPreferSnapshotEvents() {
+  if (typeof RUNTIME_CONFIG.preferEventSnapshot === "boolean") {
+    return RUNTIME_CONFIG.preferEventSnapshot;
+  }
+
+  const bookingOrigin = getBookingOrigin();
+  return !bookingOrigin || bookingOrigin !== window.location.origin;
+}
+
+function buildSnapshotUrl(path) {
+  return new URL(path, window.location.href).toString();
 }
 
 function buildFallbackEvent(data) {
@@ -789,7 +828,7 @@ function buildFallbackStudioDisplayData() {
     meta: {
       mode: "backup",
       statusLabel: "Using backup content",
-      detail: "Using the local backup dataset until WordPress responds."
+      detail: "Using the local backup dataset until live or synced data responds."
     }
   };
 }
@@ -1568,7 +1607,8 @@ async function fetchLiveEvents() {
     return {
       ok: true,
       items: normalizeEventCollection(response.payload, WORDPRESS_CONFIG.bookingUrl),
-      sourceUrl: response.url
+      sourceUrl: response.url,
+      sourceKind: "live"
     };
   } catch (error) {
     console.warn(`[studio-display] Live events unavailable. ${error.message}`);
@@ -1577,6 +1617,49 @@ async function fetchLiveEvents() {
       error
     };
   }
+}
+
+async function fetchSnapshotEvents() {
+  const snapshotUrl = buildSnapshotUrl(EVENT_SNAPSHOT_CONFIG.url);
+
+  try {
+    const payload = await fetchJsonWithTimeout(snapshotUrl);
+
+    return {
+      ok: true,
+      items: Array.isArray(payload?.upcomingEvents) ? payload.upcomingEvents : [],
+      sourceUrl: snapshotUrl,
+      sourceKind: "snapshot",
+      syncedAt: parseDateValue(firstUsable(payload?.generatedAt, payload?.syncedAt, payload?.updatedAt))
+    };
+  } catch (error) {
+    console.warn(`[studio-display] Snapshot events unavailable. ${error.message}`);
+    return {
+      ok: false,
+      error
+    };
+  }
+}
+
+async function fetchBestEvents() {
+  const loaders = shouldPreferSnapshotEvents()
+    ? [fetchSnapshotEvents, fetchLiveEvents]
+    : [fetchLiveEvents, fetchSnapshotEvents];
+  let lastFailure = null;
+
+  for (const load of loaders) {
+    const result = await load();
+    if (result.ok) {
+      return result;
+    }
+
+    lastFailure = result.error || lastFailure;
+  }
+
+  return {
+    ok: false,
+    error: lastFailure || new Error("Event sources unavailable")
+  };
 }
 
 async function fetchLiveArt() {
@@ -1967,10 +2050,28 @@ function applySettingsOverrides(data, settings) {
 function buildDataMeta(mode, sectionSources, detail) {
   return {
     mode,
-    statusLabel: mode === "live" ? "Live data" : "Using backup content",
+    statusLabel: mode === "live"
+      ? "Live data"
+      : mode === "snapshot"
+        ? "Synced data"
+        : "Using backup content",
     detail,
     sectionSources
   };
+}
+
+function determineDataMode(sectionSources) {
+  const sources = Object.values(sectionSources || {});
+
+  if (sources.some((source) => source === "live")) {
+    return "live";
+  }
+
+  if (sources.some((source) => source === "snapshot")) {
+    return "snapshot";
+  }
+
+  return "backup";
 }
 
 function describeSectionSources(sectionSources, usedExisting) {
@@ -1991,7 +2092,7 @@ async function fetchStudioDisplayData(previousData = null) {
   const initialQrLinks = resolveQrLinks(mergedBase.qrLinks);
 
   const [eventsResult, artResult, settingsResult, promosResult] = await Promise.all([
-    fetchLiveEvents(),
+    fetchBestEvents(),
     fetchLiveArt(),
     fetchLiveSettings(),
     fetchLivePromos(initialQrLinks)
@@ -2003,12 +2104,15 @@ async function fetchStudioDisplayData(previousData = null) {
     settings: "backup",
     promos: "backup"
   };
-  let liveSectionCount = 0;
+  let freshSectionCount = 0;
+  const eventSyncDetail = eventsResult.ok && eventsResult.sourceKind === "snapshot" && eventsResult.syncedAt
+    ? `events snapshot synced ${formatSourceTimestamp(eventsResult.syncedAt)}`
+    : "";
 
   if (settingsResult.ok) {
     applySettingsOverrides(mergedBase, settingsResult.settings);
     sectionSources.settings = "live";
-    liveSectionCount += 1;
+    freshSectionCount += 1;
   } else if (previousData) {
     sectionSources.settings = "stale";
   }
@@ -2017,8 +2121,8 @@ async function fetchStudioDisplayData(previousData = null) {
 
   if (eventsResult.ok) {
     mergedBase.upcomingEvents = eventsResult.items;
-    sectionSources.events = "live";
-    liveSectionCount += 1;
+    sectionSources.events = eventsResult.sourceKind || "live";
+    freshSectionCount += 1;
   } else if (previousData?.upcomingEvents?.length) {
     sectionSources.events = "stale";
   }
@@ -2026,7 +2130,7 @@ async function fetchStudioDisplayData(previousData = null) {
   if (artResult.ok) {
     mergedBase.featuredArt = artResult.items;
     sectionSources.art = "live";
-    liveSectionCount += 1;
+    freshSectionCount += 1;
   } else if (previousData?.featuredArt?.length) {
     sectionSources.art = "stale";
   }
@@ -2034,14 +2138,14 @@ async function fetchStudioDisplayData(previousData = null) {
   if (promosResult.ok && promosResult.items.length) {
     mergedBase.promos = promosResult.items;
     sectionSources.promos = "live";
-    liveSectionCount += 1;
+    freshSectionCount += 1;
   } else if (settingsResult.ok && settingsResult.settings.promos.length) {
     sectionSources.promos = "live";
   } else if (previousData?.promos?.length) {
     sectionSources.promos = "stale";
   }
 
-  if (liveSectionCount === 0 && previousData) {
+  if (freshSectionCount === 0 && previousData) {
     const staleData = mergeDisplayData(fallbackData, previousData);
     finalizeDisplayData(staleData, fallbackData);
     staleData.meta = buildDataMeta("backup", sectionSources, describeSectionSources(sectionSources, true));
@@ -2054,16 +2158,22 @@ async function fetchStudioDisplayData(previousData = null) {
   }
 
   finalizeDisplayData(mergedBase, fallbackData);
+  const mode = determineDataMode(sectionSources);
+  const detail = [describeSectionSources(sectionSources, false), eventSyncDetail]
+    .filter(Boolean)
+    .join(" • ");
   mergedBase.meta = buildDataMeta(
-    liveSectionCount > 0 ? "live" : "backup",
+    mode,
     sectionSources,
-    describeSectionSources(sectionSources, false)
+    detail
   );
 
   return {
     data: mergedBase,
     didUpdate: true,
-    loadedAt: new Date()
+    loadedAt: eventsResult.sourceKind === "snapshot" && eventsResult.syncedAt
+      ? eventsResult.syncedAt
+      : new Date()
   };
 }
 
@@ -2101,7 +2211,7 @@ function buildRotationSequence(modules) {
   return sequence;
 }
 
-function renderLoadingState(message = "Loading tonight’s creative lineup...", detail = "Pulling upcoming events, featured art, and studio promos from WordPress.") {
+function renderLoadingState(message = "Loading tonight’s creative lineup...", detail = "Pulling synced events, featured art, and studio promos.") {
   elements.stageLabel.textContent = "Loading";
   elements.stageCount.textContent = "Connecting";
   elements.stageContent.innerHTML = `
@@ -2145,7 +2255,7 @@ function bindImageResilience() {
   state.imageFallbackBound = true;
 }
 
-function updateDataModeIndicator(meta = { mode: "loading", statusLabel: "Loading data", detail: "Connecting to WordPress." }) {
+function updateDataModeIndicator(meta = { mode: "loading", statusLabel: "Loading data", detail: "Connecting to synced event and studio feeds." }) {
   if (!elements.dataMode) {
     return;
   }
@@ -2153,7 +2263,7 @@ function updateDataModeIndicator(meta = { mode: "loading", statusLabel: "Loading
   const mode = meta.mode || "loading";
   elements.dataMode.textContent = meta.statusLabel || "Loading data";
   elements.dataMode.dataset.mode = mode;
-  elements.dataMode.className = `meta-status meta-status-${mode === "live" ? "live" : mode === "backup" ? "backup" : "loading"}`;
+  elements.dataMode.className = `meta-status meta-status-${mode === "live" ? "live" : mode === "snapshot" ? "snapshot" : mode === "backup" ? "backup" : "loading"}`;
   elements.dataMode.title = meta.detail || "";
 }
 
@@ -2296,6 +2406,11 @@ function renderEventsGridModule(data) {
   const featured = data.upcomingEvents[0];
   const cards = data.upcomingEvents.slice(0, 3);
   const fewSeatsCount = data.upcomingEvents.filter((event) => event.status === "few-seats").length;
+  const availabilityChip = fewSeatsCount > 0
+    ? `${fewSeatsCount} class${fewSeatsCount === 1 ? "" : "es"} with few seats`
+    : data.meta?.sectionSources?.events === "snapshot"
+      ? "Seats update on live site"
+      : "Fresh public-event sync";
 
   return `
     <article class="module theme-event">
@@ -2307,7 +2422,7 @@ function renderEventsGridModule(data) {
             <p class="module-copy">Your next masterpiece is one scan away. Pick a floral favorite, grab a date-night seat, or try a wine-glass class that feels way less intimidating than it sounds.</p>
             <div class="summary-row">
               <span class="summary-chip">${data.upcomingEvents.length} upcoming classes</span>
-              <span class="summary-chip">${fewSeatsCount} class${fewSeatsCount === 1 ? "" : "es"} with few seats</span>
+              <span class="summary-chip">${availabilityChip}</span>
               <span class="summary-chip">No experience? Perfect.</span>
             </div>
             <a class="module-action" href="${escapeHtml(data.qrLinks.booking)}" target="_blank" rel="noreferrer">Scan to Book</a>
@@ -2643,7 +2758,7 @@ async function init() {
     updateDataModeIndicator({
       mode: "loading",
       statusLabel: "Loading data",
-      detail: "Connecting to WordPress."
+      detail: "Connecting to synced event and studio feeds."
     });
     renderLoadingState();
     bindEvents();
@@ -2677,7 +2792,7 @@ async function init() {
     });
     renderLoadingState(
       "Using backup content.",
-      "WordPress did not respond cleanly, so the kiosk kept its local backup lineup instead of going blank."
+      "The synced feeds did not respond cleanly, so the kiosk kept its local backup lineup instead of going blank."
     );
   }
 }

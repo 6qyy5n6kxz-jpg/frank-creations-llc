@@ -113,6 +113,13 @@ Fields:
 - `price`
 - `pickup`
 
+### Studio display event sync
+
+- `studio-display.html` now prefers [`data/studio-display-events.json`](/Volumes/Backup Plus/frank-creations-llc/data/studio-display-events.json) for upcoming public Toledo events when the page is hosted off the Wine & Canvas domain.
+- Refresh the snapshot locally with `python3 scripts/sync-studio-display-events.py`.
+- The scheduled workflow at [`.github/workflows/sync-studio-display-events.yml`](/Volumes/Backup Plus/frank-creations-llc/.github/workflows/sync-studio-display-events.yml) updates that JSON hourly from `https://wineandcanvas.com/toledo/events/` via the Toledo events API.
+- If the display is ever hosted on the Wine & Canvas origin itself, the page still keeps its direct live WordPress event fetch as a fallback path.
+
 ## Current launch scope
 
 - Home page for the umbrella brand
