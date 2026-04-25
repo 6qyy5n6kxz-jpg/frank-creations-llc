@@ -1,26 +1,11 @@
 {
-  "generatedAt": "2026-04-25T03:23:00Z",
+  "generatedAt": "2026-04-25T05:02:02Z",
   "source": {
     "pageUrl": "https://wineandcanvas.com/toledo/events/",
     "apiUrl": "https://wineandcanvas.com/toledo/wp-json/tribe/events/v1/events",
     "timezone": "America/New_York"
   },
   "upcomingEvents": [
-    {
-      "id": "toledo-paint-and-sip-party-vive-la-france",
-      "title": "Toledo Paint and Sip Party \u2013 Vive la France",
-      "date": "2026-04-24",
-      "time": "6:00 PM - 9:00 PM",
-      "price": 40.0,
-      "availabilityText": "Check live site for seats",
-      "status": "now-booking",
-      "badge": "Now Booking",
-      "ctaLabel": "Scan to Book",
-      "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-paint-and-sip-party-vive-la-france/",
-      "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/03/vive-la-france-bl.jpg",
-      "description": "Paint the Eiffel Tower at sunset at this Toledo Paint & Sip. Step-by-step class at Wine & Canvas Studio. BYOB and beginner-friendly.",
-      "venue": "Wine & Canvas Toledo Studio"
-    },
     {
       "id": "toledo-wine-glass-paint-and-sip-party-pick-your-design-4",
       "title": "Toledo Wine Glass Paint and Sip Party \u2013 Pick Your Design",
@@ -94,6 +79,21 @@
       "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-paint-and-sip-party-grogu/",
       "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/04/Grogu.jpg",
       "description": "Paint Grogu at this Toledo Paint & Sip! Step-by-step, beginner-friendly, BYOB. A fun Star Wars inspired creative night.",
+      "venue": "Wine & Canvas Toledo Studio"
+    },
+    {
+      "id": "toledo-paint-and-sip-party-pick-your-painting-star-wars-edition",
+      "title": "Toledo Paint and Sip Party \u2013 Pick Your Painting: Star Wars Edition",
+      "date": "2026-05-02",
+      "time": "6:00 PM - 9:00 PM",
+      "price": 40.0,
+      "availabilityText": "Check live site for seats",
+      "status": "now-booking",
+      "badge": "Now Booking",
+      "ctaLabel": "Scan to Book",
+      "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-paint-and-sip-party-pick-your-painting-star-wars-edition/",
+      "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/04/Star-Wars-Edition.png",
+      "description": "Choose your Star Wars painting at this Toledo Paint & Sip! Grogu, lightsabers & more. Beginner-friendly, BYOB, fun night out.",
       "venue": "Wine & Canvas Toledo Studio"
     }
   ]
