@@ -1,41 +1,11 @@
 {
-  "generatedAt": "2026-04-26T03:23:55Z",
+  "generatedAt": "2026-04-26T05:19:52Z",
   "source": {
     "pageUrl": "https://wineandcanvas.com/toledo/events/",
     "apiUrl": "https://wineandcanvas.com/toledo/wp-json/tribe/events/v1/events",
     "timezone": "America/New_York"
   },
   "upcomingEvents": [
-    {
-      "id": "toledo-wine-glass-paint-and-sip-party-pick-your-design-4",
-      "title": "Toledo Wine Glass Paint and Sip Party \u2013 Pick Your Design",
-      "date": "2026-04-25",
-      "time": "12:00 PM - 2:00 PM",
-      "price": 30.0,
-      "availabilityText": "Check live site for seats",
-      "status": "now-booking",
-      "badge": "Now Booking",
-      "ctaLabel": "Scan to Book",
-      "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-wine-glass-paint-and-sip-party-pick-your-design-4/",
-      "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/02/Wine_Glass_Designs_2MB.jpg",
-      "description": "Paint two custom wine glasses at a Toledo Paint & Sip Party. Pick your design, BYOB, beginner-friendly, all supplies included.",
-      "venue": "Wine & Canvas Toledo Studio"
-    },
-    {
-      "id": "toledo-paint-and-sip-party-catching-waves",
-      "title": "Toledo Paint and Sip Party \u2013 Catching Waves",
-      "date": "2026-04-25",
-      "time": "6:00 PM - 9:00 PM",
-      "price": 40.0,
-      "availabilityText": "Check live site for seats",
-      "status": "now-booking",
-      "badge": "Now Booking",
-      "ctaLabel": "Scan to Book",
-      "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-paint-and-sip-party-catching-waves/",
-      "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/03/Catching-Waves-CC.jpg",
-      "description": "Paint a crashing ocean wave at sunset at this Toledo Paint & Sip. Step-by-step class at Wine & Canvas Studio. BYOB and beginner-friendly.",
-      "venue": "Wine & Canvas Toledo Studio"
-    },
     {
       "id": "graytown-paint-and-sip-party-sunset-toast",
       "title": "Graytown Paint and Sip Party \u2013 Sunset Toast",
@@ -94,6 +64,36 @@
       "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-paint-and-sip-party-pick-your-painting-star-wars-edition/",
       "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/04/Star-Wars-Edition.png",
       "description": "Choose your Star Wars painting at this Toledo Paint & Sip! Grogu, lightsabers & more. Beginner-friendly, BYOB, fun night out.",
+      "venue": "Wine & Canvas Toledo Studio"
+    },
+    {
+      "id": "toledo-paint-and-sip-party-purple-falls",
+      "title": "Toledo Paint and Sip Party \u2013 Purple Falls",
+      "date": "2026-05-03",
+      "time": "2:00 PM - 5:00 PM",
+      "price": 40.0,
+      "availabilityText": "Check live site for seats",
+      "status": "now-booking",
+      "badge": "Now Booking",
+      "ctaLabel": "Scan to Book",
+      "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-paint-and-sip-party-purple-falls/",
+      "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/04/Purple-Falls-EC.jpg",
+      "description": "Relax and paint Purple Falls in Toledo! A peaceful Paint & Sip with glowing moonlight, waterfall, and step-by-step instruction. BYOB.",
+      "venue": "Wine & Canvas Toledo Studio"
+    },
+    {
+      "id": "toledo-paint-and-sip-party-cup-of-flowers",
+      "title": "Toledo Paint and Sip Party \u2013 Cup of Flowers",
+      "date": "2026-05-08",
+      "time": "6:00 PM - 9:00 PM",
+      "price": 40.0,
+      "availabilityText": "Check live site for seats",
+      "status": "now-booking",
+      "badge": "Now Booking",
+      "ctaLabel": "Scan to Book",
+      "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-paint-and-sip-party-cup-of-flowers/",
+      "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/04/Cup-of-Flowers-scaled.jpg",
+      "description": "Create a beautiful Cup of Flowers painting at this Toledo Paint & Sip. Enjoy a fun, beginner-friendly BYOB art class with step-by-step instruction.",
       "venue": "Wine & Canvas Toledo Studio"
     }
   ]
