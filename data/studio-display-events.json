@@ -1,26 +1,11 @@
 {
-  "generatedAt": "2026-04-28T03:24:30Z",
+  "generatedAt": "2026-04-28T05:25:59Z",
   "source": {
     "pageUrl": "https://wineandcanvas.com/toledo/events/",
     "apiUrl": "https://wineandcanvas.com/toledo/wp-json/tribe/events/v1/events",
     "timezone": "America/New_York"
   },
   "upcomingEvents": [
-    {
-      "id": "graytown-paint-and-sip-party-sunset-toast",
-      "title": "Graytown Paint and Sip Party \u2013 Sunset Toast",
-      "date": "2026-04-27",
-      "time": "6:00 PM - 9:00 PM",
-      "price": 50.0,
-      "availabilityText": "Check live site for seats",
-      "status": "now-booking",
-      "badge": "Now Booking",
-      "ctaLabel": "Scan to Book",
-      "ctaUrl": "https://wineandcanvas.com/toledo/event/graytown-paint-and-sip-party-sunset-toast/",
-      "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/04/Sunset-beach-scene-with-wine-glasses.png",
-      "description": "Create a Sunset Toast wood pallet painting at this Graytown Paint & Sip. Enjoy a beach sunset scene with wine, food, and guided instruction.",
-      "venue": "The Mockingbird on Mill Road Wine Cafe"
-    },
     {
       "id": "toledo-paint-and-sip-party-may-the-force",
       "title": "Toledo Paint and Sip Party \u2013 May The Force",
@@ -94,6 +79,21 @@
       "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-paint-and-sip-party-cup-of-flowers/",
       "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/04/Cup-of-Flowers-scaled.jpg",
       "description": "Create a beautiful Cup of Flowers painting at this Toledo Paint & Sip. Enjoy a fun, beginner-friendly BYOB art class with step-by-step instruction.",
+      "venue": "Wine & Canvas Toledo Studio"
+    },
+    {
+      "id": "toledo-cookies-and-canvas-mommy-and-me-elephants",
+      "title": "Toledo Cookies and Canvas \u2013 Mommy and Me Elephants",
+      "date": "2026-05-09",
+      "time": "12:00 PM - 2:00 PM",
+      "price": 50.0,
+      "availabilityText": "Check live site for seats",
+      "status": "now-booking",
+      "badge": "Now Booking",
+      "ctaLabel": "Scan to Book",
+      "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-cookies-and-canvas-mommy-and-me-elephants/",
+      "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/04/Mommy-and-Me-Elephants-scaled.jpg",
+      "description": "Mommy & Me elephant painting in Toledo! Create a matching 11\u00d714 + 8\u00d710 set together. Sweet, guided, and kid-friendly fun.",
       "venue": "Wine & Canvas Toledo Studio"
     }
   ]
