@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-28T12:55:41Z",
+  "generatedAt": "2026-04-28T13:55:45Z",
   "source": {
     "pageUrl": "https://wineandcanvas.com/toledo/events/",
     "apiUrl": "https://wineandcanvas.com/toledo/wp-json/tribe/events/v1/events",
@@ -7,8 +7,8 @@
   },
   "upcomingEvents": [
     {
-      "id": "toledo-paint-and-sip-party-may-the-force",
-      "title": "Toledo Paint and Sip Party \u2013 May The Force",
+      "id": "toledo-paint-and-sip-party-cityscape",
+      "title": "Toledo Paint and Sip Party \u2013 Cityscape",
       "date": "2026-05-01",
       "time": "6:00 PM - 9:00 PM",
       "price": 40.0,
@@ -16,9 +16,9 @@
       "status": "now-booking",
       "badge": "Now Booking",
       "ctaLabel": "Scan to Book",
-      "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-paint-and-sip-party-may-the-force/",
-      "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2024/04/May-the-Force_CA.jpg",
-      "description": "Paint a Star Wars inspired galaxy scene at this Toledo Paint & Sip. Step-by-step class. BYOB and beginner-friendly.",
+      "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-paint-and-sip-party-cityscape/",
+      "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/04/Cityscape.jpeg",
+      "description": "Paint Cityscape at this Toledo Paint & Sip. A glowing skyline with reflections and bold color, perfect for a fun night out.",
       "venue": "Wine & Canvas Toledo Studio"
     },
     {
