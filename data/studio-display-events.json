@@ -1,26 +1,11 @@
 {
-  "generatedAt": "2026-05-02T03:23:47Z",
+  "generatedAt": "2026-05-02T05:18:47Z",
   "source": {
     "pageUrl": "https://wineandcanvas.com/toledo/events/",
     "apiUrl": "https://wineandcanvas.com/toledo/wp-json/tribe/events/v1/events",
     "timezone": "America/New_York"
   },
   "upcomingEvents": [
-    {
-      "id": "toledo-paint-and-sip-party-cityscape",
-      "title": "Toledo Paint and Sip Party \u2013 Cityscape",
-      "date": "2026-05-01",
-      "time": "6:00 PM - 9:00 PM",
-      "price": 40.0,
-      "availabilityText": "Check live site for seats",
-      "status": "now-booking",
-      "badge": "Now Booking",
-      "ctaLabel": "Scan to Book",
-      "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-paint-and-sip-party-cityscape/",
-      "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/04/Cityscape.jpeg",
-      "description": "Paint Cityscape at this Toledo Paint & Sip. A glowing skyline with reflections and bold color, perfect for a fun night out.",
-      "venue": "Wine & Canvas Toledo Studio"
-    },
     {
       "id": "toledo-paint-and-sip-party-grogu",
       "title": "Toledo Paint and Sip Party \u2013 Grogu",
@@ -94,6 +79,21 @@
       "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-cookies-and-canvas-mommy-and-me-elephants/",
       "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/04/Mommy-and-Me-Elephants-scaled.jpg",
       "description": "Mommy & Me elephant painting in Toledo! Create a matching 11\u00d714 + 8\u00d710 set together. Sweet, guided, and kid-friendly fun.",
+      "venue": "Wine & Canvas Toledo Studio"
+    },
+    {
+      "id": "toledo-paint-and-sip-party-spring-bridge-over-water",
+      "title": "Toledo Paint and Sip Party \u2013 Spring Bridge Over Water",
+      "date": "2026-05-09",
+      "time": "6:00 PM - 9:00 PM",
+      "price": 40.0,
+      "availabilityText": "Check live site for seats",
+      "status": "now-booking",
+      "badge": "Now Booking",
+      "ctaLabel": "Scan to Book",
+      "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-paint-and-sip-party-spring-bridge-over-water/",
+      "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/04/1spring-bridge-over-water-kc-wc.jpeg",
+      "description": "Paint Spring Bridge Over Water in Toledo. Create a colorful river scene with flowers and a bridge\u2014BYOB, beginner-friendly class.",
       "venue": "Wine & Canvas Toledo Studio"
     }
   ]
