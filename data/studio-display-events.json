@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-04T14:58:16Z",
+  "generatedAt": "2026-05-04T16:53:38Z",
   "source": {
     "pageUrl": "https://wineandcanvas.com/toledo/events/",
     "apiUrl": "https://wineandcanvas.com/toledo/wp-json/tribe/events/v1/events",
@@ -82,18 +82,18 @@
       "venue": "Wine & Canvas Toledo Studio"
     },
     {
-      "id": "toledo-paint-and-sip-party-tipsy",
-      "title": "Toledo Paint and Sip Party \u2013 Tipsy",
-      "date": "2026-05-16",
-      "time": "7:00 PM - 9:00 PM",
-      "price": 30.0,
+      "id": "toledo-paint-and-sip-party-peacock-paradise",
+      "title": "Toledo Paint and Sip Party \u2013 Peacock Paradise",
+      "date": "2026-05-17",
+      "time": "2:00 PM - 5:00 PM",
+      "price": 40.0,
       "availabilityText": "Check live site for seats",
       "status": "now-booking",
       "badge": "Now Booking",
       "ctaLabel": "Scan to Book",
-      "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-paint-and-sip-party-tipsy/",
-      "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/04/Tipsy.jpeg",
-      "description": "Paint a stylish wine glass splash at this Toledo Paint & Sip. A fun, beginner-friendly night out with bold color and movement.",
+      "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-paint-and-sip-party-peacock-paradise/",
+      "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/04/IMG_0983.jpeg",
+      "description": "Paint a vibrant peacock at this Toledo Paint & Sip. A bold, colorful, beginner-friendly creative experience.",
       "venue": "Wine & Canvas Toledo Studio"
     }
   ]
