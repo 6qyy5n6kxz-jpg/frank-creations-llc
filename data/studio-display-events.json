@@ -1,26 +1,11 @@
 {
-  "generatedAt": "2026-05-04T03:24:20Z",
+  "generatedAt": "2026-05-04T05:26:26Z",
   "source": {
     "pageUrl": "https://wineandcanvas.com/toledo/events/",
     "apiUrl": "https://wineandcanvas.com/toledo/wp-json/tribe/events/v1/events",
     "timezone": "America/New_York"
   },
   "upcomingEvents": [
-    {
-      "id": "toledo-paint-and-sip-party-purple-falls",
-      "title": "Toledo Paint and Sip Party \u2013 Purple Falls",
-      "date": "2026-05-03",
-      "time": "2:00 PM - 5:00 PM",
-      "price": 40.0,
-      "availabilityText": "Check live site for seats",
-      "status": "now-booking",
-      "badge": "Now Booking",
-      "ctaLabel": "Scan to Book",
-      "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-paint-and-sip-party-purple-falls/",
-      "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/04/Purple-Falls-EC.jpg",
-      "description": "Relax and paint Purple Falls in Toledo! A peaceful Paint & Sip with glowing moonlight, waterfall, and step-by-step instruction. BYOB.",
-      "venue": "Wine & Canvas Toledo Studio"
-    },
     {
       "id": "toledo-paint-and-sip-party-cup-of-flowers",
       "title": "Toledo Paint and Sip Party \u2013 Cup of Flowers",
@@ -94,6 +79,21 @@
       "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-date-night-paint-and-sip-party-love-by-the-moon/",
       "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/04/Love-by-the-Moon.jpg",
       "description": "Enjoy a Date Night Paint & Sip in Toledo. Paint a romantic beach sunset diptych\u2014BYOB, beginner-friendly couples class.",
+      "venue": "Wine & Canvas Toledo Studio"
+    },
+    {
+      "id": "toledo-paint-and-sip-party-tipsy",
+      "title": "Toledo Paint and Sip Party \u2013 Tipsy",
+      "date": "2026-05-16",
+      "time": "7:00 PM - 9:00 PM",
+      "price": 30.0,
+      "availabilityText": "Check live site for seats",
+      "status": "now-booking",
+      "badge": "Now Booking",
+      "ctaLabel": "Scan to Book",
+      "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-paint-and-sip-party-tipsy/",
+      "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/04/Tipsy.jpeg",
+      "description": "Paint a stylish wine glass splash at this Toledo Paint & Sip. A fun, beginner-friendly night out with bold color and movement.",
       "venue": "Wine & Canvas Toledo Studio"
     }
   ]
