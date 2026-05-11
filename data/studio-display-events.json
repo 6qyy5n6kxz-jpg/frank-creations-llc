@@ -1,26 +1,11 @@
 {
-  "generatedAt": "2026-05-11T03:25:02Z",
+  "generatedAt": "2026-05-11T05:38:11Z",
   "source": {
     "pageUrl": "https://wineandcanvas.com/toledo/events/",
     "apiUrl": "https://wineandcanvas.com/toledo/wp-json/tribe/events/v1/events",
     "timezone": "America/New_York"
   },
   "upcomingEvents": [
-    {
-      "id": "toledo-paint-and-sip-party-wildflower-bouquet",
-      "title": "Toledo Paint and Sip Party \u2013 Wildflower Bouquet",
-      "date": "2026-05-10",
-      "time": "2:00 PM - 5:00 PM",
-      "price": 40.0,
-      "availabilityText": "Check live site for seats",
-      "status": "now-booking",
-      "badge": "Now Booking",
-      "ctaLabel": "Scan to Book",
-      "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-paint-and-sip-party-wildflower-bouquet/",
-      "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/04/Wildflower-Bouquet-scaled.jpg",
-      "description": "Paint a Wildflower Bouquet in Toledo. Create bright florals in a mason jar\u2014BYOB, beginner-friendly Paint & Sip class.",
-      "venue": "Wine & Canvas Toledo Studio"
-    },
     {
       "id": "toledo-date-night-paint-and-sip-party-love-by-the-moon",
       "title": "Toledo Date Night Paint and Sip Party \u2013 Love by the Moon",
@@ -94,6 +79,21 @@
       "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-wine-glass-paint-and-sip-party-pick-your-design-5/",
       "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/02/Wine_Glass_Designs_2MB.jpg",
       "description": "Paint two custom wine glasses at a Toledo Paint & Sip Party. Pick your design, BYOB, beginner-friendly, all supplies included.",
+      "venue": "Wine & Canvas Toledo Studio"
+    },
+    {
+      "id": "toledo-paint-and-sip-party-electric-sky",
+      "title": "Toledo Paint and Sip Party \u2013 Electric Sky",
+      "date": "2026-05-23",
+      "time": "6:00 PM - 9:00 PM",
+      "price": 40.0,
+      "availabilityText": "Check live site for seats",
+      "status": "now-booking",
+      "badge": "Now Booking",
+      "ctaLabel": "Scan to Book",
+      "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-paint-and-sip-party-electric-sky/",
+      "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/04/Electric-Sky-CC.jpg",
+      "description": "Paint Electric Sky at this Toledo Paint & Sip. Bold neon colors, glowing skies, and a fun, beginner-friendly night out.",
       "venue": "Wine & Canvas Toledo Studio"
     }
   ]
