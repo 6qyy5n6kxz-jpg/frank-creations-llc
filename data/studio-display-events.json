@@ -1,26 +1,11 @@
 {
-  "generatedAt": "2026-05-18T03:25:29Z",
+  "generatedAt": "2026-05-18T05:40:15Z",
   "source": {
     "pageUrl": "https://wineandcanvas.com/toledo/events/",
     "apiUrl": "https://wineandcanvas.com/toledo/wp-json/tribe/events/v1/events",
     "timezone": "America/New_York"
   },
   "upcomingEvents": [
-    {
-      "id": "toledo-paint-and-sip-party-peacock-paradise",
-      "title": "Toledo Paint and Sip Party \u2013 Peacock Paradise",
-      "date": "2026-05-17",
-      "time": "2:00 PM - 5:00 PM",
-      "price": 40.0,
-      "availabilityText": "Check live site for seats",
-      "status": "now-booking",
-      "badge": "Now Booking",
-      "ctaLabel": "Scan to Book",
-      "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-paint-and-sip-party-peacock-paradise/",
-      "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/04/IMG_0983.jpeg",
-      "description": "Paint a vibrant peacock at this Toledo Paint & Sip. A bold, colorful, beginner-friendly creative experience.",
-      "venue": "Wine & Canvas Toledo Studio"
-    },
     {
       "id": "graytown-wine-glass-paint-and-sip-party-pick-your-design",
       "title": "Graytown Wine Glass Paint and Sip Party \u2013 Pick Your Design",
@@ -94,6 +79,21 @@
       "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-paint-and-sip-party-guiding-light/",
       "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/04/IMG_1038.jpeg",
       "description": "Paint Guiding Light at this Toledo Paint & Sip. A peaceful lighthouse scene with coastal vibes and beginner-friendly instruction.",
+      "venue": "Wine & Canvas Toledo Studio"
+    },
+    {
+      "id": "toledo-paint-and-sip-party-cosmic-reflections",
+      "title": "Toledo Paint and Sip Party \u2013 Cosmic Reflections",
+      "date": "2026-05-29",
+      "time": "6:00 PM - 9:00 PM",
+      "price": 40.0,
+      "availabilityText": "Check live site for seats",
+      "status": "now-booking",
+      "badge": "Now Booking",
+      "ctaLabel": "Scan to Book",
+      "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-paint-and-sip-party-cosmic-reflections/",
+      "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/02/Cosmic-Reflections.jpeg",
+      "description": "Paint Cosmic Reflections at this Toledo Paint & Sip. A glowing galaxy nightscape with reflections and beginner-friendly instruction.",
       "venue": "Wine & Canvas Toledo Studio"
     }
   ]
