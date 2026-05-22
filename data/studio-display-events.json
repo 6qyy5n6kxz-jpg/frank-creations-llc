@@ -1,26 +1,11 @@
 {
-  "generatedAt": "2026-05-22T15:19:16Z",
+  "generatedAt": "2026-05-22T16:58:38Z",
   "source": {
     "pageUrl": "https://wineandcanvas.com/toledo/events/",
     "apiUrl": "https://wineandcanvas.com/toledo/wp-json/tribe/events/v1/events",
     "timezone": "America/New_York"
   },
   "upcomingEvents": [
-    {
-      "id": "toledo-paint-and-sip-party-golden-glow-beauty",
-      "title": "Toledo Paint and Sip Party \u2013 Golden Glow Beauty",
-      "date": "2026-05-22",
-      "time": "6:00 PM - 8:00 PM",
-      "price": 30.0,
-      "availabilityText": "Check live site for seats",
-      "status": "now-booking",
-      "badge": "Now Booking",
-      "ctaLabel": "Scan to Book",
-      "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-paint-and-sip-party-golden-glow-beauty/",
-      "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/04/Golden-Glow.jpeg",
-      "description": "Paint Golden Glow Beauty at this Toledo Paint & Sip. Bold color, glowing tones, and a confident, beginner-friendly experience.",
-      "venue": "Wine & Canvas Toledo Studio"
-    },
     {
       "id": "toledo-wine-glass-paint-and-sip-party-pick-your-design-5",
       "title": "Toledo Wine Glass Paint and Sip Party \u2013 Pick Your Design",
@@ -79,6 +64,21 @@
       "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-paint-and-sip-party-cosmic-reflections/",
       "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/02/Cosmic-Reflections.jpeg",
       "description": "Paint Cosmic Reflections at this Toledo Paint & Sip. A glowing galaxy nightscape with reflections and beginner-friendly instruction.",
+      "venue": "Wine & Canvas Toledo Studio"
+    },
+    {
+      "id": "toledo-paint-and-sip-party-happy-dream",
+      "title": "Toledo Paint and Sip Party \u2013 Happy Dream",
+      "date": "2026-05-30",
+      "time": "6:00 PM - 9:00 PM",
+      "price": 40.0,
+      "availabilityText": "Check live site for seats",
+      "status": "now-booking",
+      "badge": "Now Booking",
+      "ctaLabel": "Scan to Book",
+      "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-paint-and-sip-party-happy-dream/",
+      "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2025/05/Happy-Dream-GV-scaled.jpg",
+      "description": "Paint Happy Dream at this Toledo Paint & Sip. A tropical sunset with soft pink skies and palm silhouettes\u2014perfect for beginners.",
       "venue": "Wine & Canvas Toledo Studio"
     },
     {
