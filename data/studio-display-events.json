@@ -1,26 +1,11 @@
 {
-  "generatedAt": "2026-05-25T03:25:35Z",
+  "generatedAt": "2026-05-25T05:48:38Z",
   "source": {
     "pageUrl": "https://wineandcanvas.com/toledo/events/",
     "apiUrl": "https://wineandcanvas.com/toledo/wp-json/tribe/events/v1/events",
     "timezone": "America/New_York"
   },
   "upcomingEvents": [
-    {
-      "id": "toledo-paint-and-sip-party-guiding-light",
-      "title": "Toledo Paint and Sip Party \u2013 Guiding Light",
-      "date": "2026-05-24",
-      "time": "2:00 PM - 5:00 PM",
-      "price": 40.0,
-      "availabilityText": "Check live site for seats",
-      "status": "now-booking",
-      "badge": "Now Booking",
-      "ctaLabel": "Scan to Book",
-      "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-paint-and-sip-party-guiding-light/",
-      "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/04/IMG_1038.jpeg",
-      "description": "Paint Guiding Light at this Toledo Paint & Sip. A peaceful lighthouse scene with coastal vibes and beginner-friendly instruction.",
-      "venue": "Wine & Canvas Toledo Studio"
-    },
     {
       "id": "toledo-paint-and-sip-party-cosmic-reflections",
       "title": "Toledo Paint and Sip Party \u2013 Cosmic Reflections",
@@ -94,6 +79,21 @@
       "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-paint-and-sip-party-tropical-sunset-serenity/",
       "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2025/05/tropical-sunset_4_orig.jpg",
       "description": "Paint Tropical Sunset Serenity at this Toledo Paint & Sip. A glowing beach sunset with palm silhouettes and calm water\u2014perfect for beginners.",
+      "venue": "Wine & Canvas Toledo Studio"
+    },
+    {
+      "id": "toledo-paint-and-sip-party-so-mushroom-in-my-heart",
+      "title": "Toledo Paint and Sip Party \u2013 So Mushroom in My Heart",
+      "date": "2026-06-06",
+      "time": "12:00 PM - 2:00 PM",
+      "price": 30.0,
+      "availabilityText": "Check live site for seats",
+      "status": "now-booking",
+      "badge": "Now Booking",
+      "ctaLabel": "Scan to Book",
+      "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-paint-and-sip-party-so-mushroom-in-my-heart/",
+      "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/04/So_mushroom_in_my_heart_optimized.jpg",
+      "description": "Paint So Mushroom in My Heart at this Toledo Paint & Sip. A cute glowing mushroom with a heart and whimsical night sky\u2014perfect for beginners.",
       "venue": "Wine & Canvas Toledo Studio"
     }
   ]
