@@ -1,26 +1,11 @@
 {
-  "generatedAt": "2026-05-30T17:37:20Z",
+  "generatedAt": "2026-05-30T18:39:01Z",
   "source": {
     "pageUrl": "https://wineandcanvas.com/toledo/events/",
     "apiUrl": "https://wineandcanvas.com/toledo/wp-json/tribe/events/v1/events",
     "timezone": "America/New_York"
   },
   "upcomingEvents": [
-    {
-      "id": "toledo-paint-and-sip-party-happy-dream",
-      "title": "Toledo Paint and Sip Party \u2013 Happy Dream",
-      "date": "2026-05-30",
-      "time": "6:00 PM - 9:00 PM",
-      "price": 40.0,
-      "availabilityText": "Check live site for seats",
-      "status": "now-booking",
-      "badge": "Now Booking",
-      "ctaLabel": "Scan to Book",
-      "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-paint-and-sip-party-happy-dream/",
-      "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2025/05/Happy-Dream-GV-scaled.jpg",
-      "description": "Paint Happy Dream at this Toledo Paint & Sip. A tropical sunset with soft pink skies and palm silhouettes\u2014perfect for beginners.",
-      "venue": "Wine & Canvas Toledo Studio"
-    },
     {
       "id": "toledo-paint-and-sip-party-sunflower-dream-2",
       "title": "Toledo Paint and Sip Party \u2013 Sunflower Dream",
@@ -94,6 +79,21 @@
       "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-paint-and-sip-party-so-mushroom-in-my-heart/",
       "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/04/So_mushroom_in_my_heart_optimized.jpg",
       "description": "Paint So Mushroom in My Heart at this Toledo Paint & Sip. A cute glowing mushroom with a heart and whimsical night sky\u2014perfect for beginners.",
+      "venue": "Wine & Canvas Toledo Studio"
+    },
+    {
+      "id": "toledo-paint-and-sip-party-glowing-garden-path",
+      "title": "Toledo Paint and Sip Party \u2013 Glowing Garden Path",
+      "date": "2026-06-07",
+      "time": "2:00 PM - 5:00 PM",
+      "price": 40.0,
+      "availabilityText": "Check live site for seats",
+      "status": "now-booking",
+      "badge": "Now Booking",
+      "ctaLabel": "Scan to Book",
+      "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-paint-and-sip-party-glowing-garden-path/",
+      "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/03/Garden_CA.jpg",
+      "description": "Paint Glowing Garden Path at this Toledo Paint & Sip. Soft, luminous landscape with a glowing trail & blooming florals\u2014perfect for beginners.",
       "venue": "Wine & Canvas Toledo Studio"
     }
   ]
