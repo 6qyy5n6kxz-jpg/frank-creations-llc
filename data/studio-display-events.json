@@ -1,26 +1,11 @@
 {
-  "generatedAt": "2026-05-30T03:24:08Z",
+  "generatedAt": "2026-05-30T05:33:12Z",
   "source": {
     "pageUrl": "https://wineandcanvas.com/toledo/events/",
     "apiUrl": "https://wineandcanvas.com/toledo/wp-json/tribe/events/v1/events",
     "timezone": "America/New_York"
   },
   "upcomingEvents": [
-    {
-      "id": "toledo-paint-and-sip-party-cosmic-reflections",
-      "title": "Toledo Paint and Sip Party \u2013 Cosmic Reflections",
-      "date": "2026-05-29",
-      "time": "6:00 PM - 9:00 PM",
-      "price": 40.0,
-      "availabilityText": "Check live site for seats",
-      "status": "now-booking",
-      "badge": "Now Booking",
-      "ctaLabel": "Scan to Book",
-      "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-paint-and-sip-party-cosmic-reflections/",
-      "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/02/Cosmic-Reflections.jpeg",
-      "description": "Paint Cosmic Reflections at this Toledo Paint & Sip. A glowing galaxy nightscape with reflections and beginner-friendly instruction.",
-      "venue": "Wine & Canvas Toledo Studio"
-    },
     {
       "id": "toledo-paint-and-sip-party-happy-dream",
       "title": "Toledo Paint and Sip Party \u2013 Happy Dream",
@@ -79,6 +64,21 @@
       "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-paint-and-sip-party-tropical-sunset-serenity/",
       "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2025/05/tropical-sunset_4_orig.jpg",
       "description": "Paint Tropical Sunset Serenity at this Toledo Paint & Sip. A glowing beach sunset with palm silhouettes and calm water\u2014perfect for beginners.",
+      "venue": "Wine & Canvas Toledo Studio"
+    },
+    {
+      "id": "toledo-paint-and-sip-party-boardwalk",
+      "title": "Toledo Paint and Sip Party \u2013 Boardwalk",
+      "date": "2026-06-06",
+      "time": "6:00 PM - 9:00 PM",
+      "price": 40.0,
+      "availabilityText": "Check live site for seats",
+      "status": "now-booking",
+      "badge": "Now Booking",
+      "ctaLabel": "Scan to Book",
+      "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-paint-and-sip-party-boardwalk/",
+      "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/05/Boardwalk-JC.jpg",
+      "description": "Paint Boardwalk at this Toledo Paint & Sip. A glowing sunset pier with lights and bold perspective\u2014perfect for beginners and date nights.",
       "venue": "Wine & Canvas Toledo Studio"
     },
     {
