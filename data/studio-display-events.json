@@ -1,26 +1,11 @@
 {
-  "generatedAt": "2026-05-31T03:25:08Z",
+  "generatedAt": "2026-05-31T05:45:35Z",
   "source": {
     "pageUrl": "https://wineandcanvas.com/toledo/events/",
     "apiUrl": "https://wineandcanvas.com/toledo/wp-json/tribe/events/v1/events",
     "timezone": "America/New_York"
   },
   "upcomingEvents": [
-    {
-      "id": "toledo-paint-and-sip-party-sunflower-dream-2",
-      "title": "Toledo Paint and Sip Party \u2013 Sunflower Dream",
-      "date": "2026-05-30",
-      "time": "12:00 PM - 2:00 PM",
-      "price": 30.0,
-      "availabilityText": "Check live site for seats",
-      "status": "now-booking",
-      "badge": "Now Booking",
-      "ctaLabel": "Scan to Book",
-      "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-paint-and-sip-party-sunflower-dream-2/",
-      "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/04/Sunflower-Dream.jpg",
-      "description": "Paint a glowing sunflower at this Toledo Paint & Sip. A bright, relaxing, beginner-friendly creative experience.",
-      "venue": "Wine & Canvas Toledo Studio"
-    },
     {
       "id": "toledo-paint-and-sip-party-beach-path",
       "title": "Toledo Paint and Sip Party \u2013 Beach Path",
@@ -95,6 +80,21 @@
       "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/03/Garden_CA.jpg",
       "description": "Paint Glowing Garden Path at this Toledo Paint & Sip. Soft, luminous landscape with a glowing trail & blooming florals\u2014perfect for beginners.",
       "venue": "Wine & Canvas Toledo Studio"
+    },
+    {
+      "id": "dundee-paint-and-sip-party-disco-cherries",
+      "title": "Dundee Paint and Sip Party \u2013 Disco Cherries",
+      "date": "2026-06-08",
+      "time": "6:00 PM - 9:00 PM",
+      "price": 40.0,
+      "availabilityText": "Check live site for seats",
+      "status": "now-booking",
+      "badge": "Now Booking",
+      "ctaLabel": "Scan to Book",
+      "ctaUrl": "https://wineandcanvas.com/toledo/event/dundee-paint-and-sip-party-disco-cherries/",
+      "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/05/disco_cherries_wordpress.jpg",
+      "description": "Paint sparkling Disco Cherries in Dundee at Social House 103. Includes a 16\u00d720 canvas plus food and drinks available.",
+      "venue": "Social House 103"
     }
   ]
 }
