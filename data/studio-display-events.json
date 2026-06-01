@@ -1,26 +1,11 @@
 {
-  "generatedAt": "2026-06-01T03:25:53Z",
+  "generatedAt": "2026-06-01T05:55:29Z",
   "source": {
     "pageUrl": "https://wineandcanvas.com/toledo/events/",
     "apiUrl": "https://wineandcanvas.com/toledo/wp-json/tribe/events/v1/events",
     "timezone": "America/New_York"
   },
   "upcomingEvents": [
-    {
-      "id": "toledo-paint-and-sip-party-beach-path",
-      "title": "Toledo Paint and Sip Party \u2013 Beach Path",
-      "date": "2026-05-31",
-      "time": "2:00 PM - 5:00 PM",
-      "price": 40.0,
-      "availabilityText": "Check live site for seats",
-      "status": "now-booking",
-      "badge": "Now Booking",
-      "ctaLabel": "Scan to Book",
-      "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-paint-and-sip-party-beach-path/",
-      "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2022/04/Beach-path-BL-1.jpg",
-      "description": "Paint Beach Path at this Toledo Paint & Sip. A soft coastal scene with dunes, ocean views, and peaceful sky\u2014perfect for beginners.",
-      "venue": "Wine & Canvas Toledo Studio"
-    },
     {
       "id": "toledo-paint-and-sip-party-tropical-sunset-serenity",
       "title": "Toledo Paint and Sip Party \u2013 Tropical Sunset Serenity",
@@ -95,6 +80,21 @@
       "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/05/disco_cherries_wordpress.jpg",
       "description": "Paint sparkling Disco Cherries in Dundee at Social House 103. Includes a 16\u00d720 canvas plus food and drinks available.",
       "venue": "Social House 103"
+    },
+    {
+      "id": "toledo-paint-and-sip-party-crowned-in-confidence",
+      "title": "Toledo Paint and Sip Party \u2013 Crowned in Confidence",
+      "date": "2026-06-12",
+      "time": "6:00 PM - 9:00 PM",
+      "price": 40.0,
+      "availabilityText": "Check live site for seats",
+      "status": "now-booking",
+      "badge": "Now Booking",
+      "ctaLabel": "Scan to Book",
+      "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-paint-and-sip-party-crowned-in-confidence/",
+      "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2022/02/IMG_5262.jpg",
+      "description": "Paint Crowned in Confidence at this Toledo Paint & Sip. A bold, empowering silhouette with vibrant color and a golden crown\u2014perfect for beginners.",
+      "venue": "Wine & Canvas Toledo Studio"
     }
   ]
 }
