@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-04T17:19:45Z",
+  "generatedAt": "2026-06-04T19:03:57Z",
   "source": {
     "pageUrl": "https://wineandcanvas.com/toledo/events/",
     "apiUrl": "https://wineandcanvas.com/toledo/wp-json/tribe/events/v1/events",
@@ -37,8 +37,8 @@
       "venue": "Wine & Canvas Toledo Studio"
     },
     {
-      "id": "toledo-paint-and-sip-party-so-mushroom-in-my-heart",
-      "title": "Toledo Paint and Sip Party \u2013 So Mushroom in My Heart",
+      "id": "toledo-paint-and-sip-party-cherry-blossom-bridge-2",
+      "title": "Toledo Paint and Sip Party \u2013 Cherry Blossom Bridge",
       "date": "2026-06-06",
       "time": "12:00 PM - 2:00 PM",
       "price": 30.0,
@@ -46,9 +46,9 @@
       "status": "now-booking",
       "badge": "Now Booking",
       "ctaLabel": "Scan to Book",
-      "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-paint-and-sip-party-so-mushroom-in-my-heart/",
-      "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/04/So_mushroom_in_my_heart_optimized.jpg",
-      "description": "Paint So Mushroom in My Heart at this Toledo Paint & Sip. A cute glowing mushroom with a heart and whimsical night sky\u2014perfect for beginners.",
+      "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-paint-and-sip-party-cherry-blossom-bridge-2/",
+      "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/02/Cherry-Blossom-Bridge-CA-scaled.jpg",
+      "description": "Paint Cherry Blossom Bridge in Toledo. Includes an 11\u00d714 canvas, step-by-step instruction, and BYOB creativity.",
       "venue": "Wine & Canvas Toledo Studio"
     },
     {
