@@ -1,26 +1,11 @@
 {
-  "generatedAt": "2026-06-06T03:24:25Z",
+  "generatedAt": "2026-06-06T05:35:59Z",
   "source": {
     "pageUrl": "https://wineandcanvas.com/toledo/events/",
     "apiUrl": "https://wineandcanvas.com/toledo/wp-json/tribe/events/v1/events",
     "timezone": "America/New_York"
   },
   "upcomingEvents": [
-    {
-      "id": "toledo-paint-and-sip-party-tropical-sunset-serenity",
-      "title": "Toledo Paint and Sip Party \u2013 Tropical Sunset Serenity",
-      "date": "2026-06-05",
-      "time": "6:00 PM - 9:00 PM",
-      "price": 40.0,
-      "availabilityText": "Check live site for seats",
-      "status": "now-booking",
-      "badge": "Now Booking",
-      "ctaLabel": "Scan to Book",
-      "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-paint-and-sip-party-tropical-sunset-serenity/",
-      "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2025/05/tropical-sunset_4_orig.jpg",
-      "description": "Paint Tropical Sunset Serenity at this Toledo Paint & Sip. A glowing beach sunset with palm silhouettes and calm water\u2014perfect for beginners.",
-      "venue": "Wine & Canvas Toledo Studio"
-    },
     {
       "id": "toledo-paint-and-sip-party-boardwalk",
       "title": "Toledo Paint and Sip Party \u2013 Boardwalk",
@@ -94,6 +79,21 @@
       "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-paint-and-sip-party-crowned-in-confidence/",
       "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2022/02/IMG_5262.jpg",
       "description": "Paint Crowned in Confidence at this Toledo Paint & Sip. A bold, empowering silhouette with vibrant color and a golden crown\u2014perfect for beginners.",
+      "venue": "Wine & Canvas Toledo Studio"
+    },
+    {
+      "id": "toledo-paint-and-sip-party-spring-daisies-2",
+      "title": "Toledo Paint and Sip Party \u2013 Spring Daisies",
+      "date": "2026-06-13",
+      "time": "12:00 PM - 2:00 PM",
+      "price": 30.0,
+      "availabilityText": "Check live site for seats",
+      "status": "now-booking",
+      "badge": "Now Booking",
+      "ctaLabel": "Scan to Book",
+      "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-paint-and-sip-party-spring-daisies-2/",
+      "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/01/Spring-Daisies_EC.jpg",
+      "description": "Paint Spring Daisies at this Toledo Paint & Sip. A bright mason jar floral with soft blues and fresh blooms\u2014perfect for beginners.",
       "venue": "Wine & Canvas Toledo Studio"
     }
   ]
