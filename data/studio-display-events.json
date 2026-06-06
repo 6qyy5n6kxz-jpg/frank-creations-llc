@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-06T13:53:20Z",
+  "generatedAt": "2026-06-06T14:50:45Z",
   "source": {
     "pageUrl": "https://wineandcanvas.com/toledo/events/",
     "apiUrl": "https://wineandcanvas.com/toledo/wp-json/tribe/events/v1/events",
@@ -19,21 +19,6 @@
       "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-paint-and-sip-party-boardwalk/",
       "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/05/Boardwalk-JC.jpg",
       "description": "Paint Boardwalk at this Toledo Paint & Sip. A glowing sunset pier with lights and bold perspective\u2014perfect for beginners and date nights.",
-      "venue": "Wine & Canvas Toledo Studio"
-    },
-    {
-      "id": "toledo-paint-and-sip-party-cherry-blossom-bridge-2",
-      "title": "Toledo Paint and Sip Party \u2013 Cherry Blossom Bridge",
-      "date": "2026-06-06",
-      "time": "12:00 PM - 2:00 PM",
-      "price": 30.0,
-      "availabilityText": "Check live site for seats",
-      "status": "now-booking",
-      "badge": "Now Booking",
-      "ctaLabel": "Scan to Book",
-      "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-paint-and-sip-party-cherry-blossom-bridge-2/",
-      "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/02/Cherry-Blossom-Bridge-CA-scaled.jpg",
-      "description": "Paint Cherry Blossom Bridge in Toledo. Includes an 11\u00d714 canvas, step-by-step instruction, and BYOB creativity.",
       "venue": "Wine & Canvas Toledo Studio"
     },
     {
@@ -79,6 +64,21 @@
       "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-paint-and-sip-party-crowned-in-confidence/",
       "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2022/02/IMG_5262.jpg",
       "description": "Paint Crowned in Confidence at this Toledo Paint & Sip. A bold, empowering silhouette with vibrant color and a golden crown\u2014perfect for beginners.",
+      "venue": "Wine & Canvas Toledo Studio"
+    },
+    {
+      "id": "toledo-paint-and-sip-party-fireflies-at-the-dock",
+      "title": "Toledo Paint and Sip Party \u2013 Fireflies at the Dock",
+      "date": "2026-06-13",
+      "time": "6:00 PM - 9:00 PM",
+      "price": 40.0,
+      "availabilityText": "Check live site for seats",
+      "status": "now-booking",
+      "badge": "Now Booking",
+      "ctaLabel": "Scan to Book",
+      "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-paint-and-sip-party-fireflies-at-the-dock/",
+      "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/05/Fireflies-at-the-Dock.jpg",
+      "description": "Paint Fireflies at the Dock at this Toledo Paint & Sip. A glowing sunset, lantern-lit tree, and sparkling fireflies create a magical lakeside scene.",
       "venue": "Wine & Canvas Toledo Studio"
     },
     {
