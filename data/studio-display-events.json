@@ -1,26 +1,11 @@
 {
-  "generatedAt": "2026-06-07T13:54:09Z",
+  "generatedAt": "2026-06-07T14:53:46Z",
   "source": {
     "pageUrl": "https://wineandcanvas.com/toledo/events/",
     "apiUrl": "https://wineandcanvas.com/toledo/wp-json/tribe/events/v1/events",
     "timezone": "America/New_York"
   },
   "upcomingEvents": [
-    {
-      "id": "toledo-paint-and-sip-party-glowing-garden-path",
-      "title": "Toledo Paint and Sip Party \u2013 Glowing Garden Path",
-      "date": "2026-06-07",
-      "time": "2:00 PM - 5:00 PM",
-      "price": 40.0,
-      "availabilityText": "Check live site for seats",
-      "status": "now-booking",
-      "badge": "Now Booking",
-      "ctaLabel": "Scan to Book",
-      "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-paint-and-sip-party-glowing-garden-path/",
-      "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/03/Garden_CA.jpg",
-      "description": "Paint Glowing Garden Path at this Toledo Paint & Sip. Soft, luminous landscape with a glowing trail & blooming florals\u2014perfect for beginners.",
-      "venue": "Wine & Canvas Toledo Studio"
-    },
     {
       "id": "dundee-paint-and-sip-party-disco-cherries",
       "title": "Dundee Paint and Sip Party \u2013 Disco Cherries",
@@ -94,6 +79,21 @@
       "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-paint-and-sip-party-hydrangea-bliss/",
       "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/05/Hydrangea-Bliss.jpeg",
       "description": "Paint Hydrangea Bliss at this Toledo Paint & Sip. A soft blue floral arrangement in a glass vase\u2014fresh, elegant, and perfect for beginners.",
+      "venue": "Wine & Canvas Toledo Studio"
+    },
+    {
+      "id": "toledo-paint-and-sip-party-sip-in-color",
+      "title": "Toledo Paint and Sip Party \u2013 Sip in Color",
+      "date": "2026-06-19",
+      "time": "6:00 PM - 9:00 PM",
+      "price": 40.0,
+      "availabilityText": "Check live site for seats",
+      "status": "now-booking",
+      "badge": "Now Booking",
+      "ctaLabel": "Scan to Book",
+      "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-paint-and-sip-party-sip-in-color/",
+      "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/05/Sip-in-Color.jpeg",
+      "description": "Paint Sip in Color at this Toledo Paint & Sip. A vibrant cocktail-inspired painting with bold rainbow hues\u2014perfect for a fun night out.",
       "venue": "Wine & Canvas Toledo Studio"
     }
   ]
