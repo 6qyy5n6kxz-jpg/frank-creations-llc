@@ -1,26 +1,11 @@
 {
-  "generatedAt": "2026-06-07T03:25:15Z",
+  "generatedAt": "2026-06-07T05:49:56Z",
   "source": {
     "pageUrl": "https://wineandcanvas.com/toledo/events/",
     "apiUrl": "https://wineandcanvas.com/toledo/wp-json/tribe/events/v1/events",
     "timezone": "America/New_York"
   },
   "upcomingEvents": [
-    {
-      "id": "toledo-paint-and-sip-party-boardwalk",
-      "title": "Toledo Paint and Sip Party \u2013 Boardwalk",
-      "date": "2026-06-06",
-      "time": "6:00 PM - 9:00 PM",
-      "price": 40.0,
-      "availabilityText": "Check live site for seats",
-      "status": "now-booking",
-      "badge": "Now Booking",
-      "ctaLabel": "Scan to Book",
-      "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-paint-and-sip-party-boardwalk/",
-      "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/05/Boardwalk-JC.jpg",
-      "description": "Paint Boardwalk at this Toledo Paint & Sip. A glowing sunset pier with lights and bold perspective\u2014perfect for beginners and date nights.",
-      "venue": "Wine & Canvas Toledo Studio"
-    },
     {
       "id": "toledo-paint-and-sip-party-glowing-garden-path",
       "title": "Toledo Paint and Sip Party \u2013 Glowing Garden Path",
@@ -94,6 +79,21 @@
       "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-paint-and-sip-party-spring-daisies-2/",
       "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/01/Spring-Daisies_EC.jpg",
       "description": "Paint Spring Daisies at this Toledo Paint & Sip. A bright mason jar floral with soft blues and fresh blooms\u2014perfect for beginners.",
+      "venue": "Wine & Canvas Toledo Studio"
+    },
+    {
+      "id": "toledo-paint-and-sip-party-hydrangea-bliss",
+      "title": "Toledo Paint and Sip Party \u2013 Hydrangea Bliss",
+      "date": "2026-06-14",
+      "time": "2:00 PM - 5:00 PM",
+      "price": 40.0,
+      "availabilityText": "Check live site for seats",
+      "status": "now-booking",
+      "badge": "Now Booking",
+      "ctaLabel": "Scan to Book",
+      "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-paint-and-sip-party-hydrangea-bliss/",
+      "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/05/Hydrangea-Bliss.jpeg",
+      "description": "Paint Hydrangea Bliss at this Toledo Paint & Sip. A soft blue floral arrangement in a glass vase\u2014fresh, elegant, and perfect for beginners.",
       "venue": "Wine & Canvas Toledo Studio"
     }
   ]
