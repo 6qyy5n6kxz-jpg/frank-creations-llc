@@ -1,26 +1,11 @@
 {
-  "generatedAt": "2026-06-09T03:24:32Z",
+  "generatedAt": "2026-06-09T05:40:18Z",
   "source": {
     "pageUrl": "https://wineandcanvas.com/toledo/events/",
     "apiUrl": "https://wineandcanvas.com/toledo/wp-json/tribe/events/v1/events",
     "timezone": "America/New_York"
   },
   "upcomingEvents": [
-    {
-      "id": "dundee-paint-and-sip-party-disco-cherries",
-      "title": "Dundee Paint and Sip Party \u2013 Disco Cherries",
-      "date": "2026-06-08",
-      "time": "6:00 PM - 9:00 PM",
-      "price": 40.0,
-      "availabilityText": "Check live site for seats",
-      "status": "now-booking",
-      "badge": "Now Booking",
-      "ctaLabel": "Scan to Book",
-      "ctaUrl": "https://wineandcanvas.com/toledo/event/dundee-paint-and-sip-party-disco-cherries/",
-      "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/05/disco_cherries_wordpress.jpg",
-      "description": "Paint sparkling Disco Cherries in Dundee at Social House 103. Includes a 16\u00d720 canvas plus food and drinks available.",
-      "venue": "Social House 103"
-    },
     {
       "id": "toledo-paint-and-sip-party-crowned-in-confidence",
       "title": "Toledo Paint and Sip Party \u2013 Crowned in Confidence",
@@ -94,6 +79,21 @@
       "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-paint-and-sip-party-sip-in-color/",
       "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/05/Sip-in-Color.jpeg",
       "description": "Paint Sip in Color at this Toledo Paint & Sip. A vibrant cocktail-inspired painting with bold rainbow hues\u2014perfect for a fun night out.",
+      "venue": "Wine & Canvas Toledo Studio"
+    },
+    {
+      "id": "toledo-cookies-and-canvas-super-dad",
+      "title": "Toledo Cookies and Canvas \u2013 Super Dad",
+      "date": "2026-06-20",
+      "time": "12:00 PM - 2:00 PM",
+      "price": 20.0,
+      "availabilityText": "Check live site for seats",
+      "status": "now-booking",
+      "badge": "Now Booking",
+      "ctaLabel": "Scan to Book",
+      "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-cookies-and-canvas-super-dad/",
+      "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/05/Super-Dad-kids.jpeg",
+      "description": "Celebrate Dad at this Toledo Cookies & Canvas event! Kids will paint a Super Dad design with pre-outlined canvases\u2014fun, easy, and perfect for gifting.",
       "venue": "Wine & Canvas Toledo Studio"
     }
   ]
