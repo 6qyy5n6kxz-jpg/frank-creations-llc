@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-11T13:41:37Z",
+  "generatedAt": "2026-06-11T15:26:53Z",
   "source": {
     "pageUrl": "https://wineandcanvas.com/toledo/events/",
     "apiUrl": "https://wineandcanvas.com/toledo/wp-json/tribe/events/v1/events",
@@ -7,8 +7,8 @@
   },
   "upcomingEvents": [
     {
-      "id": "toledo-paint-and-sip-party-crowned-in-confidence",
-      "title": "Toledo Paint and Sip Party \u2013 Crowned in Confidence",
+      "id": "toledo-paint-and-sip-party-wildflower-beginnings-2",
+      "title": "Toledo Paint and Sip Party \u2013 Wildflower Beginnings",
       "date": "2026-06-12",
       "time": "6:00 PM - 9:00 PM",
       "price": 40.0,
@@ -16,9 +16,9 @@
       "status": "now-booking",
       "badge": "Now Booking",
       "ctaLabel": "Scan to Book",
-      "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-paint-and-sip-party-crowned-in-confidence/",
-      "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2022/02/IMG_5262.jpg",
-      "description": "Paint Crowned in Confidence at this Toledo Paint & Sip. A bold, empowering silhouette with vibrant color and a golden crown\u2014perfect for beginners.",
+      "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-paint-and-sip-party-wildflower-beginnings-2/",
+      "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/01/IMG_0951.jpeg",
+      "description": "Paint a colorful wildflower meadow on a 16\u00d720 canvas at Wine & Canvas Toledo. BYOB and beginner-friendly.",
       "venue": "Wine & Canvas Toledo Studio"
     },
     {
