@@ -6,6 +6,7 @@ const navItems = [
   { id: "music", label: "A Change Of Plans", href: "/a-change-of-plans/" },
   { id: "wine", label: "Wine & Canvas Toledo", href: "/wine-and-canvas-toledo/" },
   { id: "cookies", label: "Cookies & Canvas", href: "/cookies-and-canvas/" },
+  { id: "photo-booth", label: "Photo Booth", href: "/photo-booth/" },
   { id: "shop", label: "Shop", href: "/shop/" },
   { id: "contact", label: "Contact", href: "/contact/" }
 ];
@@ -93,7 +94,7 @@ if (headerTarget) {
           <img class="brand-mark" src="${resolveSitePath("images/brand-mark.svg")}" alt="Frank Creations LLC abstract brand mark">
           <span>
             <strong>Frank Creations LLC</strong>
-            <span>Creative events, music, and family experiences</span>
+            <span>Creative events, music, photo booths, and family experiences</span>
           </span>
         </a>
         <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
@@ -112,13 +113,14 @@ if (footerTarget) {
         <div class="footer-grid">
           <div>
             <h3>Frank Creations LLC</h3>
-            <p>A central home for paint experiences, live music, family-friendly events, and local creative offerings.</p>
+            <p>A central home for paint experiences, live music, family-friendly events, photo booth rentals, and local creative offerings.</p>
           </div>
           <div>
             <h3>Explore</h3>
             <p><a href="${resolveSitePath("/wine-and-canvas-toledo/")}">Wine & Canvas Toledo</a></p>
             <p><a href="${resolveSitePath("/a-change-of-plans/")}">A Change Of Plans</a></p>
             <p><a href="${resolveSitePath("/cookies-and-canvas/")}">Cookies & Canvas</a></p>
+            <p><a href="${resolveSitePath("/photo-booth/")}">Photo Booth Rentals</a></p>
           </div>
           <div>
             <h3>Plan an event</h3>
