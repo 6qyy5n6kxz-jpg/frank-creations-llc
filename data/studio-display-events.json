@@ -1,26 +1,11 @@
 {
-  "generatedAt": "2026-06-15T03:26:47Z",
+  "generatedAt": "2026-06-15T06:05:00Z",
   "source": {
     "pageUrl": "https://wineandcanvas.com/toledo/events/",
     "apiUrl": "https://wineandcanvas.com/toledo/wp-json/tribe/events/v1/events",
     "timezone": "America/New_York"
   },
   "upcomingEvents": [
-    {
-      "id": "toledo-paint-and-sip-party-hydrangea-bliss",
-      "title": "Toledo Paint and Sip Party \u2013 Hydrangea Bliss",
-      "date": "2026-06-14",
-      "time": "2:00 PM - 5:00 PM",
-      "price": 40.0,
-      "availabilityText": "Check live site for seats",
-      "status": "now-booking",
-      "badge": "Now Booking",
-      "ctaLabel": "Scan to Book",
-      "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-paint-and-sip-party-hydrangea-bliss/",
-      "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/05/Hydrangea-Bliss.jpeg",
-      "description": "Paint Hydrangea Bliss at this Toledo Paint & Sip. A soft blue floral arrangement in a glass vase\u2014fresh, elegant, and perfect for beginners.",
-      "venue": "Wine & Canvas Toledo Studio"
-    },
     {
       "id": "toledo-paint-and-sip-party-sip-in-color",
       "title": "Toledo Paint and Sip Party \u2013 Sip in Color",
@@ -95,6 +80,21 @@
       "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2025/05/Twilight-on-the-farm.jpg",
       "description": "Paint a peaceful farm sunset on a 16\u00d720 canvas at The Mockingbird in Graytown with food, wine, and cozy country vibes.",
       "venue": "The Mockingbird on Mill Road Wine Cafe"
+    },
+    {
+      "id": "toledo-paint-and-sip-party-hello-sunshine",
+      "title": "Toledo Paint and Sip Party \u2013 Hello Sunshine",
+      "date": "2026-06-26",
+      "time": "6:00 PM - 9:00 PM",
+      "price": 50.0,
+      "availabilityText": "Check live site for seats",
+      "status": "now-booking",
+      "badge": "Now Booking",
+      "ctaLabel": "Scan to Book",
+      "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-paint-and-sip-party-hello-sunshine/",
+      "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/05/hello-sunshine-pallet-wordpress.jpg",
+      "description": "Paint Hello Sunshine at this Toledo Paint & Sip. Create a bright sunflower on wood pallet\u2014perfect for a fun, rustic night out.",
+      "venue": "Wine & Canvas Toledo Studio"
     }
   ]
 }
