@@ -2258,3 +2258,508 @@ body[data-page="photo-booth"] .photo-booth-banner {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }
+
+/* Frank Creations parent brand system */
+body,
+body[data-page="home"],
+body[data-page="music"],
+body[data-page="wine"],
+body[data-page="cookies"],
+body[data-page="photo-booth"],
+body[data-page="shop"],
+body[data-page="contact"],
+body[data-page="portfolio"],
+body[data-page="notfound"] {
+  --bg: #000000;
+  --bg-soft: #080808;
+  --surface: rgba(17, 17, 17, 0.92);
+  --surface-strong: #111111;
+  --text: #ffffff;
+  --muted: rgba(255, 255, 255, 0.72);
+  --line: rgba(212, 175, 55, 0.24);
+  --brand: #d4af37;
+  --brand-dark: #e5c76b;
+  --accent: #e5c76b;
+  --accent-soft: rgba(212, 175, 55, 0.14);
+  --shadow: 0 24px 70px rgba(0, 0, 0, 0.46);
+  --radius: 8px;
+  --radius-sm: 6px;
+  background: linear-gradient(180deg, #000000 0%, #111111 52%, #000000 100%);
+  color: var(--text);
+}
+
+body * {
+  letter-spacing: 0 !important;
+}
+
+.section-highlight,
+.page-hero-photo-booth,
+body[data-page="photo-booth"] .promo-panel-photo,
+body[data-page="photo-booth"] .feature-card-bright,
+body[data-page="photo-booth"] .photo-booth-banner,
+body[data-page="wine"] .promo-panel,
+body[data-page="cookies"] .promo-panel-family,
+body[data-page="shop"] .feature-card-bright,
+body[data-page="shop"] .feature-card,
+body[data-page="shop"] .panel-card,
+body[data-page="shop"] .content-card,
+body[data-page="shop"] .shop-card,
+body[data-page="shop"] .cta-banner-strong {
+  background: rgba(255, 255, 255, 0.035);
+  border-color: var(--line);
+}
+
+.hero-text,
+.section-heading p,
+.content-card p,
+.panel-card p,
+.feature-card p,
+.info-item p,
+.notice-banner,
+.cta-banner p,
+.event-summary,
+.song-meta,
+.shop-meta,
+.form-feedback,
+.hero-points,
+.action-list,
+.photo-booth-event-card p,
+.photo-booth-hero-feature figcaption,
+.photo-booth-image-card figcaption {
+  color: var(--muted);
+}
+
+.eyebrow,
+.card-kicker,
+.mini-heading,
+.photo-booth-event-card .card-kicker,
+.gallery-card-copy .card-kicker {
+  color: var(--brand-dark);
+}
+
+.hero-copy h1,
+.page-hero h1,
+.section-heading h2,
+.content-card h2,
+.cta-banner h2,
+body[data-page] .hero-copy h1,
+body[data-page] .page-hero h1 {
+  color: var(--text);
+  letter-spacing: 0;
+}
+
+.button {
+  border-radius: 6px;
+}
+
+body .button-primary,
+body[data-page] .button-primary {
+  background: linear-gradient(135deg, #d4af37 0%, #e5c76b 100%);
+  color: #000000;
+  box-shadow: 0 16px 34px rgba(212, 175, 55, 0.24);
+}
+
+body .button-secondary,
+body[data-page] .button-secondary {
+  background: rgba(255, 255, 255, 0.06);
+  color: #ffffff;
+  border: 1px solid var(--line);
+}
+
+.text-link {
+  color: var(--brand-dark);
+}
+
+.text-link:hover,
+.text-link:focus-visible {
+  color: #ffffff;
+}
+
+.stat-card,
+.feature-card,
+.content-card,
+.panel-card,
+.info-item,
+.event-card,
+.song-card,
+.shop-card,
+.gallery-card,
+.notice-banner,
+.cta-banner,
+.spotlight-card,
+.offering-card,
+.promo-panel,
+.wine-hero-panel,
+.cookies-hero-panel,
+.home-parent-card,
+.home-brand-card,
+.photo-booth-hero-feature,
+.photo-booth-image-card,
+.photo-booth-event-card,
+.photo-booth-parent-brand,
+body[data-page] .offering-card,
+body[data-page] .feature-card-bright,
+body[data-page] .content-card,
+body[data-page] .panel-card,
+body[data-page] .spotlight-card,
+body[data-page] .promo-panel,
+body[data-page] .cta-banner-strong {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.075), rgba(255, 255, 255, 0.035)),
+    #111111;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  color: var(--text);
+}
+
+body[data-page] .spotlight-card-accent,
+body[data-page] .family-accent,
+body[data-page] .photo-booth-accent,
+.accent-card {
+  background: linear-gradient(135deg, rgba(212, 175, 55, 0.96), rgba(229, 199, 107, 0.92));
+  color: #000000;
+}
+
+body[data-page] .spotlight-card-accent p,
+body[data-page] .spotlight-card-accent .text-link,
+body[data-page] .spotlight-card-accent .card-kicker,
+body[data-page] .family-accent p,
+body[data-page] .family-accent .text-link,
+body[data-page] .family-accent .card-kicker,
+body[data-page] .photo-booth-accent p,
+body[data-page] .photo-booth-accent .text-link,
+body[data-page] .photo-booth-accent .card-kicker,
+.accent-card p,
+.accent-card .text-link,
+.accent-card .mini-heading {
+  color: inherit;
+}
+
+.hero-badge,
+.home-hero-pill,
+.wine-pill,
+.cookies-pill,
+.service-chip,
+.photo-booth-feature-list span,
+.photo-booth-check-item,
+.shop-inventory,
+.song-filter-button,
+body[data-page] .hero-badge,
+body[data-page] .hero-badge-soft {
+  background: rgba(212, 175, 55, 0.12);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  color: #ffffff;
+  box-shadow: none;
+}
+
+.photo-booth-check-item span,
+.shop-inventory.is-sold-out {
+  background: rgba(212, 175, 55, 0.16);
+  color: var(--brand-dark);
+}
+
+body[data-page="wine"] .offering-card::before,
+body[data-page="cookies"] .offering-card-family::before,
+body[data-page="photo-booth"] .offering-card-photo::before {
+  background: linear-gradient(90deg, #d4af37 0%, #e5c76b 100%);
+}
+
+.gallery-card::before,
+body[data-page="wine"] .gallery-card::before,
+body[data-page="cookies"] .gallery-card::before {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.76));
+}
+
+.gallery-card-sunset,
+.gallery-card-floral,
+.gallery-card-seasonal,
+body[data-page="wine"] .gallery-card-sunset,
+body[data-page="wine"] .gallery-card-floral,
+body[data-page="wine"] .gallery-card-seasonal,
+body[data-page="cookies"] .gallery-card-sunset,
+body[data-page="cookies"] .gallery-card-floral,
+body[data-page="cookies"] .gallery-card-seasonal {
+  background:
+    linear-gradient(135deg, rgba(212, 175, 55, 0.55), rgba(17, 17, 17, 0.96)),
+    #111111;
+}
+
+.field input,
+.field textarea,
+.field select {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  color: var(--text);
+}
+
+.field input::placeholder,
+.field textarea::placeholder {
+  color: rgba(255, 255, 255, 0.46);
+}
+
+.site-header {
+  background: rgba(0, 0, 0, 0.94);
+  border-bottom: 1px solid var(--line);
+}
+
+.site-header-inner {
+  min-height: 82px;
+}
+
+.brand-lockup {
+  flex: 0 0 auto;
+}
+
+.brand-logo {
+  display: block;
+  object-fit: contain;
+}
+
+.brand-logo-desktop {
+  width: min(38vw, 282px);
+  height: auto;
+}
+
+.brand-logo-mobile {
+  display: none;
+  width: 52px;
+  height: 52px;
+}
+
+.nav-toggle {
+  background: rgba(212, 175, 55, 0.12);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  color: #ffffff;
+}
+
+.site-nav {
+  background: rgba(0, 0, 0, 0.98);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.site-nav a {
+  border-radius: 6px;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 0.9rem;
+}
+
+.site-nav a:hover,
+.site-nav a:focus-visible,
+.site-nav a[aria-current="page"] {
+  background: rgba(212, 175, 55, 0.14);
+  color: var(--brand-dark);
+}
+
+.site-footer {
+  background: #000000;
+  border-top: 1px solid var(--line);
+}
+
+.footer-brand {
+  max-width: 30rem;
+}
+
+.footer-logo-link {
+  display: inline-flex;
+  width: min(100%, 300px);
+  margin-bottom: 1rem;
+}
+
+.footer-logo {
+  width: 100%;
+  height: auto;
+}
+
+.footer-grid h3 {
+  color: #ffffff;
+  margin-top: 0;
+}
+
+.footer-grid a {
+  color: var(--muted);
+}
+
+.footer-social-links {
+  display: flex;
+  gap: 0.6rem;
+  margin-top: 1rem;
+}
+
+.footer-social-link {
+  width: 2.4rem;
+  height: 2.4rem;
+  display: inline-grid;
+  place-items: center;
+  border-radius: 6px;
+  background: rgba(212, 175, 55, 0.12);
+  border: 1px solid var(--line);
+  color: #ffffff;
+}
+
+.footer-social-link svg {
+  width: 1.25rem;
+  height: 1.25rem;
+  fill: currentColor;
+}
+
+.footer-cta {
+  margin-top: 0.35rem;
+}
+
+.footer-legal {
+  color: var(--muted);
+}
+
+.home-master-logo {
+  width: min(100%, 340px);
+  height: auto;
+  margin: 0 0 1rem;
+}
+
+.home-positioning {
+  color: var(--brand-dark);
+  font-weight: 800;
+  margin: 0 0 1.2rem;
+}
+
+.home-parent-card {
+  align-self: stretch;
+  padding: 1.5rem;
+}
+
+.home-parent-mark {
+  width: 5rem;
+  height: auto;
+  margin-bottom: 1rem;
+  opacity: 0.86;
+}
+
+.home-parent-card h2,
+.home-brand-card h3 {
+  margin-top: 0;
+}
+
+.home-parent-card p {
+  color: var(--muted);
+}
+
+.home-brand-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.home-brand-card {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  text-decoration: none;
+  transition: transform 180ms ease, border-color 180ms ease, background 180ms ease;
+}
+
+.home-brand-card:hover,
+.home-brand-card:focus-visible {
+  transform: translateY(-2px);
+  border-color: rgba(229, 199, 107, 0.72);
+  background:
+    linear-gradient(180deg, rgba(212, 175, 55, 0.12), rgba(255, 255, 255, 0.04)),
+    #111111;
+}
+
+.home-brand-icon {
+  width: 3rem;
+  height: 3rem;
+  display: grid;
+  place-items: center;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+  background: rgba(212, 175, 55, 0.14);
+  border: 1px solid var(--line);
+  font-size: 1.45rem;
+}
+
+.home-brand-card p:last-child {
+  margin-bottom: 0;
+  color: var(--muted);
+}
+
+.photo-booth-parent-brand {
+  max-width: 28rem;
+  margin: 0 auto 1.4rem;
+  padding: 1.25rem;
+  text-align: center;
+}
+
+.photo-booth-parent-brand img {
+  width: min(100%, 300px);
+  height: auto;
+  margin: 0 auto 0.75rem;
+}
+
+.photo-booth-parent-brand p {
+  margin: 0;
+  color: var(--brand-dark);
+  font-weight: 800;
+}
+
+.photo-booth-watermark-frame {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.photo-booth-watermark-frame::after {
+  content: "";
+  position: absolute;
+  right: 0.65rem;
+  bottom: 0.65rem;
+  width: 3.6rem;
+  aspect-ratio: 1;
+  background: url("../../images/fc-monogram-transparent.png") center / contain no-repeat;
+  opacity: 0.3;
+  mix-blend-mode: screen;
+  pointer-events: none;
+}
+
+@media (max-width: 759px) {
+  .site-header-inner {
+    min-height: 68px;
+  }
+
+  .brand-logo-desktop {
+    display: none;
+  }
+
+  .brand-logo-mobile {
+    display: block;
+  }
+
+  .home-master-logo {
+    width: min(100%, 280px);
+  }
+}
+
+@media (min-width: 960px) {
+  .site-nav,
+  .site-nav[hidden] {
+    background: transparent;
+    border: 0;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1.25fr 0.75fr 1fr;
+  }
+}
+
+@media (min-width: 1100px) {
+  .home-brand-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
