@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-18T15:24:42Z",
+  "generatedAt": "2026-06-18T17:21:53Z",
   "source": {
     "pageUrl": "https://wineandcanvas.com/toledo/events/",
     "apiUrl": "https://wineandcanvas.com/toledo/wp-json/tribe/events/v1/events",
@@ -82,18 +82,18 @@
       "venue": "The Mockingbird on Mill Road Wine Cafe"
     },
     {
-      "id": "toledo-paint-and-sip-party-hello-sunshine",
-      "title": "Toledo Paint and Sip Party \u2013 Hello Sunshine",
-      "date": "2026-06-26",
-      "time": "6:00 PM - 9:00 PM",
-      "price": 50.0,
+      "id": "toledo-wine-glass-paint-and-sip-party-pick-your-design-6",
+      "title": "Toledo Wine Glass Paint and Sip Party \u2013 Pick Your Design",
+      "date": "2026-06-27",
+      "time": "12:00 PM - 2:00 PM",
+      "price": 30.0,
       "availabilityText": "Check live site for seats",
       "status": "now-booking",
       "badge": "Now Booking",
       "ctaLabel": "Scan to Book",
-      "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-paint-and-sip-party-hello-sunshine/",
-      "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/05/hello-sunshine-pallet-wordpress.jpg",
-      "description": "Paint Hello Sunshine at this Toledo Paint & Sip. Create a bright sunflower on wood pallet\u2014perfect for a fun, rustic night out.",
+      "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-wine-glass-paint-and-sip-party-pick-your-design-6/",
+      "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/02/Wine_Glass_Designs_2MB.jpg",
+      "description": "Paint custom wine glasses at this Toledo Wine Glass Paint Party. Fun BYOB creative event with two glasses included.",
       "venue": "Wine & Canvas Toledo Studio"
     }
   ]
