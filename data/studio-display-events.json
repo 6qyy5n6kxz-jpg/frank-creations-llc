@@ -1,26 +1,11 @@
 {
-  "generatedAt": "2026-06-19T20:46:39Z",
+  "generatedAt": "2026-06-19T21:40:54Z",
   "source": {
     "pageUrl": "https://wineandcanvas.com/toledo/events/",
     "apiUrl": "https://wineandcanvas.com/toledo/wp-json/tribe/events/v1/events",
     "timezone": "America/New_York"
   },
   "upcomingEvents": [
-    {
-      "id": "toledo-paint-and-sip-party-sip-in-color",
-      "title": "Toledo Paint and Sip Party \u2013 Sip in Color",
-      "date": "2026-06-19",
-      "time": "6:00 PM - 9:00 PM",
-      "price": 40.0,
-      "availabilityText": "Check live site for seats",
-      "status": "now-booking",
-      "badge": "Now Booking",
-      "ctaLabel": "Scan to Book",
-      "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-paint-and-sip-party-sip-in-color/",
-      "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/05/Sip-in-Color.jpeg",
-      "description": "Paint Sip in Color at this Toledo Paint & Sip. A vibrant cocktail-inspired painting with bold rainbow hues\u2014perfect for a fun night out.",
-      "venue": "Wine & Canvas Toledo Studio"
-    },
     {
       "id": "toledo-cookies-and-canvas-super-dad",
       "title": "Toledo Cookies and Canvas \u2013 Super Dad",
@@ -95,6 +80,21 @@
       "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/02/Wine_Glass_Designs_2MB.jpg",
       "description": "Paint custom wine glasses at this Toledo Wine Glass Paint Party. Fun BYOB creative event with two glasses included.",
       "venue": "Wine & Canvas Toledo Studio"
+    },
+    {
+      "id": "petersburg-paint-and-sip-party-celebration",
+      "title": "Petersburg Paint and Sip Party \u2013 Celebration",
+      "date": "2026-06-27",
+      "time": "12:00 PM - 3:00 PM",
+      "price": 40.0,
+      "availabilityText": "Check live site for seats",
+      "status": "now-booking",
+      "badge": "Now Booking",
+      "ctaLabel": "Scan to Book",
+      "ctaUrl": "https://wineandcanvas.com/toledo/event/petersburg-paint-and-sip-party-celebration/",
+      "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/05/Celebration-GV-scaled.jpg",
+      "description": "Celebrate summer with this patriotic Petersburg Paint Party featuring fireworks, stars, stripes, and colorful creativity.",
+      "venue": "Pirolli Park Campground"
     }
   ]
 }
