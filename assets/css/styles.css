@@ -2763,3 +2763,240 @@ body[data-page="cookies"] .gallery-card-seasonal {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }
+
+/* Premium event-company homepage and photo booth proof sections */
+.home-hero-media,
+.home-experience-card,
+.photo-booth-recent-summary {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.075), rgba(255, 255, 255, 0.035)),
+    #111111;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.home-hero-media {
+  align-self: stretch;
+  margin: 0;
+  min-height: 34rem;
+  display: grid;
+  grid-template-rows: minmax(0, 1fr) auto;
+}
+
+.home-hero-media img {
+  width: 100%;
+  height: 100%;
+  min-height: 28rem;
+  object-fit: cover;
+}
+
+.home-hero-media figcaption {
+  padding: 1rem;
+  color: var(--muted);
+  line-height: 1.45;
+  background: rgba(0, 0, 0, 0.66);
+}
+
+.home-experience-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.home-experience-card a {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: 15rem 1fr;
+  color: inherit;
+  text-decoration: none;
+}
+
+.home-experience-image {
+  display: block;
+  overflow: hidden;
+  background: #000000;
+}
+
+.home-experience-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 220ms ease;
+}
+
+.home-experience-logo {
+  display: grid;
+  place-items: center;
+  padding: 1.2rem;
+  background:
+    linear-gradient(135deg, rgba(212, 175, 55, 0.18), rgba(255, 255, 255, 0.04)),
+    #050505;
+}
+
+.home-experience-logo img {
+  width: min(100%, 12rem);
+  height: min(100%, 12rem);
+  object-fit: contain;
+}
+
+.home-experience-copy {
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+  padding: 1.25rem;
+}
+
+.home-experience-copy h3 {
+  margin: 0 0 0.6rem;
+  color: #ffffff;
+}
+
+.home-experience-copy p {
+  color: var(--muted);
+}
+
+.home-experience-copy .text-link {
+  margin-top: auto;
+}
+
+.home-experience-card:hover,
+.home-experience-card:focus-within {
+  border-color: rgba(229, 199, 107, 0.72);
+}
+
+.home-experience-card:hover .home-experience-image img,
+.home-experience-card:focus-within .home-experience-image img {
+  transform: scale(1.035);
+}
+
+.home-proof-grid {
+  display: grid;
+  gap: 2rem;
+  align-items: center;
+}
+
+.home-proof-images {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+.home-proof-images span {
+  display: block;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  aspect-ratio: 1;
+  background: #111111;
+}
+
+.home-proof-images img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.home-service-links {
+  display: grid;
+  gap: 0.7rem;
+  align-content: center;
+}
+
+.home-service-links a {
+  display: flex;
+  align-items: center;
+  min-height: 2.75rem;
+  padding: 0.7rem 0.85rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: rgba(255, 255, 255, 0.045);
+}
+
+.photo-booth-recent-summary {
+  display: grid;
+  gap: 1.25rem;
+  margin-bottom: 1.25rem;
+  padding: 1.25rem;
+}
+
+.photo-booth-recent-summary h3 {
+  margin: 0 0 0.5rem;
+  color: #ffffff;
+}
+
+.photo-booth-recent-summary p {
+  color: var(--muted);
+}
+
+.photo-booth-recent-summary dl {
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin: 0;
+}
+
+.photo-booth-recent-summary dl div {
+  min-height: 6rem;
+  display: grid;
+  align-content: center;
+  padding: 0.9rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: rgba(212, 175, 55, 0.1);
+}
+
+.photo-booth-recent-summary dt {
+  color: var(--brand-dark);
+  font-size: clamp(1.35rem, 2.8vw, 2rem);
+  font-weight: 900;
+  line-height: 1.1;
+}
+
+.photo-booth-recent-summary dd {
+  margin: 0.25rem 0 0;
+  color: var(--muted);
+}
+
+@media (min-width: 760px) {
+  .home-proof-grid {
+    grid-template-columns: 0.82fr 1.18fr;
+  }
+
+  .home-complete-event {
+    display: grid;
+    grid-template-columns: 1fr 0.58fr;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .photo-booth-recent-summary {
+    grid-template-columns: 1fr 1.15fr;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1100px) {
+  .home-experience-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 759px) {
+  .home-hero-media {
+    min-height: auto;
+  }
+
+  .home-hero-media img {
+    min-height: 24rem;
+  }
+
+  .home-experience-card a {
+    grid-template-rows: 14rem 1fr;
+  }
+
+  .photo-booth-recent-summary dl {
+    grid-template-columns: 1fr;
+  }
+}

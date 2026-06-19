@@ -132,7 +132,8 @@ if (footerTarget) {
               <img class="footer-logo" src="${resolveSitePath(brandAssets.horizontalLogo)}" width="1649" height="423" alt="Frank Creations LLC">
             </a>
             <h3>Frank Creations LLC</h3>
-            <p>Creative Events &bull; Entertainment &bull; Experiences</p>
+            <p>Events &bull; Entertainment &bull; Experiences</p>
+            <p>Serving Northwest Ohio and Southeast Michigan</p>
             <div class="footer-social-links" aria-label="Social media links">
               <a class="footer-social-link" href="https://www.facebook.com/AChangeOfPlans419" target="_blank" rel="noreferrer" aria-label="A Change Of Plans on Facebook">
                 <svg viewBox="0 0 24 24" aria-hidden="true">
@@ -149,15 +150,16 @@ if (footerTarget) {
           <div>
             <h3>Explore</h3>
             <p><a href="${resolveSitePath("/")}">Home</a></p>
+            <p><a href="${resolveSitePath("/photo-booth/")}">Photo Booth Rentals</a></p>
             <p><a href="${resolveSitePath("/wine-and-canvas-toledo/")}">Wine & Canvas Toledo</a></p>
             <p><a href="${resolveSitePath("/cookies-and-canvas/")}">Cookies & Canvas</a></p>
-            <p><a href="${resolveSitePath("/photo-booth/")}">Photo Booth Rentals</a></p>
             <p><a href="${resolveSitePath("/a-change-of-plans/")}">A Change Of Plans</a></p>
+            <p><a href="${resolveSitePath("/shop/")}">Shop</a></p>
             <p><a href="${resolveSitePath("/contact/")}">Contact</a></p>
           </div>
           <div>
             <h3>Brand Family</h3>
-            <p>Frank Creations LLC is the parent company behind local creative events, entertainment, family experiences, and photo booth rentals throughout Northwest Ohio.</p>
+            <p>Frank Creations LLC is the parent company behind photo booth rentals, live music, paint parties, kids art events, and creative experiences throughout Northwest Ohio and Southeast Michigan.</p>
             <a class="button button-primary footer-cta" href="${resolveSitePath("/contact/")}">Start a Booking Inquiry</a>
           </div>
         </div>
