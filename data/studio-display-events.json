@@ -1,26 +1,11 @@
 {
-  "generatedAt": "2026-06-20T12:53:09Z",
+  "generatedAt": "2026-06-20T13:54:55Z",
   "source": {
     "pageUrl": "https://wineandcanvas.com/toledo/events/",
     "apiUrl": "https://wineandcanvas.com/toledo/wp-json/tribe/events/v1/events",
     "timezone": "America/New_York"
   },
   "upcomingEvents": [
-    {
-      "id": "toledo-cookies-and-canvas-super-dad",
-      "title": "Toledo Cookies and Canvas \u2013 Super Dad",
-      "date": "2026-06-20",
-      "time": "12:00 PM - 2:00 PM",
-      "price": 20.0,
-      "availabilityText": "Check live site for seats",
-      "status": "now-booking",
-      "badge": "Now Booking",
-      "ctaLabel": "Scan to Book",
-      "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-cookies-and-canvas-super-dad/",
-      "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/05/Super-Dad-kids.jpeg",
-      "description": "Celebrate Dad at this Toledo Cookies & Canvas event! Kids will paint a Super Dad design with pre-outlined canvases\u2014fun, easy, and perfect for gifting.",
-      "venue": "Wine & Canvas Toledo Studio"
-    },
     {
       "id": "toledo-paint-and-sip-party-planets",
       "title": "Toledo Paint and Sip Party \u2013 Planets",
@@ -65,6 +50,21 @@
       "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2025/05/Twilight-on-the-farm.jpg",
       "description": "Paint a peaceful farm sunset on a 16\u00d720 canvas at The Mockingbird in Graytown with food, wine, and cozy country vibes.",
       "venue": "The Mockingbird on Mill Road Wine Cafe"
+    },
+    {
+      "id": "toledo-date-night-paint-and-sip-party-lovers-cave",
+      "title": "Toledo Date Night Paint and Sip Party \u2013 Lovers Cave",
+      "date": "2026-06-27",
+      "time": "6:00 PM - 9:00 PM",
+      "price": 80.0,
+      "availabilityText": "Check live site for seats",
+      "status": "now-booking",
+      "badge": "Now Booking",
+      "ctaLabel": "Scan to Book",
+      "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-date-night-paint-and-sip-party-lovers-cave/",
+      "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/05/Lovers-Cave-Date-Night.jpg",
+      "description": "Romantic Toledo Date Night Paint Party featuring TWO canvases per couple that connect into one shared masterpiece.",
+      "venue": "Wine & Canvas Toledo Studio"
     },
     {
       "id": "toledo-wine-glass-paint-and-sip-party-pick-your-design-6",
