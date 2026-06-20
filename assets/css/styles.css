@@ -2763,7 +2763,6 @@ body[data-page="cookies"] .gallery-card-seasonal {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }
-
 /* Premium event-company homepage and photo booth proof sections */
 .home-hero-media,
 .home-experience-card,

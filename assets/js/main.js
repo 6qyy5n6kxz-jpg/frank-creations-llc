@@ -132,7 +132,7 @@ if (footerTarget) {
               <img class="footer-logo" src="${resolveSitePath(brandAssets.horizontalLogo)}" width="1649" height="423" alt="Frank Creations LLC">
             </a>
             <h3>Frank Creations LLC</h3>
-            <p>Events &bull; Entertainment &bull; Experiences</p>
+            <p>Creative Events &bull; Entertainment &bull; Experiences</p>
             <p>Serving Northwest Ohio and Southeast Michigan</p>
             <div class="footer-social-links" aria-label="Social media links">
               <a class="footer-social-link" href="https://www.facebook.com/AChangeOfPlans419" target="_blank" rel="noreferrer" aria-label="A Change Of Plans on Facebook">
@@ -159,7 +159,7 @@ if (footerTarget) {
           </div>
           <div>
             <h3>Brand Family</h3>
-            <p>Frank Creations LLC is the parent company behind photo booth rentals, live music, paint parties, kids art events, and creative experiences throughout Northwest Ohio and Southeast Michigan.</p>
+            <p>Frank Creations LLC is the parent company behind photo booth rentals, live music, paint parties, family experiences, and creative events throughout Northwest Ohio and Southeast Michigan.</p>
             <a class="button button-primary footer-cta" href="${resolveSitePath("/contact/")}">Start a Booking Inquiry</a>
           </div>
         </div>
