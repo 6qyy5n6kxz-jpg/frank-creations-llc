@@ -1,26 +1,11 @@
 {
-  "generatedAt": "2026-06-21T03:25:15Z",
+  "generatedAt": "2026-06-21T05:55:40Z",
   "source": {
     "pageUrl": "https://wineandcanvas.com/toledo/events/",
     "apiUrl": "https://wineandcanvas.com/toledo/wp-json/tribe/events/v1/events",
     "timezone": "America/New_York"
   },
   "upcomingEvents": [
-    {
-      "id": "toledo-paint-and-sip-party-planets",
-      "title": "Toledo Paint and Sip Party \u2013 Planets",
-      "date": "2026-06-20",
-      "time": "6:00 PM - 9:00 PM",
-      "price": 40.0,
-      "availabilityText": "Check live site for seats",
-      "status": "now-booking",
-      "badge": "Now Booking",
-      "ctaLabel": "Scan to Book",
-      "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-paint-and-sip-party-planets/",
-      "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/05/Planets.jpg",
-      "description": "Paint Planets at this Toledo Paint & Sip! Create a colorful galaxy with stars and planets\u2014perfect for a fun night out.",
-      "venue": "Wine & Canvas Toledo Studio"
-    },
     {
       "id": "toledo-paint-and-sip-party-ivory-and-eucalyptus",
       "title": "Toledo Paint and Sip Party \u2013 Ivory and Eucalyptus",
@@ -95,6 +80,21 @@
       "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/05/Celebration-GV-scaled.jpg",
       "description": "Celebrate summer with this patriotic Petersburg Paint Party featuring fireworks, stars, stripes, and colorful creativity.",
       "venue": "Pirolli Park Campground"
+    },
+    {
+      "id": "toledo-paint-and-sip-party-golden-fields-forever",
+      "title": "Toledo Paint and Sip Party \u2013 Golden Fields Forever",
+      "date": "2026-06-28",
+      "time": "2:00 PM - 5:00 PM",
+      "price": 40.0,
+      "availabilityText": "Check live site for seats",
+      "status": "now-booking",
+      "badge": "Now Booking",
+      "ctaLabel": "Scan to Book",
+      "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-paint-and-sip-party-golden-fields-forever/",
+      "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/05/Van-Goghs-Wheat-Field.jpg",
+      "description": "Paint a vibrant Van Gogh-inspired landscape at this Toledo Paint and Sip featuring golden fields and swirling skies.",
+      "venue": "Wine & Canvas Toledo Studio"
     }
   ]
 }
