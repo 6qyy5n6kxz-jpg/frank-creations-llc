@@ -1,26 +1,11 @@
 {
-  "generatedAt": "2026-06-22T03:26:28Z",
+  "generatedAt": "2026-06-22T06:07:40Z",
   "source": {
     "pageUrl": "https://wineandcanvas.com/toledo/events/",
     "apiUrl": "https://wineandcanvas.com/toledo/wp-json/tribe/events/v1/events",
     "timezone": "America/New_York"
   },
   "upcomingEvents": [
-    {
-      "id": "toledo-paint-and-sip-party-ivory-and-eucalyptus",
-      "title": "Toledo Paint and Sip Party \u2013 Ivory and Eucalyptus",
-      "date": "2026-06-21",
-      "time": "2:00 PM - 5:00 PM",
-      "price": 40.0,
-      "availabilityText": "Check live site for seats",
-      "status": "now-booking",
-      "badge": "Now Booking",
-      "ctaLabel": "Scan to Book",
-      "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-paint-and-sip-party-ivory-and-eucalyptus/",
-      "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/05/Ivory-Eucalyptus.jpeg",
-      "description": "Paint Ivory & Eucalyptus at this Toledo Paint & Sip. Create soft florals in a glass vase\u2014perfect for a relaxing, elegant night out.",
-      "venue": "Wine & Canvas Toledo Studio"
-    },
     {
       "id": "graytown-paint-and-sip-party-twilight-on-the-farm",
       "title": "Graytown Paint and Sip Party \u2013 Twilight on the Farm",
@@ -94,6 +79,21 @@
       "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-paint-and-sip-party-golden-fields-forever/",
       "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/05/Van-Goghs-Wheat-Field.jpg",
       "description": "Paint a vibrant Van Gogh-inspired landscape at this Toledo Paint and Sip featuring golden fields and swirling skies.",
+      "venue": "Wine & Canvas Toledo Studio"
+    },
+    {
+      "id": "toledo-paint-and-sip-party-fireworks-over-the-beach",
+      "title": "Toledo Paint and Sip Party \u2013 Fireworks Over The Beach",
+      "date": "2026-07-03",
+      "time": "6:00 PM - 9:00 PM",
+      "price": 40.0,
+      "availabilityText": "Check live site for seats",
+      "status": "now-booking",
+      "badge": "Now Booking",
+      "ctaLabel": "Scan to Book",
+      "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-paint-and-sip-party-fireworks-over-the-beach/",
+      "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/05/fireworks-over-the-beach.jpg",
+      "description": "Paint glowing fireworks over the beach on a 16\u00d720 canvas at this BYOB Toledo Paint & Sip Party near Monroe Street.",
       "venue": "Wine & Canvas Toledo Studio"
     }
   ]
