@@ -1,26 +1,11 @@
 {
-  "generatedAt": "2026-06-23T03:24:24Z",
+  "generatedAt": "2026-06-23T05:39:21Z",
   "source": {
     "pageUrl": "https://wineandcanvas.com/toledo/events/",
     "apiUrl": "https://wineandcanvas.com/toledo/wp-json/tribe/events/v1/events",
     "timezone": "America/New_York"
   },
   "upcomingEvents": [
-    {
-      "id": "graytown-paint-and-sip-party-twilight-on-the-farm",
-      "title": "Graytown Paint and Sip Party \u2013 Twilight on the Farm",
-      "date": "2026-06-22",
-      "time": "6:00 PM - 9:00 PM",
-      "price": 40.0,
-      "availabilityText": "Check live site for seats",
-      "status": "now-booking",
-      "badge": "Now Booking",
-      "ctaLabel": "Scan to Book",
-      "ctaUrl": "https://wineandcanvas.com/toledo/event/graytown-paint-and-sip-party-twilight-on-the-farm/",
-      "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2025/05/Twilight-on-the-farm.jpg",
-      "description": "Paint a peaceful farm sunset on a 16\u00d720 canvas at The Mockingbird in Graytown with food, wine, and cozy country vibes.",
-      "venue": "The Mockingbird on Mill Road Wine Cafe"
-    },
     {
       "id": "toledo-date-night-paint-and-sip-party-lovers-cave",
       "title": "Toledo Date Night Paint and Sip Party \u2013 Lovers Cave",
@@ -94,6 +79,21 @@
       "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-paint-and-sip-party-fireworks-over-the-beach/",
       "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/05/fireworks-over-the-beach.jpg",
       "description": "Paint glowing fireworks over the beach on a 16\u00d720 canvas at this BYOB Toledo Paint & Sip Party near Monroe Street.",
+      "venue": "Wine & Canvas Toledo Studio"
+    },
+    {
+      "id": "toledo-wine-glass-paint-and-sip-party-patriotic-edition",
+      "title": "Toledo Wine Glass Paint and Sip Party \u2013 Patriotic Edition",
+      "date": "2026-07-04",
+      "time": "12:00 PM - 2:00 PM",
+      "price": 30.0,
+      "availabilityText": "Check live site for seats",
+      "status": "now-booking",
+      "badge": "Now Booking",
+      "ctaLabel": "Scan to Book",
+      "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-wine-glass-paint-and-sip-party-patriotic-edition/",
+      "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/05/ChatGPT-Image-May-21-2026-07_43_19-AM.png",
+      "description": "Paint patriotic wine glasses in Toledo with fireworks, stars, and summer designs at this fun BYOB glass painting party.",
       "venue": "Wine & Canvas Toledo Studio"
     }
   ]
