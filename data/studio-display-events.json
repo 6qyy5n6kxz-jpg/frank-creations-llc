@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-23T13:16:07Z",
+  "generatedAt": "2026-06-23T14:06:26Z",
   "source": {
     "pageUrl": "https://wineandcanvas.com/toledo/events/",
     "apiUrl": "https://wineandcanvas.com/toledo/wp-json/tribe/events/v1/events",
@@ -22,8 +22,8 @@
       "venue": "Wine & Canvas Toledo Studio"
     },
     {
-      "id": "toledo-wine-glass-paint-and-sip-party-pick-your-design-6",
-      "title": "Toledo Wine Glass Paint and Sip Party \u2013 Pick Your Design",
+      "id": "toledo-paint-and-sip-express-shining-sunflowers",
+      "title": "Toledo Paint and Sip Express \u2013 Shining Sunflowers",
       "date": "2026-06-27",
       "time": "12:00 PM - 2:00 PM",
       "price": 30.0,
@@ -31,9 +31,9 @@
       "status": "now-booking",
       "badge": "Now Booking",
       "ctaLabel": "Scan to Book",
-      "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-wine-glass-paint-and-sip-party-pick-your-design-6/",
-      "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/02/Wine_Glass_Designs_2MB.jpg",
-      "description": "Paint custom wine glasses at this Toledo Wine Glass Paint Party. Fun BYOB creative event with two glasses included.",
+      "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-paint-and-sip-express-shining-sunflowers/",
+      "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/05/Shining-Sunflowers.jpg",
+      "description": "Paint glowing sunflowers on a black canvas at Wine & Canvas Toledo. Express Paint & Sip, beginner-friendly, just $30.",
       "venue": "Wine & Canvas Toledo Studio"
     },
     {
