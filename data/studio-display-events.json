@@ -1,26 +1,11 @@
 {
-  "generatedAt": "2026-06-28T16:40:57Z",
+  "generatedAt": "2026-06-28T17:41:05Z",
   "source": {
     "pageUrl": "https://wineandcanvas.com/toledo/events/",
     "apiUrl": "https://wineandcanvas.com/toledo/wp-json/tribe/events/v1/events",
     "timezone": "America/New_York"
   },
   "upcomingEvents": [
-    {
-      "id": "toledo-paint-and-sip-party-golden-fields-forever",
-      "title": "Toledo Paint and Sip Party \u2013 Golden Fields Forever",
-      "date": "2026-06-28",
-      "time": "2:00 PM - 5:00 PM",
-      "price": 40.0,
-      "availabilityText": "Check live site for seats",
-      "status": "now-booking",
-      "badge": "Now Booking",
-      "ctaLabel": "Scan to Book",
-      "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-paint-and-sip-party-golden-fields-forever/",
-      "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/05/Van-Goghs-Wheat-Field.jpg",
-      "description": "Paint a vibrant Van Gogh-inspired landscape at this Toledo Paint and Sip featuring golden fields and swirling skies.",
-      "venue": "Wine & Canvas Toledo Studio"
-    },
     {
       "id": "toledo-paint-and-sip-party-fireworks-over-the-beach",
       "title": "Toledo Paint and Sip Party \u2013 Fireworks Over The Beach",
@@ -94,6 +79,21 @@
       "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-paint-and-sip-party-fresh-mail/",
       "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/06/Fresh-Mail.jpeg",
       "description": "Paint Fresh Mail in Toledo! Create a charming floral mailbox scene on an 11\u00d714 canvas. BYOB and beginner friendly.",
+      "venue": "Paint and Sip Studio Toledo | Wine & Canvas Studio"
+    },
+    {
+      "id": "toledo-paint-and-sip-party-highland-cow",
+      "title": "Toledo Paint and Sip Party \u2013 Highland Cow",
+      "date": "2026-07-11",
+      "time": "6:00 PM - 9:00 PM",
+      "price": 40.0,
+      "availabilityText": "Check live site for seats",
+      "status": "now-booking",
+      "badge": "Now Booking",
+      "ctaLabel": "Scan to Book",
+      "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-paint-and-sip-party-highland-cow/",
+      "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2025/08/highland-cow-DC.jpeg",
+      "description": "Paint a floral Highland Cow in Toledo! Create this colorful 16\u00d720 canvas masterpiece. BYOB and beginner friendly.",
       "venue": "Paint and Sip Studio Toledo | Wine & Canvas Studio"
     }
   ]
