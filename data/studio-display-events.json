@@ -1,56 +1,11 @@
 {
-  "generatedAt": "2026-06-28T03:24:52Z",
+  "generatedAt": "2026-06-28T05:44:56Z",
   "source": {
     "pageUrl": "https://wineandcanvas.com/toledo/events/",
     "apiUrl": "https://wineandcanvas.com/toledo/wp-json/tribe/events/v1/events",
     "timezone": "America/New_York"
   },
   "upcomingEvents": [
-    {
-      "id": "toledo-date-night-paint-and-sip-party-lovers-cave",
-      "title": "Toledo Date Night Paint and Sip Party \u2013 Lovers Cave",
-      "date": "2026-06-27",
-      "time": "6:00 PM - 9:00 PM",
-      "price": 80.0,
-      "availabilityText": "Check live site for seats",
-      "status": "now-booking",
-      "badge": "Now Booking",
-      "ctaLabel": "Scan to Book",
-      "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-date-night-paint-and-sip-party-lovers-cave/",
-      "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/05/Lovers-Cave-Date-Night.jpg",
-      "description": "Romantic Toledo Date Night Paint Party featuring TWO canvases per couple that connect into one shared masterpiece.",
-      "venue": "Wine & Canvas Toledo Studio"
-    },
-    {
-      "id": "toledo-paint-and-sip-express-shining-sunflowers",
-      "title": "Toledo Paint and Sip Express \u2013 Shining Sunflowers",
-      "date": "2026-06-27",
-      "time": "12:00 PM - 2:00 PM",
-      "price": 30.0,
-      "availabilityText": "Check live site for seats",
-      "status": "now-booking",
-      "badge": "Now Booking",
-      "ctaLabel": "Scan to Book",
-      "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-paint-and-sip-express-shining-sunflowers/",
-      "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/05/Shining-Sunflowers.jpg",
-      "description": "Paint glowing sunflowers on a black canvas at Wine & Canvas Toledo. Express Paint & Sip, beginner-friendly, just $30.",
-      "venue": "Wine & Canvas Toledo Studio"
-    },
-    {
-      "id": "petersburg-paint-and-sip-party-celebration",
-      "title": "Petersburg Paint and Sip Party \u2013 Celebration",
-      "date": "2026-06-27",
-      "time": "12:00 PM - 3:00 PM",
-      "price": 40.0,
-      "availabilityText": "Check live site for seats",
-      "status": "now-booking",
-      "badge": "Now Booking",
-      "ctaLabel": "Scan to Book",
-      "ctaUrl": "https://wineandcanvas.com/toledo/event/petersburg-paint-and-sip-party-celebration/",
-      "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/05/Celebration-GV-scaled.jpg",
-      "description": "Celebrate summer with this patriotic Petersburg Paint Party featuring fireworks, stars, stripes, and colorful creativity.",
-      "venue": "Pirolli Park Campground"
-    },
     {
       "id": "toledo-paint-and-sip-party-golden-fields-forever",
       "title": "Toledo Paint and Sip Party \u2013 Golden Fields Forever",
@@ -95,6 +50,51 @@
       "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/05/ChatGPT-Image-May-21-2026-07_43_19-AM.png",
       "description": "Paint patriotic wine glasses in Toledo with fireworks, stars, and summer designs at this fun BYOB glass painting party.",
       "venue": "Wine & Canvas Toledo Studio"
+    },
+    {
+      "id": "toledo-paint-and-sip-party-sweet-tea",
+      "title": "Toledo Paint and Sip Party \u2013 Sweet Tea",
+      "date": "2026-07-05",
+      "time": "2:00 PM - 5:00 PM",
+      "price": 40.0,
+      "availabilityText": "Check live site for seats",
+      "status": "now-booking",
+      "badge": "Now Booking",
+      "ctaLabel": "Scan to Book",
+      "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-paint-and-sip-party-sweet-tea/",
+      "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/05/Sweet-tea.jpg",
+      "description": "Paint a charming sweet tea scene at this Toledo Paint & Sip Party. Includes a 16\u00d720 canvas. BYOB friendly.",
+      "venue": "Wine & Canvas Toledo Studio"
+    },
+    {
+      "id": "toledo-blacklight-paint-and-sip-party-neon-wildflowers",
+      "title": "Toledo Blacklight Paint and Sip Party \u2013 Neon Wildflowers",
+      "date": "2026-07-10",
+      "time": "6:00 PM - 9:00 PM",
+      "price": 40.0,
+      "availabilityText": "Check live site for seats",
+      "status": "now-booking",
+      "badge": "Now Booking",
+      "ctaLabel": "Scan to Book",
+      "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-blacklight-paint-and-sip-party-neon-wildflowers/",
+      "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/06/Floral_Bouquet_WordPress_Optimized.jpg",
+      "description": "Paint glowing Neon Wildflowers under blacklights in Toledo. Includes a 16\u00d720 canvas, neon paints, and BYOB fun.",
+      "venue": "Paint and Sip Studio Toledo | Wine & Canvas Studio"
+    },
+    {
+      "id": "toledo-paint-and-sip-party-fresh-mail",
+      "title": "Toledo Paint and Sip Party \u2013 Fresh Mail",
+      "date": "2026-07-11",
+      "time": "12:00 PM - 2:00 PM",
+      "price": 30.0,
+      "availabilityText": "Check live site for seats",
+      "status": "now-booking",
+      "badge": "Now Booking",
+      "ctaLabel": "Scan to Book",
+      "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-paint-and-sip-party-fresh-mail/",
+      "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/06/Fresh-Mail.jpeg",
+      "description": "Paint Fresh Mail in Toledo! Create a charming floral mailbox scene on an 11\u00d714 canvas. BYOB and beginner friendly.",
+      "venue": "Paint and Sip Studio Toledo | Wine & Canvas Studio"
     }
   ]
 }
