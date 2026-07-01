@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-01T16:08:34Z",
+  "generatedAt": "2026-07-01T17:00:40Z",
   "source": {
     "pageUrl": "https://wineandcanvas.com/toledo/events/",
     "apiUrl": "https://wineandcanvas.com/toledo/wp-json/tribe/events/v1/events",
@@ -34,21 +34,6 @@
       "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-wine-glass-paint-and-sip-party-patriotic-edition/",
       "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/05/ChatGPT-Image-May-21-2026-07_43_19-AM.png",
       "description": "Paint patriotic wine glasses in Toledo with fireworks, stars, and summer designs at this fun BYOB glass painting party.",
-      "venue": "Wine & Canvas Toledo Studio"
-    },
-    {
-      "id": "toledo-paint-and-sip-party-sweet-tea",
-      "title": "Toledo Paint and Sip Party \u2013 Sweet Tea",
-      "date": "2026-07-05",
-      "time": "2:00 PM - 5:00 PM",
-      "price": 40.0,
-      "availabilityText": "Check live site for seats",
-      "status": "now-booking",
-      "badge": "Now Booking",
-      "ctaLabel": "Scan to Book",
-      "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-paint-and-sip-party-sweet-tea/",
-      "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/05/Sweet-tea.jpg",
-      "description": "Paint a charming sweet tea scene at this Toledo Paint & Sip Party. Includes a 16\u00d720 canvas. BYOB friendly.",
       "venue": "Wine & Canvas Toledo Studio"
     },
     {
@@ -94,6 +79,21 @@
       "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-paint-and-sip-party-highland-cow/",
       "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2025/08/highland-cow-DC.jpeg",
       "description": "Paint a floral Highland Cow in Toledo! Create this colorful 16\u00d720 canvas masterpiece. BYOB and beginner friendly.",
+      "venue": "Paint and Sip Studio Toledo | Wine & Canvas Studio"
+    },
+    {
+      "id": "toledo-paint-and-sip-party-lavender-watering-can",
+      "title": "Toledo Paint and Sip Party \u2013 Lavender Watering Can",
+      "date": "2026-07-12",
+      "time": "2:00 PM - 5:00 PM",
+      "price": 40.0,
+      "availabilityText": "Check live site for seats",
+      "status": "now-booking",
+      "badge": "Now Booking",
+      "ctaLabel": "Scan to Book",
+      "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-paint-and-sip-party-lavender-watering-can/",
+      "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/06/Lavender-Watering-Can-scaled.jpg",
+      "description": "Paint a rustic lavender watering can in Toledo! Create this relaxing floral 16\u00d720 canvas. BYOB and beginner friendly.",
       "venue": "Paint and Sip Studio Toledo | Wine & Canvas Studio"
     }
   ]
