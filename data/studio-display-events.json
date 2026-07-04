@@ -1,26 +1,11 @@
 {
-  "generatedAt": "2026-07-04T03:59:01Z",
+  "generatedAt": "2026-07-04T07:13:03Z",
   "source": {
     "pageUrl": "https://wineandcanvas.com/toledo/events/",
     "apiUrl": "https://wineandcanvas.com/toledo/wp-json/tribe/events/v1/events",
     "timezone": "America/New_York"
   },
   "upcomingEvents": [
-    {
-      "id": "toledo-paint-and-sip-party-fireworks-over-the-beach",
-      "title": "Toledo Paint and Sip Party \u2013 Fireworks Over The Beach",
-      "date": "2026-07-03",
-      "time": "6:00 PM - 9:00 PM",
-      "price": 40.0,
-      "availabilityText": "Check live site for seats",
-      "status": "now-booking",
-      "badge": "Now Booking",
-      "ctaLabel": "Scan to Book",
-      "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-paint-and-sip-party-fireworks-over-the-beach/",
-      "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/05/fireworks-over-the-beach.jpg",
-      "description": "Paint glowing fireworks over the beach on a 16\u00d720 canvas at this BYOB Toledo Paint & Sip Party near Monroe Street.",
-      "venue": "Wine & Canvas Toledo Studio"
-    },
     {
       "id": "toledo-wine-glass-paint-and-sip-party-patriotic-edition",
       "title": "Toledo Wine Glass Paint and Sip Party \u2013 Patriotic Edition",
@@ -95,6 +80,21 @@
       "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/06/Lavender-Watering-Can-scaled.jpg",
       "description": "Paint a rustic lavender watering can in Toledo! Create this relaxing floral 16\u00d720 canvas. BYOB and beginner friendly.",
       "venue": "Paint and Sip Studio Toledo | Wine & Canvas Studio"
+    },
+    {
+      "id": "dundee-paint-and-sip-party-bayside-breeze",
+      "title": "Dundee Paint and Sip Party \u2013 Bayside Breeze",
+      "date": "2026-07-13",
+      "time": "6:00 PM - 9:00 PM",
+      "price": 40.0,
+      "availabilityText": "Check live site for seats",
+      "status": "now-booking",
+      "badge": "Now Booking",
+      "ctaLabel": "Scan to Book",
+      "ctaUrl": "https://wineandcanvas.com/toledo/event/dundee-paint-and-sip-party-bayside-breeze/",
+      "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/06/Bayside-Breeze-CC1.jpg",
+      "description": "Paint a colorful beach sunset at Social House 103 in Dundee. Food, drinks, and beginner-friendly Paint & Sip fun.",
+      "venue": "Social House 103"
     }
   ]
 }
