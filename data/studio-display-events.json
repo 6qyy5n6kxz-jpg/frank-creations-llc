@@ -1,26 +1,11 @@
 {
-  "generatedAt": "2026-07-05T00:11:36Z",
+  "generatedAt": "2026-07-05T04:17:55Z",
   "source": {
     "pageUrl": "https://wineandcanvas.com/toledo/events/",
     "apiUrl": "https://wineandcanvas.com/toledo/wp-json/tribe/events/v1/events",
     "timezone": "America/New_York"
   },
   "upcomingEvents": [
-    {
-      "id": "toledo-wine-glass-paint-and-sip-party-patriotic-edition",
-      "title": "Toledo Wine Glass Paint and Sip Party \u2013 Patriotic Edition",
-      "date": "2026-07-04",
-      "time": "12:00 PM - 2:00 PM",
-      "price": 30.0,
-      "availabilityText": "Check live site for seats",
-      "status": "now-booking",
-      "badge": "Now Booking",
-      "ctaLabel": "Scan to Book",
-      "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-wine-glass-paint-and-sip-party-patriotic-edition/",
-      "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/05/ChatGPT-Image-May-21-2026-07_43_19-AM.png",
-      "description": "Paint patriotic wine glasses in Toledo with fireworks, stars, and summer designs at this fun BYOB glass painting party.",
-      "venue": "Wine & Canvas Toledo Studio"
-    },
     {
       "id": "toledo-blacklight-paint-and-sip-party-neon-wildflowers",
       "title": "Toledo Blacklight Paint and Sip Party \u2013 Neon Wildflowers",
@@ -95,6 +80,21 @@
       "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/06/Bayside-Breeze-CC1.jpg",
       "description": "Paint a colorful beach sunset at Social House 103 in Dundee. Food, drinks, and beginner-friendly Paint & Sip fun.",
       "venue": "Social House 103"
+    },
+    {
+      "id": "toledo-paint-and-sip-party-aurora-point-lighthouse",
+      "title": "Toledo Paint and Sip Party \u2013 Aurora Point Lighthouse",
+      "date": "2026-07-17",
+      "time": "6:00 PM - 9:00 PM",
+      "price": 40.0,
+      "availabilityText": "Check live site for seats",
+      "status": "now-booking",
+      "badge": "Now Booking",
+      "ctaLabel": "Scan to Book",
+      "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-paint-and-sip-party-aurora-point-lighthouse/",
+      "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/06/88BC5116-C600-489D-AAEA-E84B22613C5B.jpeg",
+      "description": "Paint a glowing northern lights lighthouse scene at Wine & Canvas Toledo. BYOB, beginner-friendly, and perfect for date night.",
+      "venue": "Paint and Sip Studio Toledo | Wine & Canvas Studio"
     }
   ]
 }
