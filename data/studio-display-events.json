@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-10T12:07:32Z",
+  "generatedAt": "2026-07-10T14:49:11Z",
   "source": {
     "pageUrl": "https://wineandcanvas.com/toledo/events/",
     "apiUrl": "https://wineandcanvas.com/toledo/wp-json/tribe/events/v1/events",
@@ -52,8 +52,8 @@
       "venue": "Paint and Sip Studio Toledo | Wine & Canvas Studio"
     },
     {
-      "id": "toledo-paint-and-sip-party-lavender-watering-can",
-      "title": "Toledo Paint and Sip Party \u2013 Lavender Watering Can",
+      "id": "beach-path-paint-sip-toledo-july-12-2026",
+      "title": "Toledo Paint and Sip Party \u2013 Beach Path",
       "date": "2026-07-12",
       "time": "2:00 PM - 5:00 PM",
       "price": 40.0,
@@ -61,9 +61,9 @@
       "status": "now-booking",
       "badge": "Now Booking",
       "ctaLabel": "Scan to Book",
-      "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-paint-and-sip-party-lavender-watering-can/",
-      "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/06/Lavender-Watering-Can-scaled.jpg",
-      "description": "Paint a rustic lavender watering can in Toledo! Create this relaxing floral 16\u00d720 canvas. BYOB and beginner friendly.",
+      "ctaUrl": "https://wineandcanvas.com/toledo/event/beach-path-paint-sip-toledo-july-12-2026/",
+      "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2022/04/Beach-path-BL-1.jpg",
+      "description": "Create a peaceful beach path painting at Wine & Canvas Toledo. Beginner-friendly Paint & Sip on Sunday, July 12. Reserve your seat today!",
       "venue": "Paint and Sip Studio Toledo | Wine & Canvas Studio"
     },
     {
