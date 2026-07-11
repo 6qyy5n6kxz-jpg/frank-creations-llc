@@ -1,26 +1,11 @@
 {
-  "generatedAt": "2026-07-11T03:38:44Z",
+  "generatedAt": "2026-07-11T06:24:37Z",
   "source": {
     "pageUrl": "https://wineandcanvas.com/toledo/events/",
     "apiUrl": "https://wineandcanvas.com/toledo/wp-json/tribe/events/v1/events",
     "timezone": "America/New_York"
   },
   "upcomingEvents": [
-    {
-      "id": "toledo-blacklight-paint-and-sip-party-neon-wildflowers",
-      "title": "Toledo Blacklight Paint and Sip Party \u2013 Neon Wildflowers",
-      "date": "2026-07-10",
-      "time": "6:00 PM - 9:00 PM",
-      "price": 40.0,
-      "availabilityText": "Check live site for seats",
-      "status": "now-booking",
-      "badge": "Now Booking",
-      "ctaLabel": "Scan to Book",
-      "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-blacklight-paint-and-sip-party-neon-wildflowers/",
-      "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/06/Floral_Bouquet_WordPress_Optimized.jpg",
-      "description": "Paint glowing Neon Wildflowers under blacklights in Toledo. Includes a 16\u00d720 canvas, neon paints, and BYOB fun.",
-      "venue": "Paint and Sip Studio Toledo | Wine & Canvas Studio"
-    },
     {
       "id": "toledo-paint-and-sip-party-highland-cow",
       "title": "Toledo Paint and Sip Party \u2013 Highland Cow",
@@ -94,6 +79,21 @@
       "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-cookies-and-canvas-shellys-island-adventure/",
       "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/06/IMG_3786.jpeg",
       "description": "Kids paint a cute sea turtle on an 8\u00d710 canvas, enjoy a cookie, and create a masterpiece at Wine & Canvas Toledo.",
+      "venue": "Paint and Sip Studio Toledo | Wine & Canvas Studio"
+    },
+    {
+      "id": "toledo-paint-and-sip-party-sunflower-day",
+      "title": "Toledo Paint and Sip Party \u2013 Sunflower Day",
+      "date": "2026-07-19",
+      "time": "2:00 PM - 5:00 PM",
+      "price": 40.0,
+      "availabilityText": "Check live site for seats",
+      "status": "now-booking",
+      "badge": "Now Booking",
+      "ctaLabel": "Scan to Book",
+      "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-paint-and-sip-party-sunflower-day/",
+      "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/06/Sunflower-Day_CB.jpg",
+      "description": "Paint a vibrant sunflower on a 16\u00d720 canvas at Wine & Canvas Toledo. BYOB and beginner-friendly summer paint party.",
       "venue": "Paint and Sip Studio Toledo | Wine & Canvas Studio"
     }
   ]
