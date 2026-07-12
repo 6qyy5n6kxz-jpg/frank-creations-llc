@@ -1,26 +1,11 @@
 {
-  "generatedAt": "2026-07-12T03:53:34Z",
+  "generatedAt": "2026-07-12T06:44:51Z",
   "source": {
     "pageUrl": "https://wineandcanvas.com/toledo/events/",
     "apiUrl": "https://wineandcanvas.com/toledo/wp-json/tribe/events/v1/events",
     "timezone": "America/New_York"
   },
   "upcomingEvents": [
-    {
-      "id": "toledo-paint-and-sip-party-highland-cow",
-      "title": "Toledo Paint and Sip Party \u2013 Highland Cow",
-      "date": "2026-07-11",
-      "time": "6:00 PM - 9:00 PM",
-      "price": 40.0,
-      "availabilityText": "Check live site for seats",
-      "status": "now-booking",
-      "badge": "Now Booking",
-      "ctaLabel": "Scan to Book",
-      "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-paint-and-sip-party-highland-cow/",
-      "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2025/08/highland-cow-DC.jpeg",
-      "description": "Paint a floral Highland Cow in Toledo! Create this colorful 16\u00d720 canvas masterpiece. BYOB and beginner friendly.",
-      "venue": "Paint and Sip Studio Toledo | Wine & Canvas Studio"
-    },
     {
       "id": "beach-path-paint-sip-toledo-july-12-2026",
       "title": "Toledo Paint and Sip Party \u2013 Beach Path",
@@ -94,6 +79,21 @@
       "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-paint-and-sip-party-sunflower-day/",
       "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/06/Sunflower-Day_CB.jpg",
       "description": "Paint a vibrant sunflower on a 16\u00d720 canvas at Wine & Canvas Toledo. BYOB and beginner-friendly summer paint party.",
+      "venue": "Paint and Sip Studio Toledo | Wine & Canvas Studio"
+    },
+    {
+      "id": "toledo-paint-and-sip-party-disco-cherries",
+      "title": "Toledo Paint and Sip Party \u2013 Disco Cherries",
+      "date": "2026-07-24",
+      "time": "6:00 PM - 9:00 PM",
+      "price": 40.0,
+      "availabilityText": "Check live site for seats",
+      "status": "now-booking",
+      "badge": "Now Booking",
+      "ctaLabel": "Scan to Book",
+      "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-paint-and-sip-party-disco-cherries/",
+      "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/05/disco_cherries_wordpress.jpg",
+      "description": "Paint sparkling disco cherries at Wine & Canvas Toledo. BYOB, beginner-friendly, colorful, trendy, and fun.",
       "venue": "Paint and Sip Studio Toledo | Wine & Canvas Studio"
     }
   ]
