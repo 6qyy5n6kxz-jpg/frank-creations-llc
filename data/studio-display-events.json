@@ -1,26 +1,11 @@
 {
-  "generatedAt": "2026-07-12T15:13:59Z",
+  "generatedAt": "2026-07-12T16:10:43Z",
   "source": {
     "pageUrl": "https://wineandcanvas.com/toledo/events/",
     "apiUrl": "https://wineandcanvas.com/toledo/wp-json/tribe/events/v1/events",
     "timezone": "America/New_York"
   },
   "upcomingEvents": [
-    {
-      "id": "beach-path-paint-sip-toledo-july-12-2026",
-      "title": "Toledo Paint and Sip Party \u2013 Beach Path",
-      "date": "2026-07-12",
-      "time": "2:00 PM - 5:00 PM",
-      "price": 40.0,
-      "availabilityText": "Check live site for seats",
-      "status": "now-booking",
-      "badge": "Now Booking",
-      "ctaLabel": "Scan to Book",
-      "ctaUrl": "https://wineandcanvas.com/toledo/event/beach-path-paint-sip-toledo-july-12-2026/",
-      "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2022/04/Beach-path-BL-1.jpg",
-      "description": "Create a peaceful beach path painting at Wine & Canvas Toledo. Beginner-friendly Paint & Sip on Sunday, July 12. Reserve your seat today!",
-      "venue": "Paint and Sip Studio Toledo | Wine & Canvas Studio"
-    },
     {
       "id": "dundee-paint-and-sip-party-bayside-breeze",
       "title": "Dundee Paint and Sip Party \u2013 Bayside Breeze",
@@ -94,6 +79,21 @@
       "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-paint-and-sip-party-disco-cherries/",
       "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/05/disco_cherries_wordpress.jpg",
       "description": "Paint sparkling disco cherries at Wine & Canvas Toledo. BYOB, beginner-friendly, colorful, trendy, and fun.",
+      "venue": "Paint and Sip Studio Toledo | Wine & Canvas Studio"
+    },
+    {
+      "id": "toledo-paint-and-sip-express-shining-sunflowers-2",
+      "title": "Toledo Paint and Sip Express \u2013 Shining Sunflowers",
+      "date": "2026-07-25",
+      "time": "12:00 PM - 2:00 PM",
+      "price": 30.0,
+      "availabilityText": "Check live site for seats",
+      "status": "now-booking",
+      "badge": "Now Booking",
+      "ctaLabel": "Scan to Book",
+      "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-paint-and-sip-express-shining-sunflowers-2/",
+      "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/05/Shining-Sunflowers.jpg",
+      "description": "Paint glowing sunflowers on a black canvas at Wine & Canvas Toledo. Express Paint & Sip, beginner-friendly, just $30.",
       "venue": "Paint and Sip Studio Toledo | Wine & Canvas Studio"
     }
   ]
