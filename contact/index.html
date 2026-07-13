@@ -33,18 +33,18 @@
     <section class="page-hero page-hero-contact">
       <div class="container">
         <p class="eyebrow">Contact</p>
-        <h1>Start a booking or general inquiry from one central page.</h1>
-        <p class="hero-text narrow-copy">Use this form to send booking requests, event inquiries, photo booth rental questions, shop questions, and general business messages for Frank Creations LLC.</p>
+        <h1>Tell us what would make your event easier.</h1>
+        <p class="hero-text narrow-copy">Share the date, venue, schedule, and services you are considering. We’ll use the details to confirm availability and prepare a personalized quote.</p>
       </div>
     </section>
 
     <section class="section">
-      <div class="container split-layout">
+      <div class="container">
         <div>
           <div class="section-heading left-aligned">
             <p class="eyebrow">Inquiry form</p>
-            <h2>Start with the category</h2>
-            <p>The category dropdown keeps inquiries organized for music, paint events, family programming, photo booth rentals, shop questions, and general business requests.</p>
+            <h2>Request availability</h2>
+            <p>Fields marked required give us the essentials. Service-specific questions appear as you select photo booth, tent, or live music.</p>
           </div>
           <form
             class="stacked-form"
@@ -52,55 +52,63 @@
             data-formspree-endpoint="https://formspree.io/f/xreojwny"
             data-recipient-email="infotoledo@wineandcanvas.com"
           >
-            <label class="field">
-              <span>Name</span>
-              <input type="text" name="name" required placeholder="Your full name">
-            </label>
-            <label class="field">
-              <span>Email</span>
-              <input type="email" name="email" required placeholder="you@example.com">
-            </label>
-            <label class="field">
-              <span>Phone</span>
-              <input type="tel" name="phone" placeholder="Optional">
-            </label>
-            <label class="field">
-              <span>Category</span>
-              <select name="category" required>
-                <option value="">Choose a category</option>
-                <option value="A Change Of Plans">A Change Of Plans</option>
-                <option value="Wine & Canvas Toledo">Wine &amp; Canvas Toledo</option>
-                <option value="Cookies & Canvas">Cookies &amp; Canvas</option>
-                <option value="Photo Booth Rental">Photo Booth Rental</option>
-                <option value="Shop">Shop</option>
-                <option value="General">General</option>
-              </select>
-            </label>
-            <label class="field">
-              <span>Preferred event date</span>
-              <input type="date" name="eventDate">
-            </label>
-            <label class="field">
-              <span>Message</span>
-              <textarea name="message" rows="6" required placeholder="Tell us what you are planning, your group size, venue, product question, photo booth rental, or performance request."></textarea>
-            </label>
-            <button class="button button-primary" type="submit">Send Inquiry</button>
+            <section class="form-section"><h3>Your information</h3><div class="form-grid">
+              <label class="field"><span>Name *</span><input type="text" name="name" required autocomplete="name"></label>
+              <label class="field"><span>Email *</span><input type="email" name="email" required autocomplete="email"></label>
+              <label class="field"><span>Phone</span><input type="tel" name="phone" autocomplete="tel"></label>
+              <label class="field"><span>Event date *</span><input type="date" name="eventDate" required></label>
+            </div></section>
+            <section class="form-section"><h3>Event details</h3><div class="form-grid">
+              <label class="field"><span>Event type *</span><input type="text" name="eventType" required placeholder="Graduation, wedding, festival…"></label>
+              <label class="field"><span>Estimated guest count</span><input type="number" min="1" name="guestCount"></label>
+              <label class="field"><span>Venue name</span><input type="text" name="venueName"></label>
+              <label class="field"><span>Venue address *</span><input type="text" name="venueAddress" required autocomplete="street-address"></label>
+              <label class="field"><span>Event start time</span><input type="time" name="startTime"></label>
+              <label class="field"><span>Event end time</span><input type="time" name="endTime"></label>
+              <label class="field"><span>Setup access time</span><input type="time" name="setupAccessTime"></label>
+              <label class="field"><span>Setting</span><select name="setting"><option value="">Choose one</option><option>Indoor</option><option>Outdoor</option><option>Both indoor and outdoor</option></select></label>
+              <label class="field"><span>Power availability</span><select name="powerAvailability"><option value="">Choose one</option><option>Power is available</option><option>Power is not available</option><option>Not sure</option></select></label>
+              <label class="field"><span>Estimated starting total</span><input type="text" name="estimatedStartingTotal" data-estimated-total readonly placeholder="Transferred from package builder"></label>
+            </div></section>
+            <section class="form-section"><h3>Requested services *</h3><div class="checkbox-grid" data-service-options>
+              <label class="checkbox-field"><input type="checkbox" name="requestedServices" value="Photo Booth"> Photo Booth</label>
+              <label class="checkbox-field"><input type="checkbox" name="requestedServices" value="High Peak Tent"> High Peak Tent</label>
+              <label class="checkbox-field"><input type="checkbox" name="requestedServices" value="Uplighting"> Uplighting</label>
+              <label class="checkbox-field"><input type="checkbox" name="requestedServices" value="Speaker"> Speaker</label>
+              <label class="checkbox-field"><input type="checkbox" name="requestedServices" value="Wireless Microphone"> Wireless Microphone</label>
+              <label class="checkbox-field"><input type="checkbox" name="requestedServices" value="A Change Of Plans Solo"> A Change Of Plans Solo</label>
+              <label class="checkbox-field"><input type="checkbox" name="requestedServices" value="A Change Of Plans Duo"> A Change Of Plans Duo</label>
+              <label class="checkbox-field"><input type="checkbox" name="requestedServices" value="Wine & Canvas private event"> Wine &amp; Canvas private event</label>
+              <label class="checkbox-field"><input type="checkbox" name="requestedServices" value="Cookies & Canvas event"> Cookies &amp; Canvas event</label>
+              <label class="checkbox-field"><input type="checkbox" name="requestedServices" value="General inquiry"> General inquiry</label>
+            </div></section>
+            <section class="form-section conditional-fields" data-conditional="High Peak Tent" hidden><h3>Tent details</h3><div class="form-grid">
+              <label class="field"><span>Installation surface</span><select name="tentSurface"><option value="">Choose one</option><option>Grass</option><option>Asphalt</option><option>Concrete</option><option>Other</option></select></label>
+              <label class="field"><span>Permission to stake</span><select name="stakingPermission"><option value="">Choose one</option><option>Yes</option><option>No</option><option>Not sure</option></select></label>
+              <label class="field"><span>Underground utilities or sprinklers</span><textarea name="undergroundUtilities" rows="2"></textarea></label>
+              <label class="field"><span>Available space dimensions</span><input type="text" name="spaceDimensions" placeholder="Length × width"></label>
+              <label class="field field-wide"><span>Weather backup plan</span><textarea name="weatherBackupPlan" rows="3"></textarea></label>
+            </div></section>
+            <section class="form-section conditional-fields" data-conditional="A Change Of Plans" hidden><h3>Live music details</h3><div class="form-grid">
+              <label class="field"><span>Performance format</span><select name="musicFormat"><option value="">Choose one</option><option>Solo</option><option>Duo</option></select></label>
+              <label class="field"><span>Performance setting</span><select name="performanceSetting"><option value="">Choose one</option><option>Ceremony</option><option>Cocktail hour</option><option>Private party</option><option>Festival</option><option>Bar</option><option>Restaurant</option><option>Other</option></select></label>
+              <label class="field"><span>Desired performance duration</span><input type="text" name="performanceDuration"></label>
+              <label class="field"><span>Sound system needed</span><select name="soundSystemNeeded"><option value="">Choose one</option><option>Yes</option><option>No</option><option>Not sure</option></select></label>
+              <label class="field field-wide"><span>Requested songs or special moments</span><textarea name="requestedSongs" rows="3"></textarea></label>
+            </div></section>
+            <section class="form-section conditional-fields" data-conditional="Photo Booth" hidden><h3>Photo booth details</h3><div class="form-grid">
+              <label class="field"><span>Rental duration</span><select name="photoBoothDuration"><option value="">Choose one</option><option>2 hours</option><option>3 hours</option><option>4 hours</option><option>Other</option></select></label>
+              <label class="field"><span>Custom overlay needs</span><input type="text" name="overlayNeeds"></label>
+              <label class="field"><span>Theme or branding</span><input type="text" name="photoBoothTheme"></label>
+              <label class="field"><span>Props requested</span><select name="propsRequested"><option value="">Choose one</option><option>Yes</option><option>No</option><option>Not sure</option></select></label>
+              <label class="field"><span>Attendant requested</span><select name="attendantRequested"><option value="">Choose one</option><option>Yes</option><option>No</option><option>Not sure</option></select></label>
+              <label class="field"><span>Booth setting</span><select name="photoBoothSetting"><option value="">Choose one</option><option>Indoor</option><option>Outdoor</option></select></label>
+            </div></section>
+            <section class="form-section"><label class="field"><span>Special requests</span><textarea name="specialRequests" rows="5" placeholder="Access restrictions, schedule notes, custom ideas, or anything else we should know."></textarea></label></section>
+            <input type="hidden" name="category" value="Event Inquiry">
+            <button class="button button-primary" type="submit">Request Availability</button>
             <p class="form-feedback" data-contact-feedback aria-live="polite"></p>
           </form>
-        </div>
-        <div class="panel-list">
-          <article class="panel-card">
-            <h3>Form delivery</h3>
-            <p>Submissions from this form are sent to <code>infotoledo@wineandcanvas.com</code>.</p>
-          </article>
-          <article class="panel-card">
-            <h3>Launch setup</h3>
-            <p>Test a real submission and confirm both delivery and confirmation behavior before public launch.</p>
-          </article>
-          <article class="panel-card">
-            <h3>Manual updates</h3>
-            <p>Confirm your response email, booking phone number, privacy language, and expected response time before production launch.</p>
-          </article>
         </div>
       </div>
     </section>

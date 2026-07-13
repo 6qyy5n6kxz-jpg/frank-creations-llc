@@ -2,12 +2,9 @@ const page = document.body.dataset.page || "";
 const siteRoot = document.body.dataset.siteRoot || ".";
 
 const navItems = [
-  { id: "home", label: "Home", href: "/" },
-  { id: "wine", label: "Wine & Canvas Toledo", href: "/wine-and-canvas-toledo/" },
-  { id: "cookies", label: "Cookies & Canvas", href: "/cookies-and-canvas/" },
-  { id: "photo-booth", label: "Photo Booth Rentals", href: "/photo-booth/" },
-  { id: "music", label: "A Change Of Plans", href: "/a-change-of-plans/" },
-  { id: "shop", label: "Shop", href: "/shop/" },
+  { id: "experiences", label: "Experiences", href: "/#our-experiences", activePages: ["home", "wine", "cookies", "music"] },
+  { id: "enhancements", label: "Event Enhancements", href: "/event-enhancements/", activePages: ["enhancements", "photo-booth"] },
+  { id: "packages", label: "Packages", href: "/packages/" },
   { id: "contact", label: "Contact", href: "/contact/" }
 ];
 
@@ -101,7 +98,7 @@ const footerTarget = document.querySelector("[data-site-footer]");
 
 const navMarkup = navItems.map((item) => {
   const href = resolveSitePath(item.href);
-  const current = page === item.id ? ' aria-current="page"' : "";
+  const current = page === item.id || item.activePages?.includes(page) ? ' aria-current="page"' : "";
   return `<a href="${href}"${current}>${item.label}</a>`;
 }).join("");
 
@@ -150,11 +147,13 @@ if (footerTarget) {
           <div>
             <h3>Explore</h3>
             <p><a href="${resolveSitePath("/")}">Home</a></p>
+            <p><a href="${resolveSitePath("/#our-experiences")}">Experiences</a></p>
+            <p><a href="${resolveSitePath("/event-enhancements/")}">Event Enhancements</a></p>
+            <p><a href="${resolveSitePath("/packages/")}">Packages</a></p>
             <p><a href="${resolveSitePath("/photo-booth/")}">Photo Booth Rentals</a></p>
             <p><a href="${resolveSitePath("/wine-and-canvas-toledo/")}">Wine & Canvas Toledo</a></p>
             <p><a href="${resolveSitePath("/cookies-and-canvas/")}">Cookies & Canvas</a></p>
             <p><a href="${resolveSitePath("/a-change-of-plans/")}">A Change Of Plans</a></p>
-            <p><a href="${resolveSitePath("/shop/")}">Shop</a></p>
             <p><a href="${resolveSitePath("/contact/")}">Contact</a></p>
           </div>
           <div>

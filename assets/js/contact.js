@@ -3,6 +3,46 @@ const contactFeedback = document.querySelector("[data-contact-feedback]");
 
 if (contactForm && contactFeedback) {
   const submitButton = contactForm.querySelector('button[type="submit"]');
+  const serviceInputs = [...contactForm.querySelectorAll('input[name="requestedServices"]')];
+  const conditionalSections = [...contactForm.querySelectorAll("[data-conditional]")];
+  const query = new URLSearchParams(window.location.search);
+
+  const updateConditionalFields = () => {
+    const selected = serviceInputs.filter((input) => input.checked).map((input) => input.value);
+    conditionalSections.forEach((section) => {
+      const key = section.dataset.conditional;
+      section.hidden = !selected.some((service) => service.includes(key));
+    });
+  };
+
+  const requestedServices = (query.get("services") || "").split(",").map((item) => item.trim()).filter(Boolean);
+  requestedServices.forEach((service) => {
+    const exact = serviceInputs.find((input) => input.value.toLowerCase() === service.toLowerCase());
+    const related = serviceInputs.find((input) => service.toLowerCase().includes(input.value.toLowerCase()));
+    if (exact || related) (exact || related).checked = true;
+
+    const aliases = [];
+    if (/booth/i.test(service)) aliases.push("Photo Booth");
+    if (/tent/i.test(service)) aliases.push("High Peak Tent");
+    if (/graduation celebration package/i.test(service)) aliases.push("High Peak Tent", "Photo Booth");
+    if (/backyard party package/i.test(service)) aliases.push("High Peak Tent", "Speaker", "Wireless Microphone");
+    if (/wedding enhancement package/i.test(service)) aliases.push("Photo Booth", "Uplighting", "Speaker", "Wireless Microphone");
+    if (/complete outdoor celebration package/i.test(service)) aliases.push("High Peak Tent", "Photo Booth", "Uplighting", "Speaker", "Wireless Microphone");
+    if (/live event package/i.test(service)) aliases.push("A Change Of Plans Duo", "Photo Booth");
+    aliases.forEach((alias) => {
+      const input = serviceInputs.find((item) => item.value === alias);
+      if (input) input.checked = true;
+    });
+  });
+
+  const estimateField = contactForm.querySelector("[data-estimated-total]");
+  if (estimateField && query.has("estimate")) {
+    const estimate = Number(query.get("estimate"));
+    estimateField.value = Number.isFinite(estimate) ? `$${estimate.toLocaleString("en-US")}` : query.get("estimate");
+  }
+
+  serviceInputs.forEach((input) => input.addEventListener("change", updateConditionalFields));
+  updateConditionalFields();
 
   contactForm.addEventListener("submit", async (event) => {
     event.preventDefault();
@@ -53,6 +93,7 @@ if (contactForm && contactFeedback) {
       }
 
       contactForm.reset();
+      updateConditionalFields();
       contactFeedback.textContent = "Thank you. Your inquiry was sent successfully, and someone will follow up soon.";
     } catch (error) {
       contactFeedback.textContent = error.message || "There was a problem sending your inquiry. Please try again in a few minutes.";
