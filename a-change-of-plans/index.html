@@ -39,17 +39,24 @@
       </div>
     </section>
 
-    <section class="section">
-      <div class="container split-layout">
-        <div>
+    <section class="section music-schedule" id="upcoming-schedule" data-schedule-section>
+      <div class="container music-schedule-layout">
+        <div class="music-schedule-intro">
           <div class="section-heading left-aligned">
             <p class="eyebrow">Upcoming schedule</p>
             <h2>Where to catch the duo next</h2>
             <p>Upcoming public shows, guest appearances, and worship-service dates for A Change Of Plans.</p>
           </div>
           <div class="event-summary" data-events-summary></div>
+          <div class="music-schedule-booking">
+            <p>Planning a wedding, private party, festival, or venue event? Ask about solo and duo availability.</p>
+            <a class="button button-primary" href="../contact/?services=A%20Change%20Of%20Plans%20Duo">Book A Change Of Plans</a>
+          </div>
         </div>
-        <div class="panel-list" data-events-list data-event-category="music" aria-live="polite"></div>
+        <div class="music-schedule-results">
+          <div class="panel-list music-event-list" id="schedule-event-list" data-events-list data-event-category="music" aria-live="polite"></div>
+          <button class="button button-secondary schedule-toggle" type="button" data-schedule-toggle aria-expanded="false" aria-controls="schedule-event-list" hidden>View All Upcoming Shows</button>
+        </div>
       </div>
     </section>
 

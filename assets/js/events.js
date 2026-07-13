@@ -1,5 +1,15 @@
 const eventsContainer = document.querySelector("[data-events-list]");
 const summaryTarget = document.querySelector("[data-events-summary]");
+const scheduleToggle = document.querySelector("[data-schedule-toggle]");
+const scheduleSection = document.querySelector("[data-schedule-section]");
+const collapsedEventCount = 3;
+
+const escapeHtml = (value = "") => String(value)
+  .replaceAll("&", "&amp;")
+  .replaceAll("<", "&lt;")
+  .replaceAll(">", "&gt;")
+  .replaceAll('"', "&quot;")
+  .replaceAll("'", "&#039;");
 
 const formatDate = (dateValue) => {
   const date = new Date(`${dateValue}T12:00:00`);
@@ -20,21 +30,81 @@ const getTodayKey = () => {
 };
 
 const getEventHeadline = (event) => event.venue || event.location || event.title || "Venue details coming soon";
+const isPrivateEvent = (event) => /private\s+(?:function|event)/i.test(`${event.title || ""} ${event.description || ""}`);
 
 const renderDescription = (description) => description
-  ? `<p>${description}</p>`
+  ? `<p class="event-description">${escapeHtml(description)}</p>`
   : "";
 
-const renderEvents = async () => {
-  if (!eventsContainer) {
+const renderSummary = (items, category) => {
+  if (!summaryTarget) return;
+
+  if (!items.length) {
+    summaryTarget.innerHTML = `<p>No upcoming ${escapeHtml(category)} events are listed right now. Check back soon for new dates.</p>`;
     return;
   }
 
+  const publicEvents = items.filter((event) => !isPrivateEvent(event));
+  const nextEvent = publicEvents[0] || items[0];
+  const highlights = publicEvents.filter((event) => event !== nextEvent).slice(0, 3);
+
+  summaryTarget.innerHTML = `
+    <p class="event-count"><strong>${items.length}</strong> upcoming ${escapeHtml(category)} event${items.length === 1 ? "" : "s"}</p>
+    <article class="schedule-next-show">
+      <p class="mini-heading">Next Show</p>
+      <dl>
+        <div><dt>Date</dt><dd>${escapeHtml(formatDate(nextEvent.date))}</dd></div>
+        <div><dt>Venue</dt><dd>${escapeHtml(getEventHeadline(nextEvent))}</dd></div>
+        <div><dt>Time</dt><dd>${escapeHtml(nextEvent.time)}</dd></div>
+      </dl>
+    </article>
+    ${highlights.length ? `
+      <div class="schedule-highlights">
+        <p class="mini-heading">Upcoming Highlights</p>
+        <ul>${highlights.map((event) => `<li><time datetime="${escapeHtml(event.date)}">${escapeHtml(formatDate(event.date))}</time><span>${escapeHtml(getEventHeadline(event))}</span></li>`).join("")}</ul>
+      </div>
+    ` : ""}
+  `;
+};
+
+const setupScheduleToggle = () => {
+  if (!scheduleToggle || !eventsContainer) return;
+
+  const cards = [...eventsContainer.querySelectorAll(".event-card")];
+  if (cards.length <= collapsedEventCount) {
+    scheduleToggle.hidden = true;
+    return;
+  }
+
+  const setExpanded = (expanded) => {
+    cards.forEach((card, index) => {
+      const shouldHide = !expanded && index >= collapsedEventCount;
+      card.hidden = shouldHide;
+      card.setAttribute("aria-hidden", String(shouldHide));
+    });
+    scheduleToggle.setAttribute("aria-expanded", String(expanded));
+    scheduleToggle.textContent = expanded ? "Show Fewer Events" : "View All Upcoming Shows";
+  };
+
+  scheduleToggle.hidden = false;
+  setExpanded(false);
+  scheduleToggle.addEventListener("click", () => {
+    const wasExpanded = scheduleToggle.getAttribute("aria-expanded") === "true";
+    setExpanded(!wasExpanded);
+
+    if (wasExpanded && scheduleSection?.getBoundingClientRect().top < 0) {
+      const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      scheduleSection.scrollIntoView({ behavior: reduceMotion ? "auto" : "smooth", block: "start" });
+    }
+  });
+};
+
+const renderEvents = async () => {
+  if (!eventsContainer) return;
+
   try {
     const response = await fetch(window.resolveSitePath("data/events.json"));
-    if (!response.ok) {
-      throw new Error(`Failed to load events: ${response.status}`);
-    }
+    if (!response.ok) throw new Error(`Failed to load events: ${response.status}`);
 
     const payload = await response.json();
     const category = eventsContainer.dataset.eventCategory || "music";
@@ -44,43 +114,32 @@ const renderEvents = async () => {
       .filter((event) => event.date >= todayKey)
       .sort((left, right) => left.date.localeCompare(right.date));
 
-    if (summaryTarget) {
-      if (items.length) {
-        const nextEvent = items[0];
-        summaryTarget.innerHTML = `
-          <p>${items.length} upcoming ${category} event${items.length === 1 ? "" : "s"} listed.</p>
-          <p><strong>Next up:</strong> ${formatDate(nextEvent.date)} at ${getEventHeadline(nextEvent)}.</p>
-        `;
-      } else {
-        summaryTarget.innerHTML = `<p>No upcoming ${category} events are listed right now. Check back soon for new dates.</p>`;
-      }
-    }
+    renderSummary(items, category);
 
     if (!items.length) {
-      eventsContainer.innerHTML = `
-        <article class="event-card">
-          <h3>More dates coming soon</h3>
-          <p>Follow A Change Of Plans on social media or check back here for the next public performance dates.</p>
-        </article>
-      `;
+      eventsContainer.innerHTML = `<article class="event-card"><h3>More dates coming soon</h3><p>Follow A Change Of Plans on social media or check back here for the next public performance dates.</p></article>`;
       return;
     }
 
-    eventsContainer.innerHTML = items.map((event) => `
-      <article class="event-card">
-        <div class="event-date">${formatDate(event.date)}</div>
-        <h3>${getEventHeadline(event)}</h3>
-        ${renderDescription(event.description)}
-        <p><strong>Time:</strong> ${event.time}</p>
-      </article>
-    `).join("");
+    eventsContainer.innerHTML = items.map((event) => {
+      const privateEvent = isPrivateEvent(event);
+      return `
+        <article class="event-card${privateEvent ? " event-card-private" : ""}">
+          <div class="event-card-topline">
+            <time class="event-date" datetime="${escapeHtml(event.date)}">${escapeHtml(formatDate(event.date))}</time>
+            ${privateEvent ? '<span class="private-event-label">Private Event</span>' : ""}
+          </div>
+          <h3>${escapeHtml(getEventHeadline(event))}</h3>
+          ${renderDescription(event.description)}
+          <p class="event-time"><strong>Time:</strong> <span>${escapeHtml(event.time)}</span></p>
+        </article>
+      `;
+    }).join("");
+
+    setupScheduleToggle();
   } catch (error) {
-    eventsContainer.innerHTML = `
-      <article class="event-card">
-        <h3>Schedule unavailable</h3>
-        <p>The event data could not be loaded. Verify that <code>data/events.json</code> is present and that the page is being served through a local or hosted web server rather than opened as a <code>file://</code> URL.</p>
-      </article>
-    `;
+    if (scheduleToggle) scheduleToggle.hidden = true;
+    eventsContainer.innerHTML = `<article class="event-card"><h3>Schedule unavailable</h3><p>The event data could not be loaded. Please check back shortly for upcoming dates.</p></article>`;
     console.error("Unable to render events schedule.", error);
   }
 };

@@ -3258,3 +3258,206 @@ body[data-page="cookies"] .gallery-card-seasonal {
     grid-template-columns: 1fr;
   }
 }
+
+/* A Change Of Plans compact schedule */
+.music-schedule-layout {
+  display: grid;
+  gap: 2rem;
+  align-items: start;
+}
+
+.music-schedule-intro,
+.music-schedule-results {
+  min-width: 0;
+}
+
+.event-count {
+  margin: 0 0 1rem;
+  color: var(--muted);
+}
+
+.event-count strong {
+  color: #e5c75a;
+  font-size: 1.35rem;
+}
+
+.schedule-next-show,
+.schedule-highlights,
+.music-schedule-booking {
+  margin-top: 1rem;
+  padding: 1.1rem;
+  border: 1px solid rgba(229, 199, 90, 0.32);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.045);
+}
+
+.schedule-next-show .mini-heading,
+.schedule-highlights .mini-heading {
+  margin: 0 0 0.75rem;
+}
+
+.schedule-next-show dl {
+  display: grid;
+  gap: 0.7rem;
+  margin: 0;
+}
+
+.schedule-next-show dl div {
+  display: grid;
+  grid-template-columns: 4rem minmax(0, 1fr);
+  gap: 0.6rem;
+}
+
+.schedule-next-show dt {
+  color: #e5c75a;
+  font-weight: 700;
+}
+
+.schedule-next-show dd {
+  margin: 0;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.schedule-highlights ul {
+  display: grid;
+  gap: 0.75rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.schedule-highlights li {
+  display: grid;
+  gap: 0.1rem;
+  padding-bottom: 0.7rem;
+  border-bottom: 1px solid rgba(229, 199, 90, 0.18);
+}
+
+.schedule-highlights li:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.schedule-highlights time {
+  color: #e5c75a;
+  font-size: 0.84rem;
+  font-weight: 700;
+}
+
+.schedule-highlights span {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.music-schedule-booking p {
+  margin-top: 0;
+  color: var(--muted);
+}
+
+.music-schedule-booking .button {
+  width: 100%;
+}
+
+.music-event-list {
+  gap: 0.9rem;
+}
+
+.music-event-list .event-card {
+  display: flex;
+  min-height: 0;
+  flex-direction: column;
+  gap: 0.7rem;
+  padding: 1.25rem;
+  border-color: rgba(229, 199, 90, 0.32);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.065), rgba(255, 255, 255, 0.025)), #111111;
+}
+
+.music-event-list .event-card[hidden] {
+  display: none;
+}
+
+.event-card-topline {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.55rem;
+}
+
+.music-event-list .event-card .event-date {
+  display: inline-flex;
+  width: fit-content;
+  padding: 0.45rem 0.8rem;
+  border: 1px solid #e5c75a;
+  border-radius: 999px;
+  background: #e5c75a;
+  color: #111111;
+  font-size: 0.86rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.private-event-label {
+  display: inline-flex;
+  padding: 0.35rem 0.65rem;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 999px;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.music-event-list .event-card h3 {
+  margin: 0;
+  color: #ffffff;
+  line-height: 1.25;
+}
+
+.music-event-list .event-description {
+  margin: 0;
+  color: var(--muted);
+}
+
+.music-event-list .event-time {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin: 0.2rem 0 0;
+  padding-top: 0.75rem;
+  border-top: 1px solid rgba(229, 199, 90, 0.2);
+  line-height: 1.35;
+}
+
+.music-event-list .event-time strong {
+  color: #e5c75a;
+  font-weight: 800;
+}
+
+.music-event-list .event-time span {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.schedule-toggle {
+  min-height: 44px;
+  margin: 1.25rem auto 0;
+}
+
+.schedule-toggle[hidden] {
+  display: none;
+}
+
+@media (min-width: 760px) {
+  .music-schedule-layout {
+    grid-template-columns: minmax(0, 0.6fr) minmax(0, 1fr);
+    gap: 2.5rem;
+  }
+}
+
+@media (max-width: 759px) {
+  .schedule-toggle {
+    width: 100%;
+  }
+}
