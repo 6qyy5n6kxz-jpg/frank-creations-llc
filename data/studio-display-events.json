@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-14T12:38:13Z",
+  "generatedAt": "2026-07-14T15:01:46Z",
   "source": {
     "pageUrl": "https://wineandcanvas.com/toledo/events/",
     "apiUrl": "https://wineandcanvas.com/toledo/wp-json/tribe/events/v1/events",
@@ -19,21 +19,6 @@
       "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-paint-and-sip-party-aurora-point-lighthouse/",
       "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/06/88BC5116-C600-489D-AAEA-E84B22613C5B.jpeg",
       "description": "Paint a glowing northern lights lighthouse scene at Wine & Canvas Toledo. BYOB, beginner-friendly, and perfect for date night.",
-      "venue": "Paint and Sip Studio Toledo | Wine & Canvas Studio"
-    },
-    {
-      "id": "toledo-cookies-and-canvas-shellys-island-adventure",
-      "title": "Toledo Cookies and Canvas \u2013 Shelly\u2019s Island Adventure",
-      "date": "2026-07-18",
-      "time": "12:00 PM - 1:00 PM",
-      "price": 20.0,
-      "availabilityText": "Check live site for seats",
-      "status": "now-booking",
-      "badge": "Now Booking",
-      "ctaLabel": "Scan to Book",
-      "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-cookies-and-canvas-shellys-island-adventure/",
-      "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/06/IMG_3786.jpeg",
-      "description": "Kids paint a cute sea turtle on an 8\u00d710 canvas, enjoy a cookie, and create a masterpiece at Wine & Canvas Toledo.",
       "venue": "Paint and Sip Studio Toledo | Wine & Canvas Studio"
     },
     {
@@ -94,6 +79,21 @@
       "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-paint-and-sip-express-shining-sunflowers-2/",
       "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/05/Shining-Sunflowers.jpg",
       "description": "Paint glowing sunflowers on a black canvas at Wine & Canvas Toledo. Express Paint & Sip, beginner-friendly, just $30.",
+      "venue": "Paint and Sip Studio Toledo | Wine & Canvas Studio"
+    },
+    {
+      "id": "toledo-paint-and-sip-party-calm",
+      "title": "Toledo Paint and Sip Party \u2013 Calm",
+      "date": "2026-07-26",
+      "time": "2:00 PM - 5:00 PM",
+      "price": 40.0,
+      "availabilityText": "Check live site for seats",
+      "status": "now-booking",
+      "badge": "Now Booking",
+      "ctaLabel": "Scan to Book",
+      "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-paint-and-sip-party-calm/",
+      "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/06/calm-scaled.jpg",
+      "description": "Paint a peaceful mountain landscape at Wine & Canvas Toledo. Beginner-friendly, BYOB, and instructor-led. Reserve your seat today!",
       "venue": "Paint and Sip Studio Toledo | Wine & Canvas Studio"
     }
   ]
