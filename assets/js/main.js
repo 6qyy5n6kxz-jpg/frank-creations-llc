@@ -2,7 +2,7 @@ const page = document.body.dataset.page || "";
 const siteRoot = document.body.dataset.siteRoot || ".";
 
 const navItems = [
-  { id: "experiences", label: "Experiences", href: "/#our-experiences", activePages: ["home", "wine", "cookies", "music"] },
+  { id: "services", label: "Services", href: "/#our-services", activePages: ["home", "wine", "cookies", "music"] },
   { id: "enhancements", label: "Event Enhancements", href: "/event-enhancements/", activePages: ["enhancements", "photo-booth"] },
   { id: "packages", label: "Packages", href: "/packages/" },
   { id: "contact", label: "Contact", href: "/contact/" }
@@ -147,7 +147,7 @@ if (footerTarget) {
           <div>
             <h3>Explore</h3>
             <p><a href="${resolveSitePath("/")}">Home</a></p>
-            <p><a href="${resolveSitePath("/#our-experiences")}">Experiences</a></p>
+            <p><a href="${resolveSitePath("/#our-services")}">Services</a></p>
             <p><a href="${resolveSitePath("/event-enhancements/")}">Event Enhancements</a></p>
             <p><a href="${resolveSitePath("/packages/")}">Packages</a></p>
             <p><a href="${resolveSitePath("/photo-booth/")}">Photo Booth Rentals</a></p>
