@@ -1,26 +1,11 @@
 {
-  "generatedAt": "2026-07-14T03:30:26Z",
+  "generatedAt": "2026-07-14T06:22:38Z",
   "source": {
     "pageUrl": "https://wineandcanvas.com/toledo/events/",
     "apiUrl": "https://wineandcanvas.com/toledo/wp-json/tribe/events/v1/events",
     "timezone": "America/New_York"
   },
   "upcomingEvents": [
-    {
-      "id": "dundee-paint-and-sip-party-bayside-breeze",
-      "title": "Dundee Paint and Sip Party \u2013 Bayside Breeze",
-      "date": "2026-07-13",
-      "time": "6:00 PM - 9:00 PM",
-      "price": 40.0,
-      "availabilityText": "Check live site for seats",
-      "status": "now-booking",
-      "badge": "Now Booking",
-      "ctaLabel": "Scan to Book",
-      "ctaUrl": "https://wineandcanvas.com/toledo/event/dundee-paint-and-sip-party-bayside-breeze/",
-      "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/06/Bayside-Breeze-CC1.jpg",
-      "description": "Paint a colorful beach sunset at Social House 103 in Dundee. Food, drinks, and beginner-friendly Paint & Sip fun.",
-      "venue": "Social House 103"
-    },
     {
       "id": "toledo-paint-and-sip-party-aurora-point-lighthouse",
       "title": "Toledo Paint and Sip Party \u2013 Aurora Point Lighthouse",
@@ -79,6 +64,21 @@
       "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-paint-and-sip-party-disco-cherries/",
       "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/05/disco_cherries_wordpress.jpg",
       "description": "Paint sparkling disco cherries at Wine & Canvas Toledo. BYOB, beginner-friendly, colorful, trendy, and fun.",
+      "venue": "Paint and Sip Studio Toledo | Wine & Canvas Studio"
+    },
+    {
+      "id": "sunset-toast-paint-sip-toledo",
+      "title": "Toledo Paint & Sip \u2013 Sunset Toast (Wood Pallet)",
+      "date": "2026-07-25",
+      "time": "6:00 PM - 9:00 PM",
+      "price": 50.0,
+      "availabilityText": "Check live site for seats",
+      "status": "now-booking",
+      "badge": "Now Booking",
+      "ctaLabel": "Scan to Book",
+      "ctaUrl": "https://wineandcanvas.com/toledo/event/sunset-toast-paint-sip-toledo/",
+      "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/04/Sunset-beach-scene-with-wine-glasses.png",
+      "description": "Paint a beautiful beach sunset on a rustic wood pallet at Wine & Canvas Studio. Beginner-friendly, BYOB, and all supplies included.",
       "venue": "Paint and Sip Studio Toledo | Wine & Canvas Studio"
     },
     {
