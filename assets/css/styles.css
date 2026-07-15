@@ -2758,7 +2758,6 @@ body[data-page="graduation"] {
 }
 
 .graduation-hero-grid,
-.graduation-proof-layout,
 .graduation-faq-layout {
   display: grid;
   gap: clamp(2rem, 5vw, 4.5rem);
@@ -2829,9 +2828,84 @@ body[data-page="graduation"] {
 .graduation-service-grid,
 .graduation-planning-grid,
 .graduation-benefits,
-.graduation-addons {
+.graduation-addons,
+.graduation-connected-benefits {
   display: grid;
   gap: 1rem;
+}
+
+.graduation-connected .section-heading {
+  margin-inline: auto;
+  text-align: center;
+}
+
+.graduation-service-map {
+  position: relative;
+  display: grid;
+  max-width: 52rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 0 auto 2rem;
+  padding: 1.5rem;
+  border: 1px solid rgba(229, 199, 107, 0.2);
+  border-radius: var(--radius);
+  background:
+    linear-gradient(90deg, transparent 49.9%, rgba(212, 175, 55, 0.22) 50%, transparent 50.1%),
+    linear-gradient(transparent 49.9%, rgba(212, 175, 55, 0.22) 50%, transparent 50.1%),
+    rgba(0, 0, 0, 0.28);
+}
+
+.graduation-map-center,
+.graduation-map-node {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  min-height: 5.5rem;
+  place-items: center;
+  padding: 0.8rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: #151515;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.82rem;
+  font-weight: 800;
+  text-align: center;
+}
+
+.graduation-map-center {
+  grid-column: 2;
+  grid-row: 2;
+  border-color: var(--brand-dark);
+  background: linear-gradient(135deg, #d4af37, #e5c76b);
+  color: #000000;
+  font-size: 1rem;
+}
+
+.map-photo { grid-column: 1; grid-row: 1; }
+.map-tent { grid-column: 2; grid-row: 1; }
+.map-music { grid-column: 3; grid-row: 1; }
+.map-speaker { grid-column: 1; grid-row: 3; }
+.map-lighting { grid-column: 2; grid-row: 3; }
+.map-paint { grid-column: 3; grid-row: 3; }
+
+.graduation-connected-benefits {
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+}
+
+.graduation-connected-benefits article {
+  padding: 1.25rem;
+  border-top: 2px solid var(--brand);
+  background: rgba(255, 255, 255, 0.035);
+}
+
+.graduation-connected-benefits h3,
+.graduation-connected-benefits p {
+  margin-top: 0;
+}
+
+.graduation-connected-benefits p {
+  margin-bottom: 0;
+  color: var(--muted);
 }
 
 .graduation-service-grid {
@@ -2849,7 +2923,72 @@ body[data-page="graduation"] {
 
 .graduation-service-card {
   display: flex;
+  overflow: hidden;
   flex-direction: column;
+  padding: 0;
+  transition: border-color 180ms ease, transform 180ms ease, box-shadow 180ms ease;
+}
+
+.graduation-service-card:hover {
+  border-color: rgba(229, 199, 107, 0.42);
+  transform: translateY(-3px);
+  box-shadow: 0 26px 70px rgba(0, 0, 0, 0.54);
+}
+
+.graduation-card-visual {
+  position: relative;
+  display: grid;
+  height: 12rem;
+  flex: 0 0 12rem;
+  place-items: center;
+  overflow: hidden;
+  border-bottom: 1px solid var(--line);
+  background:
+    radial-gradient(circle at 78% 18%, rgba(229, 199, 107, 0.22), transparent 34%),
+    linear-gradient(145deg, #181818, #090909);
+}
+
+.graduation-card-visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.graduation-card-brand img {
+  padding: 1.25rem;
+  object-fit: contain;
+}
+
+.graduation-card-placeholder {
+  align-content: center;
+  gap: 0.35rem;
+  color: var(--brand-dark);
+}
+
+.graduation-card-placeholder svg {
+  width: 7.5rem;
+  height: 4.4rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.8;
+}
+
+.graduation-card-placeholder span {
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.graduation-card-body {
+  display: flex;
+  min-height: 0;
+  flex: 1;
+  flex-direction: column;
+  padding: clamp(1.35rem, 3vw, 2rem);
 }
 
 .graduation-service-card h3,
@@ -2867,7 +3006,14 @@ body[data-page="graduation"] {
 }
 
 .graduation-service-card ul {
+  margin-top: 0.4rem;
   padding-left: 1.15rem;
+}
+
+.graduation-service-card li + li,
+.graduation-package-includes li + li,
+.graduation-package-summary li + li {
+  margin-top: 0.35rem;
 }
 
 .graduation-service-card .button {
@@ -2917,7 +3063,7 @@ body[data-page="graduation"] {
 
 .graduation-package-card {
   display: grid;
-  gap: 1.5rem;
+  gap: clamp(1.5rem, 4vw, 3rem);
   padding: clamp(1.5rem, 5vw, 3.5rem);
   border: 1px solid rgba(229, 199, 107, 0.48);
   border-radius: var(--radius);
@@ -2926,7 +3072,7 @@ body[data-page="graduation"] {
 }
 
 .graduation-package-card h2,
-.graduation-proof-layout h2,
+.graduation-proof-intro h2,
 .graduation-faq-layout h2 {
   margin: 0 0 1rem;
   color: #ffffff;
@@ -2936,6 +3082,7 @@ body[data-page="graduation"] {
 }
 
 .graduation-package-price {
+  margin-block: 1.4rem;
   color: #ffffff;
   font-size: clamp(3rem, 7vw, 5rem);
   font-weight: 900;
@@ -2946,6 +3093,58 @@ body[data-page="graduation"] {
   display: grid;
   align-content: center;
   border-block: 1px solid var(--line);
+}
+
+.graduation-package-main > p:not(.eyebrow, .graduation-package-price, .graduation-save-line),
+.graduation-package-summary li {
+  color: var(--muted);
+}
+
+.graduation-package-includes {
+  margin: 1.25rem 0;
+  padding: 0;
+  list-style: none;
+}
+
+.graduation-package-includes li {
+  position: relative;
+  padding-left: 1.55rem;
+  color: rgba(255, 255, 255, 0.84);
+}
+
+.graduation-package-includes li::before {
+  position: absolute;
+  left: 0;
+  color: var(--brand-dark);
+  content: "✓";
+  font-weight: 900;
+}
+
+.graduation-save-line {
+  color: var(--brand-dark);
+  font-weight: 900;
+}
+
+.graduation-package-summary {
+  align-self: stretch;
+  padding: clamp(1.25rem, 3vw, 2rem);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: rgba(0, 0, 0, 0.38);
+}
+
+.graduation-package-summary h3 {
+  margin: 0 0 0.7rem;
+  color: #ffffff;
+}
+
+.graduation-package-summary h3:not(:first-child) {
+  margin-top: 1.5rem;
+}
+
+.graduation-package-summary ul {
+  margin-bottom: 1.5rem;
+  padding-left: 1.1rem;
 }
 
 .graduation-savings p {
@@ -2962,14 +3161,13 @@ body[data-page="graduation"] {
 }
 
 .graduation-package-disclaimer {
-  grid-column: 1 / -1;
   margin: 0;
   color: var(--muted);
   font-size: 0.8rem;
 }
 
 .graduation-package-card .button-row {
-  grid-column: 1 / -1;
+  margin-top: 1.5rem;
 }
 
 .graduation-addons {
@@ -3000,27 +3198,100 @@ body[data-page="graduation"] {
   font-size: 0.82rem;
 }
 
-.graduation-proof-layout {
-  align-items: start;
+.graduation-proof-intro {
+  max-width: 48rem;
+  margin-bottom: 2rem;
 }
 
 .graduation-proof-gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 0.65rem;
+  gap: 1rem;
+}
+
+.graduation-proof-gallery button {
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: #111111;
+  cursor: zoom-in;
+}
+
+.graduation-proof-gallery button:focus-visible {
+  outline: 3px solid var(--brand-dark);
+  outline-offset: 3px;
 }
 
 .graduation-proof-gallery img {
   width: 100%;
   aspect-ratio: 3 / 4;
-  border-radius: var(--radius-sm);
   object-fit: cover;
+  object-position: center;
+  transition: transform 240ms ease;
 }
 
-.graduation-proof-gallery .graduation-proof-feature {
-  grid-column: 1 / -1;
-  aspect-ratio: 16 / 10;
-  object-position: center 42%;
+.graduation-proof-gallery button:hover img {
+  transform: scale(1.035);
+}
+
+.graduation-lightbox {
+  width: min(92vw, 62rem);
+  max-width: none;
+  max-height: 92vh;
+  padding: 0;
+  overflow: visible;
+  border: 1px solid rgba(229, 199, 107, 0.5);
+  border-radius: var(--radius);
+  background: #090909;
+  color: #ffffff;
+  box-shadow: 0 30px 100px rgba(0, 0, 0, 0.75);
+}
+
+.graduation-lightbox::backdrop {
+  background: rgba(0, 0, 0, 0.86);
+  backdrop-filter: blur(5px);
+}
+
+.graduation-lightbox figure {
+  display: grid;
+  max-height: 90vh;
+  margin: 0;
+  padding: 1rem;
+  place-items: center;
+}
+
+.graduation-lightbox img {
+  width: auto;
+  max-width: 100%;
+  max-height: calc(90vh - 5rem);
+  border-radius: var(--radius-sm);
+  object-fit: contain;
+}
+
+.graduation-lightbox figcaption {
+  padding-top: 0.65rem;
+  color: var(--muted);
+  font-size: 0.82rem;
+  text-align: center;
+}
+
+.graduation-lightbox-close {
+  position: absolute;
+  z-index: 2;
+  top: -1rem;
+  right: -1rem;
+  display: grid;
+  width: 2.75rem;
+  height: 2.75rem;
+  place-items: center;
+  border: 1px solid var(--brand-dark);
+  border-radius: 50%;
+  background: #111111;
+  color: #ffffff;
+  font-size: 1.65rem;
+  line-height: 1;
+  cursor: pointer;
 }
 
 .graduation-steps {
@@ -3139,7 +3410,6 @@ body[data-page="graduation"] {
     grid-template-columns: minmax(0, 1.1fr) minmax(340px, 0.72fr);
   }
 
-  .graduation-proof-layout,
   .graduation-faq-layout {
     grid-template-columns: minmax(250px, 0.72fr) minmax(0, 1.28fr);
   }
@@ -3153,12 +3423,42 @@ body[data-page="graduation"] {
   }
 }
 
+@media (max-width: 799px) {
+  .graduation-proof-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (max-width: 679px) {
   .graduation-hero-copy .button,
   .graduation-package-card .button,
   .graduation-final-actions,
   .graduation-final-actions .button {
     width: 100%;
+  }
+
+  .graduation-service-map {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    background: rgba(0, 0, 0, 0.28);
+  }
+
+  .graduation-map-center {
+    grid-column: 1 / -1;
+    grid-row: 1;
+  }
+
+  .map-photo,
+  .map-tent,
+  .map-music,
+  .map-speaker,
+  .map-lighting,
+  .map-paint {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .graduation-proof-gallery {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -3167,8 +3467,15 @@ body[data-page="graduation"] {
     scroll-behavior: auto;
   }
 
-  .graduation-addons a {
+  .graduation-addons a,
+  .graduation-service-card,
+  .graduation-proof-gallery img {
     transition: none;
+  }
+
+  .graduation-service-card:hover,
+  .graduation-proof-gallery button:hover img {
+    transform: none;
   }
 }
 
