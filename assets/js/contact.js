@@ -7,6 +7,12 @@ if (contactForm && contactFeedback) {
   const conditionalSections = [...contactForm.querySelectorAll("[data-conditional]")];
   const query = new URLSearchParams(window.location.search);
 
+  const eventTypeField = contactForm.querySelector('input[name="eventType"]');
+  if (eventTypeField && query.has("eventType")) eventTypeField.value = query.get("eventType");
+
+  const sourcePageField = contactForm.querySelector("[data-source-page]");
+  if (sourcePageField && query.has("source")) sourcePageField.value = query.get("source");
+
   const updateConditionalFields = () => {
     const selected = serviceInputs.filter((input) => input.checked).map((input) => input.value);
     conditionalSections.forEach((section) => {

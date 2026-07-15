@@ -64,6 +64,12 @@ const applyLaunchMeta = () => {
   const siteName = "Frank Creations LLC";
   const description = document.querySelector('meta[name="description"]')?.getAttribute("content") || "";
   const title = document.title;
+  const declaredOgTitle = document.querySelector('meta[property="og:title"]')?.getAttribute("content");
+  const declaredOgDescription = document.querySelector('meta[property="og:description"]')?.getAttribute("content");
+  const declaredOgImage = document.querySelector('meta[property="og:image"]')?.getAttribute("content");
+  const declaredTwitterTitle = document.querySelector('meta[name="twitter:title"]')?.getAttribute("content");
+  const declaredTwitterDescription = document.querySelector('meta[name="twitter:description"]')?.getAttribute("content");
+  const declaredTwitterImage = document.querySelector('meta[name="twitter:image"]')?.getAttribute("content");
   const canonical = new URL(window.location.href.split("#")[0]);
   if (canonical.pathname.endsWith("/index.html")) {
     canonical.pathname = canonical.pathname.replace(/index\.html$/, "");
@@ -71,7 +77,7 @@ const applyLaunchMeta = () => {
   canonical.hash = "";
   canonical.search = "";
   const canonicalUrl = canonical.toString();
-  const socialImageUrl = new URL(resolveSitePath(brandAssets.fullLogo), window.location.href).href;
+  const socialImageUrl = declaredOgImage || new URL(resolveSitePath(brandAssets.fullLogo), window.location.href).href;
 
   document.head.querySelectorAll('link[rel="icon"]').forEach((node) => node.remove());
 
@@ -86,11 +92,11 @@ const applyLaunchMeta = () => {
   ensureMetaTag('meta[property="og:site_name"]', { property: "og:site_name", content: siteName });
   ensureMetaTag('meta[property="og:url"]', { property: "og:url", content: canonicalUrl });
   ensureMetaTag('meta[property="og:image"]', { property: "og:image", content: socialImageUrl });
-  ensureMetaTag('meta[property="og:title"]', { property: "og:title", content: title });
-  ensureMetaTag('meta[property="og:description"]', { property: "og:description", content: description });
-  ensureMetaTag('meta[name="twitter:title"]', { name: "twitter:title", content: title });
-  ensureMetaTag('meta[name="twitter:description"]', { name: "twitter:description", content: description });
-  ensureMetaTag('meta[name="twitter:image"]', { name: "twitter:image", content: socialImageUrl });
+  ensureMetaTag('meta[property="og:title"]', { property: "og:title", content: declaredOgTitle || title });
+  ensureMetaTag('meta[property="og:description"]', { property: "og:description", content: declaredOgDescription || description });
+  ensureMetaTag('meta[name="twitter:title"]', { name: "twitter:title", content: declaredTwitterTitle || declaredOgTitle || title });
+  ensureMetaTag('meta[name="twitter:description"]', { name: "twitter:description", content: declaredTwitterDescription || declaredOgDescription || description });
+  ensureMetaTag('meta[name="twitter:image"]', { name: "twitter:image", content: declaredTwitterImage || socialImageUrl });
 };
 
 const headerTarget = document.querySelector("[data-site-header]");
@@ -150,6 +156,7 @@ if (footerTarget) {
             <p><a href="${resolveSitePath("/#our-services")}">Services</a></p>
             <p><a href="${resolveSitePath("/event-enhancements/")}">Event Enhancements</a></p>
             <p><a href="${resolveSitePath("/packages/")}">Packages</a></p>
+            <p><a href="${resolveSitePath("/graduation-parties/")}">Graduation Parties</a></p>
             <p><a href="${resolveSitePath("/photo-booth/")}">Photo Booth Rentals</a></p>
             <p><a href="${resolveSitePath("/wine-and-canvas-toledo/")}">Wine & Canvas Toledo</a></p>
             <p><a href="${resolveSitePath("/cookies-and-canvas/")}">Cookies & Canvas</a></p>

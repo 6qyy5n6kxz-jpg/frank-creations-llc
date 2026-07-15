@@ -2746,6 +2746,432 @@ body[data-page="cookies"] .gallery-card-seasonal {
   }
 }
 
+/* Graduation party landing page — reusable event-type page pattern */
+body[data-page="graduation"] {
+  background:
+    radial-gradient(circle at 82% 8%, rgba(212, 175, 55, 0.13), transparent 25rem),
+    linear-gradient(180deg, #050505 0%, #151515 48%, #050505 100%);
+}
+
+.graduation-hero {
+  padding: clamp(2.5rem, 7vw, 6rem) 0;
+}
+
+.graduation-hero-grid,
+.graduation-proof-layout,
+.graduation-faq-layout {
+  display: grid;
+  gap: clamp(2rem, 5vw, 4.5rem);
+  align-items: center;
+}
+
+.graduation-hero-copy h1 {
+  max-width: 12ch;
+  margin: 0 0 1.25rem;
+  color: #ffffff;
+  font-family: "Lato", "Manrope", sans-serif;
+  font-size: clamp(3rem, 7vw, 5.8rem);
+  font-weight: 900;
+  line-height: 0.98;
+}
+
+.graduation-hero-copy .hero-text {
+  max-width: 42rem;
+  font-size: clamp(1rem, 2vw, 1.18rem);
+}
+
+.graduation-hero-media {
+  position: relative;
+  margin: 0;
+}
+
+.graduation-hero-media::before {
+  position: absolute;
+  z-index: -1;
+  inset: -1rem 1rem 1rem -1rem;
+  border: 1px solid rgba(229, 199, 107, 0.52);
+  content: "";
+}
+
+.graduation-hero-media img {
+  width: 100%;
+  max-height: 44rem;
+  border-radius: var(--radius);
+  object-fit: cover;
+  box-shadow: var(--shadow);
+}
+
+.graduation-hero-media figcaption {
+  margin-top: 0.8rem;
+  color: var(--muted);
+  font-size: 0.78rem;
+}
+
+.graduation-trust {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem 1.25rem;
+  margin-top: 1.5rem;
+}
+
+.graduation-trust span {
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 0.82rem;
+  font-weight: 800;
+}
+
+.graduation-trust span::before {
+  margin-right: 0.45rem;
+  color: var(--brand-dark);
+  content: "✓";
+}
+
+.graduation-service-grid,
+.graduation-planning-grid,
+.graduation-benefits,
+.graduation-addons {
+  display: grid;
+  gap: 1rem;
+}
+
+.graduation-service-grid {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+}
+
+.graduation-service-card,
+.graduation-planning-grid article,
+.graduation-benefits article {
+  padding: clamp(1.35rem, 3vw, 2rem);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.075), rgba(255, 255, 255, 0.025));
+}
+
+.graduation-service-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.graduation-service-card h3,
+.graduation-planning-grid h3,
+.graduation-benefits h3 {
+  margin: 0 0 0.65rem;
+  color: #ffffff;
+}
+
+.graduation-service-card p,
+.graduation-service-card li,
+.graduation-planning-grid li,
+.graduation-benefits p {
+  color: var(--muted);
+}
+
+.graduation-service-card ul {
+  padding-left: 1.15rem;
+}
+
+.graduation-service-card .button {
+  align-self: flex-start;
+  margin-top: auto;
+}
+
+.graduation-price {
+  margin-top: auto;
+  color: #ffffff !important;
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.graduation-price span,
+.graduation-package-price span {
+  display: block;
+  color: var(--brand-dark);
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.graduation-note {
+  padding: 0.8rem 0.9rem;
+  border-left: 3px solid var(--brand);
+  background: rgba(212, 175, 55, 0.08);
+  color: rgba(255, 255, 255, 0.72) !important;
+  font-size: 0.82rem;
+}
+
+.graduation-rate-list {
+  display: grid;
+  gap: 0.4rem;
+  margin: auto 0 1rem;
+  color: rgba(255, 255, 255, 0.76);
+}
+
+.graduation-rate-list strong {
+  color: #ffffff;
+}
+
+.graduation-package {
+  border-block: 1px solid rgba(229, 199, 107, 0.28);
+  background: radial-gradient(circle at 85% 20%, rgba(212, 175, 55, 0.16), transparent 35%), #090909;
+}
+
+.graduation-package-card {
+  display: grid;
+  gap: 1.5rem;
+  padding: clamp(1.5rem, 5vw, 3.5rem);
+  border: 1px solid rgba(229, 199, 107, 0.48);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.04);
+  box-shadow: var(--shadow);
+}
+
+.graduation-package-card h2,
+.graduation-proof-layout h2,
+.graduation-faq-layout h2 {
+  margin: 0 0 1rem;
+  color: #ffffff;
+  font-family: "Playfair Display", serif;
+  font-size: clamp(2rem, 5vw, 3.4rem);
+  line-height: 1.05;
+}
+
+.graduation-package-price {
+  color: #ffffff;
+  font-size: clamp(3rem, 7vw, 5rem);
+  font-weight: 900;
+  line-height: 1;
+}
+
+.graduation-savings {
+  display: grid;
+  align-content: center;
+  border-block: 1px solid var(--line);
+}
+
+.graduation-savings p {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 0;
+  padding: 0.8rem 0;
+  color: var(--muted);
+}
+
+.graduation-savings strong {
+  color: #ffffff;
+}
+
+.graduation-package-disclaimer {
+  grid-column: 1 / -1;
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.graduation-package-card .button-row {
+  grid-column: 1 / -1;
+}
+
+.graduation-addons {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.graduation-addons a {
+  display: flex;
+  min-height: 8rem;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.2rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: #111111;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.graduation-addons a:hover,
+.graduation-addons a:focus-visible {
+  border-color: var(--brand-dark);
+  transform: translateY(-2px);
+}
+
+.graduation-addons strong {
+  color: var(--brand-dark);
+  font-size: 0.82rem;
+}
+
+.graduation-proof-layout {
+  align-items: start;
+}
+
+.graduation-proof-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.65rem;
+}
+
+.graduation-proof-gallery img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  border-radius: var(--radius-sm);
+  object-fit: cover;
+}
+
+.graduation-proof-gallery .graduation-proof-feature {
+  grid-column: 1 / -1;
+  aspect-ratio: 16 / 10;
+  object-position: center 42%;
+}
+
+.graduation-steps {
+  display: grid;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.graduation-steps li {
+  display: flex;
+  gap: 1rem;
+  padding: 1.25rem;
+  border-top: 1px solid var(--line);
+}
+
+.graduation-steps li > span {
+  display: grid;
+  width: 2.5rem;
+  height: 2.5rem;
+  flex: 0 0 2.5rem;
+  place-items: center;
+  border: 1px solid var(--brand-dark);
+  border-radius: 50%;
+  color: var(--brand-dark);
+  font-weight: 900;
+}
+
+.graduation-steps h3,
+.graduation-steps p {
+  margin-top: 0;
+}
+
+.graduation-steps p {
+  color: var(--muted);
+}
+
+.graduation-booking-note {
+  margin-top: 1.5rem;
+}
+
+.graduation-planning-grid,
+.graduation-benefits {
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+}
+
+.graduation-planning-grid ul {
+  margin-bottom: 0;
+  padding-left: 1.15rem;
+}
+
+.graduation-faq-layout {
+  align-items: start;
+}
+
+.graduation-faq-item {
+  border-top: 1px solid var(--line);
+}
+
+.graduation-faq-item:last-child {
+  border-bottom: 1px solid var(--line);
+}
+
+.graduation-faq-item h3 {
+  margin: 0;
+}
+
+.graduation-faq-item button {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 0;
+  border: 0;
+  background: transparent;
+  color: #ffffff;
+  font: inherit;
+  font-weight: 800;
+  text-align: left;
+  cursor: pointer;
+}
+
+.graduation-faq-item button span {
+  color: var(--brand-dark);
+  font-size: 1.3rem;
+}
+
+.graduation-faq-item button:focus-visible {
+  outline: 2px solid var(--brand-dark);
+  outline-offset: 4px;
+}
+
+.graduation-faq-item > div {
+  padding: 0 2rem 1rem 0;
+}
+
+.graduation-faq-item p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.graduation-final-cta .cta-banner {
+  border-color: rgba(229, 199, 107, 0.5);
+}
+
+.graduation-final-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  align-items: flex-start;
+}
+
+@media (min-width: 800px) {
+  .graduation-hero-grid {
+    grid-template-columns: minmax(0, 1.1fr) minmax(340px, 0.72fr);
+  }
+
+  .graduation-proof-layout,
+  .graduation-faq-layout {
+    grid-template-columns: minmax(250px, 0.72fr) minmax(0, 1.28fr);
+  }
+
+  .graduation-package-card {
+    grid-template-columns: minmax(0, 1.2fr) minmax(250px, 0.8fr);
+  }
+
+  .graduation-steps {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 679px) {
+  .graduation-hero-copy .button,
+  .graduation-package-card .button,
+  .graduation-final-actions,
+  .graduation-final-actions .button {
+    width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .graduation-addons a {
+    transition: none;
+  }
+}
+
 /* Transparent pricing, package builder, and detailed inquiries */
 .section-jump-nav {
   display: flex;
