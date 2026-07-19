@@ -1,26 +1,11 @@
 {
-  "generatedAt": "2026-07-19T15:12:59Z",
+  "generatedAt": "2026-07-19T16:08:41Z",
   "source": {
     "pageUrl": "https://wineandcanvas.com/toledo/events/",
     "apiUrl": "https://wineandcanvas.com/toledo/wp-json/tribe/events/v1/events",
     "timezone": "America/New_York"
   },
   "upcomingEvents": [
-    {
-      "id": "toledo-paint-and-sip-party-sunflower-day",
-      "title": "Toledo Paint and Sip Party \u2013 Sunflower Day",
-      "date": "2026-07-19",
-      "time": "2:00 PM - 5:00 PM",
-      "price": 40.0,
-      "availabilityText": "Check live site for seats",
-      "status": "now-booking",
-      "badge": "Now Booking",
-      "ctaLabel": "Scan to Book",
-      "ctaUrl": "https://wineandcanvas.com/toledo/event/toledo-paint-and-sip-party-sunflower-day/",
-      "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/06/Sunflower-Day_CB.jpg",
-      "description": "Paint a vibrant sunflower on a 16\u00d720 canvas at Wine & Canvas Toledo. BYOB and beginner-friendly summer paint party.",
-      "venue": "Paint and Sip Studio Toledo | Wine & Canvas Studio"
-    },
     {
       "id": "toledo-paint-and-sip-party-disco-cherries",
       "title": "Toledo Paint and Sip Party \u2013 Disco Cherries",
@@ -94,6 +79,21 @@
       "ctaUrl": "https://wineandcanvas.com/toledo/event/sunset-flamingo-paint-sip-toledo-july-31-2026/",
       "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/07/sunset-flamingo-clean-wordpress.jpg",
       "description": "Paint a vibrant Sunset Flamingo on black canvas at this beginner-friendly BYOB Express Paint & Sip in Toledo. Only $30!",
+      "venue": "Paint and Sip Studio Toledo | Wine & Canvas Studio"
+    },
+    {
+      "id": "honey-bee-paint-sip-toledo-august-1-2026",
+      "title": "Toledo Paint and Sip Party \u2013 Honey Bee",
+      "date": "2026-08-01",
+      "time": "12:00 PM - 2:00 PM",
+      "price": 30.0,
+      "availabilityText": "Check live site for seats",
+      "status": "now-booking",
+      "badge": "Now Booking",
+      "ctaLabel": "Scan to Book",
+      "ctaUrl": "https://wineandcanvas.com/toledo/event/honey-bee-paint-sip-toledo-august-1-2026/",
+      "image": "https://wineandcanvas.com/toledo/wp-content/uploads/sites/68/2026/07/Honey-Bee.jpg",
+      "description": "Paint a bold Honey Bee on an 11\u00d714 canvas at Wine & Canvas Toledo. Beginner-friendly express Paint & Sip on August 1. Reserve today!",
       "venue": "Paint and Sip Studio Toledo | Wine & Canvas Studio"
     }
   ]
