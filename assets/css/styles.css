@@ -4513,7 +4513,8 @@ body[data-page="graduation"] .section {
 }
 
 .home-benefit-card h3,
-.home-package-card h3 {
+.home-package-card h3,
+.home-testimonial-card h3 {
   margin: 0 0 0.65rem;
   color: #ffffff;
   font-size: 1.15rem;
@@ -4728,23 +4729,14 @@ body[data-page="graduation"] .section {
   flex-direction: column;
 }
 
-.home-stars {
-  color: var(--brand-dark);
-  font-size: 1.15rem;
-  word-spacing: 0.2rem;
+.home-testimonial-card > p {
+  margin: 0 0 1rem;
+  font-size: 0.9rem;
+  font-weight: 500;
 }
 
-.home-testimonial-card blockquote {
-  margin: 1.25rem 0;
-  color: rgba(255, 255, 255, 0.9);
-  font-size: 1.05rem;
-  line-height: 1.65;
-}
-
-.home-testimonial-card p {
+.home-testimonial-card .text-link {
   margin-top: auto;
-  font-size: 0.82rem;
-  font-weight: 700;
 }
 
 .home-final-cta .cta-banner {

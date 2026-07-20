@@ -70,7 +70,8 @@ const applyLaunchMeta = () => {
   const declaredTwitterTitle = document.querySelector('meta[name="twitter:title"]')?.getAttribute("content");
   const declaredTwitterDescription = document.querySelector('meta[name="twitter:description"]')?.getAttribute("content");
   const declaredTwitterImage = document.querySelector('meta[name="twitter:image"]')?.getAttribute("content");
-  const canonical = new URL(window.location.href.split("#")[0]);
+  const declaredCanonical = document.querySelector('link[rel="canonical"]')?.getAttribute("href");
+  const canonical = new URL(declaredCanonical || window.location.href.split("#")[0], window.location.href);
   if (canonical.pathname.endsWith("/index.html")) {
     canonical.pathname = canonical.pathname.replace(/index\.html$/, "");
   }

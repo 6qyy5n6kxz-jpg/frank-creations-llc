@@ -22,18 +22,17 @@
 
 ## Content and business details
 
-- Replace A Change Of Plans payment handles in [a-change-of-plans.html](/Volumes/Backup Plus/frank-creations-llc/a-change-of-plans.html).
-- Replace placeholder YouTube embeds in [a-change-of-plans.html](/Volumes/Backup Plus/frank-creations-llc/a-change-of-plans.html).
+- Confirm the displayed payment handles in [a-change-of-plans/index.html](/Volumes/Backup Plus/frank-creations-llc/a-change-of-plans/index.html).
 - Review event data in [data/events.json](/Volumes/Backup Plus/frank-creations-llc/data/events.json).
 - Review song data in [data/songs.json](/Volumes/Backup Plus/frank-creations-llc/data/songs.json).
 - Review shop inventory in [data/shop.json](/Volumes/Backup Plus/frank-creations-llc/data/shop.json).
 - Confirm service area, booking language, and any contact details on the page copy.
 - Replace [images/social-preview.svg](/Volumes/Backup Plus/frank-creations-llc/images/social-preview.svg) if you want a branded social-sharing image.
 
-## Contact form wiring
+## Form delivery
 
-- Connect the form in [contact.html](/Volumes/Backup Plus/frank-creations-llc/contact.html) to Formspree, Basin, Netlify Forms, a serverless function, or another live submission endpoint.
-- Verify the success flow and message delivery using a real test submission.
+- Verify the configured Formspree workflows for the event inquiry, song request, and local-pickup reservation forms.
+- Verify each success flow and message delivery using a real test submission.
 - Confirm the destination inbox, spam filtering, and reply workflow.
 
 ## Final review
@@ -45,7 +44,7 @@
   - music events
   - song search
   - shop filter
-- Test the contact form preview state or live submission flow.
+- Test the live contact, song-request, and local-pickup submission flows.
 - Test [404.html](/Volumes/Backup Plus/frank-creations-llc/404.html) directly after publishing.
 - Review titles, descriptions, favicon, canonical URL, and social preview metadata on the live domain.
 - Review spacing, image rendering, and typography on a phone and a desktop browser.

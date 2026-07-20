@@ -7,11 +7,15 @@ Production-ready umbrella website for Frank Creations LLC, built with semantic H
 ```text
 /
 ├── index.html
-├── a-change-of-plans.html
-├── wine-and-canvas-toledo.html
-├── cookies-and-canvas.html
-├── shop.html
-├── contact.html
+├── a-change-of-plans/index.html
+├── wine-and-canvas-toledo/index.html
+├── cookies-and-canvas/index.html
+├── photo-booth/index.html
+├── event-enhancements/index.html
+├── graduation-parties/index.html
+├── packages/index.html
+├── shop/index.html
+├── contact/index.html
 ├── 404.html
 ├── README.md
 ├── assets/
@@ -57,8 +61,8 @@ Then open `http://localhost:8000/`.
 7. Save the settings and wait for the Pages deployment to finish.
 8. Open the published GitHub Pages URL and test every primary page before pointing a custom domain at it.
 9. Confirm that JSON-driven sections load at the published URLs:
-   - `a-change-of-plans.html`
-   - `shop.html`
+   - `/a-change-of-plans/`
+   - `/shop/`
 10. Confirm the 404 page, mobile navigation, footer links, and contact flow still behave as expected after publishing.
 
 ## Connect a custom domain
@@ -131,8 +135,8 @@ Fields:
 
 ## Forms and static hosting
 
-- The song request and contact form currently provide frontend-only confirmation text.
-- Before public launch, connect the contact flow to Formspree, Basin, a serverless function, or another preferred form backend.
+- The song request, event inquiry, and local-pickup reservation forms submit to configured Formspree endpoints.
+- Verify each endpoint, destination inbox, spam handling, and success flow after deployment.
 - The JSON-driven sections work on GitHub Pages because they are loaded with relative `fetch()` calls from `/data/`.
 
 ## Portfolio as a future phase
@@ -143,8 +147,7 @@ Fields:
 
 ## Manual updates before launch
 
-- Replace placeholder payment handles on [`a-change-of-plans.html`](/Volumes/Backup Plus/frank-creations-llc/a-change-of-plans.html).
-- Replace placeholder YouTube embeds on [`a-change-of-plans.html`](/Volumes/Backup Plus/frank-creations-llc/a-change-of-plans.html).
-- Connect the contact form in [`contact.html`](/Volumes/Backup Plus/frank-creations-llc/contact.html) to a real backend workflow.
+- Verify the published Formspree workflows on [`contact/index.html`](/Volumes/Backup Plus/frank-creations-llc/contact/index.html), [`shop/index.html`](/Volumes/Backup Plus/frank-creations-llc/shop/index.html), and [`a-change-of-plans/index.html`](/Volumes/Backup Plus/frank-creations-llc/a-change-of-plans/index.html).
+- Confirm the displayed Venmo and Cash App destinations on [`a-change-of-plans/index.html`](/Volumes/Backup Plus/frank-creations-llc/a-change-of-plans/index.html).
 - Replace the temporary social preview asset in [`images/social-preview.svg`](/Volumes/Backup Plus/frank-creations-llc/images/social-preview.svg) with a branded sharing image if you want richer link previews.
 - Replace the future-phase content in [`portfolio/index.html`](/Volumes/Backup Plus/frank-creations-llc/portfolio/index.html) when portfolio migration begins.
