@@ -34,7 +34,8 @@ if (contactForm && contactFeedback) {
     if (/backyard party package/i.test(service)) aliases.push("High Peak Tent", "Speaker", "Wireless Microphone");
     if (/wedding enhancement package/i.test(service)) aliases.push("Photo Booth", "Uplighting", "Speaker", "Wireless Microphone");
     if (/complete outdoor celebration package/i.test(service)) aliases.push("High Peak Tent", "Photo Booth", "Uplighting", "Speaker", "Wireless Microphone");
-    if (/live event package/i.test(service)) aliases.push("A Change Of Plans Duo", "Photo Booth");
+    if (/a change of plans/i.test(service)) aliases.push("A Change Of Plans Live Music");
+    if (/live event package/i.test(service)) aliases.push("A Change Of Plans Live Music", "Photo Booth");
     aliases.forEach((alias) => {
       const input = serviceInputs.find((item) => item.value === alias);
       if (input) input.checked = true;

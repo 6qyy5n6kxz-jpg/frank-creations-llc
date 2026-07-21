@@ -2,6 +2,8 @@
 
 Audit date: July 20, 2026
 
+Status update, July 21, 2026: A Change Of Plans launched at `https://achangeofplansmusic.com/`. The Frank Creations page is now a concise umbrella-service overview; the detailed schedule, song catalog, request form, pricing, and direct music-booking experience moved to the standalone site. Historical findings below describe the site as it existed on the original audit date.
+
 ## Scope and approach
 
 This audit covers every public or directly reachable HTML page in the repository, along with shared CSS and JavaScript, `sitemap.xml`, forms, structured data, images, and launch documentation. Safe corrections were implemented only where the repository or an official business source established the correct value. The site's visual structure and overall design were preserved.

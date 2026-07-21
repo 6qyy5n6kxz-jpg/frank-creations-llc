@@ -23,14 +23,11 @@ Production-ready umbrella website for Frank Creations LLC, built with semantic H
 │   │   └── styles.css
 │   └── js/
 │       ├── main.js
-│       ├── songs.js
-│       ├── events.js
 │       ├── shop.js
 │       └── contact.js
 ├── data/
-│   ├── songs.json
-│   ├── events.json
-│   └── shop.json
+│   ├── shop.json
+│   └── studio-display-events.json
 ├── images/
 │   └── brand-mark.svg
 └── portfolio/
@@ -60,9 +57,7 @@ Then open `http://localhost:8000/`.
 6. Select the publishing branch and the `/ (root)` folder.
 7. Save the settings and wait for the Pages deployment to finish.
 8. Open the published GitHub Pages URL and test every primary page before pointing a custom domain at it.
-9. Confirm that JSON-driven sections load at the published URLs:
-   - `/a-change-of-plans/`
-   - `/shop/`
+9. Confirm that the JSON-driven shop loads at `/shop/`.
 10. Confirm the 404 page, mobile navigation, footer links, and contact flow still behave as expected after publishing.
 
 ## Connect a custom domain
@@ -76,34 +71,6 @@ Then open `http://localhost:8000/`.
 7. Re-test the live site on the final domain and verify page metadata, icons, and navigation behavior.
 
 ## Content updates
-
-### Update events
-
-Edit [`data/events.json`](/Volumes/Backup Plus/frank-creations-llc/data/events.json).
-
-Fields:
-
-- `category`
-- `date`
-- `time`
-- `title`
-- `venue`
-- `location`
-- `description`
-
-The A Change Of Plans page filters on `category: "music"`.
-
-### Update songs
-
-Edit [`data/songs.json`](/Volumes/Backup Plus/frank-creations-llc/data/songs.json).
-
-Fields:
-
-- `title`
-- `artist`
-- `decade`
-- `vibe`
-- `tags`
 
 ### Update shop inventory
 
@@ -127,7 +94,7 @@ Fields:
 ## Current launch scope
 
 - Home page for the umbrella brand
-- A Change Of Plans schedule and searchable song list
+- Concise A Change Of Plans service overview linking to `https://achangeofplansmusic.com/`
 - Wine & Canvas Toledo service page with native featured-work content
 - Cookies & Canvas overview page
 - Static shop catalog for local pickup
@@ -135,9 +102,9 @@ Fields:
 
 ## Forms and static hosting
 
-- The song request, event inquiry, and local-pickup reservation forms submit to configured Formspree endpoints.
+- The event inquiry and local-pickup reservation forms submit to configured Formspree endpoints.
 - Verify each endpoint, destination inbox, spam handling, and success flow after deployment.
-- The JSON-driven sections work on GitHub Pages because they are loaded with relative `fetch()` calls from `/data/`.
+- The JSON-driven shop works on GitHub Pages because it loads inventory with a relative `fetch()` call from `/data/`.
 
 ## Portfolio as a future phase
 
@@ -147,7 +114,7 @@ Fields:
 
 ## Manual updates before launch
 
-- Verify the published Formspree workflows on [`contact/index.html`](/Volumes/Backup Plus/frank-creations-llc/contact/index.html), [`shop/index.html`](/Volumes/Backup Plus/frank-creations-llc/shop/index.html), and [`a-change-of-plans/index.html`](/Volumes/Backup Plus/frank-creations-llc/a-change-of-plans/index.html).
-- Confirm the displayed Venmo and Cash App destinations on [`a-change-of-plans/index.html`](/Volumes/Backup Plus/frank-creations-llc/a-change-of-plans/index.html).
+- Verify the published Formspree workflows on [`contact/index.html`](/Volumes/Backup Plus/frank-creations-llc/contact/index.html) and [`shop/index.html`](/Volumes/Backup Plus/frank-creations-llc/shop/index.html).
+- Confirm that the A Change Of Plans overview and related service links lead to `https://achangeofplansmusic.com/` where intended.
 - Replace the temporary social preview asset in [`images/social-preview.svg`](/Volumes/Backup Plus/frank-creations-llc/images/social-preview.svg) with a branded sharing image if you want richer link previews.
 - Replace the future-phase content in [`portfolio/index.html`](/Volumes/Backup Plus/frank-creations-llc/portfolio/index.html) when portfolio migration begins.

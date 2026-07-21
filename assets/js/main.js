@@ -138,18 +138,6 @@ if (footerTarget) {
             <h3>Frank Creations LLC</h3>
             <p>Events &bull; Entertainment &bull; Experiences</p>
             <p>Serving Northwest Ohio and Southeast Michigan</p>
-            <div class="footer-social-links" aria-label="Social media links">
-              <a class="footer-social-link" href="https://www.facebook.com/AChangeOfPlans419" target="_blank" rel="noreferrer" aria-label="A Change Of Plans on Facebook">
-                <svg viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M13.35 20v-6.38h2.14l.32-2.49h-2.46V9.54c0-.72.2-1.21 1.23-1.21h1.31V6.1c-.23-.03-1-.1-1.89-.1-1.87 0-3.16 1.14-3.16 3.24v1.89H9v2.49h2.03V20h2.32Z"/>
-                </svg>
-              </a>
-              <a class="footer-social-link" href="https://www.instagram.com/AChangeofPlansduo" target="_blank" rel="noreferrer" aria-label="A Change Of Plans on Instagram">
-                <svg viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M7.5 3h9A4.5 4.5 0 0 1 21 7.5v9a4.5 4.5 0 0 1-4.5 4.5h-9A4.5 4.5 0 0 1 3 16.5v-9A4.5 4.5 0 0 1 7.5 3Zm0 1.5A3 3 0 0 0 4.5 7.5v9a3 3 0 0 0 3 3h9a3 3 0 0 0 3-3v-9a3 3 0 0 0-3-3h-9Zm9.38 1.88a1.12 1.12 0 1 1 0 2.24 1.12 1.12 0 0 1 0-2.24ZM12 7.5A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 0 1 12 7.5Zm0 1.5A3 3 0 1 0 15 12a3 3 0 0 0-3-3Z"/>
-                </svg>
-              </a>
-            </div>
           </div>
           <div>
             <h3>Explore</h3>
@@ -161,7 +149,7 @@ if (footerTarget) {
             <p><a href="${resolveSitePath("/photo-booth/")}">Photo Booth Rentals</a></p>
             <p><a href="${resolveSitePath("/wine-and-canvas-toledo/")}">Wine & Canvas Toledo</a></p>
             <p><a href="${resolveSitePath("/cookies-and-canvas/")}">Cookies & Canvas</a></p>
-            <p><a href="${resolveSitePath("/a-change-of-plans/")}">A Change Of Plans</a></p>
+            <p><a href="https://achangeofplansmusic.com/">A Change Of Plans Music</a></p>
             <p><a href="${resolveSitePath("/contact/")}">Contact</a></p>
           </div>
           <div>
