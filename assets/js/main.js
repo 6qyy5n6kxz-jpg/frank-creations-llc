@@ -1,8 +1,10 @@
+import { initializeConversionTracking } from "./analytics.js";
+
 const page = document.body.dataset.page || "";
 const siteRoot = document.body.dataset.siteRoot || ".";
 
 const navItems = [
-  { id: "services", label: "Services", href: "/#our-services", activePages: ["home", "wine", "cookies", "music"] },
+  { id: "services", label: "Services", href: "/services/", activePages: ["wine", "cookies", "music"] },
   { id: "enhancements", label: "Event Enhancements", href: "/event-enhancements/", activePages: ["enhancements", "photo-booth"] },
   { id: "packages", label: "Packages", href: "/packages/" },
   { id: "contact", label: "Contact", href: "/contact/" }
@@ -142,7 +144,7 @@ if (footerTarget) {
           <div>
             <h3>Explore</h3>
             <p><a href="${resolveSitePath("/")}">Home</a></p>
-            <p><a href="${resolveSitePath("/#our-services")}">Services</a></p>
+            <p><a href="${resolveSitePath("/services/")}">All Services</a></p>
             <p><a href="${resolveSitePath("/event-enhancements/")}">Event Enhancements</a></p>
             <p><a href="${resolveSitePath("/packages/")}">Packages</a></p>
             <p><a href="${resolveSitePath("/graduation-parties/")}">Graduation Parties</a></p>
@@ -165,6 +167,7 @@ if (footerTarget) {
 }
 
 applyLaunchMeta();
+initializeConversionTracking();
 
 document.querySelectorAll("[data-current-year]").forEach((node) => {
   node.textContent = new Date().getFullYear();
@@ -176,12 +179,14 @@ const siteNav = document.querySelector(".site-nav");
 if (navToggle && siteNav) {
   const closeNav = () => {
     navToggle.setAttribute("aria-expanded", "false");
+    navToggle.textContent = "Menu";
     siteNav.hidden = true;
   };
 
   navToggle.addEventListener("click", () => {
     const isExpanded = navToggle.getAttribute("aria-expanded") === "true";
     navToggle.setAttribute("aria-expanded", String(!isExpanded));
+    navToggle.textContent = isExpanded ? "Menu" : "Close";
     siteNav.hidden = isExpanded;
   });
 
@@ -191,6 +196,13 @@ if (navToggle && siteNav) {
         closeNav();
       }
     });
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && !siteNav.hidden && window.innerWidth < 960) {
+      closeNav();
+      navToggle.focus();
+    }
   });
 
   window.addEventListener("resize", () => {
@@ -205,5 +217,6 @@ if (navToggle && siteNav) {
   if (window.innerWidth >= 960) {
     siteNav.hidden = false;
     navToggle.setAttribute("aria-expanded", "true");
+    navToggle.textContent = "Close";
   }
 }

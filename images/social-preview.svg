@@ -1,31 +1,30 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
   <title id="title">Frank Creations LLC social preview</title>
-  <desc id="desc">A wide social sharing graphic for Frank Creations LLC featuring the umbrella brand and offerings.</desc>
+  <desc id="desc">Black and gold Frank Creations graphic for events, entertainment, and experiences in Northwest Ohio and Southeast Michigan.</desc>
   <defs>
-    <linearGradient id="bg" x1="0%" x2="100%" y1="0%" y2="100%">
-      <stop offset="0%" stop-color="#fff8ef"/>
-      <stop offset="55%" stop-color="#f4e7d6"/>
-      <stop offset="100%" stop-color="#ead6c2"/>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f0d77b"/>
+      <stop offset="0.48" stop-color="#d4af37"/>
+      <stop offset="1" stop-color="#a77d12"/>
     </linearGradient>
-    <linearGradient id="accentWarm" x1="0%" x2="100%" y1="0%" y2="100%">
-      <stop offset="0%" stop-color="#b85c38"/>
-      <stop offset="100%" stop-color="#d28b62"/>
-    </linearGradient>
-    <linearGradient id="accentCool" x1="0%" x2="100%" y1="0%" y2="100%">
-      <stop offset="0%" stop-color="#1d6b63"/>
-      <stop offset="100%" stop-color="#58a196"/>
-    </linearGradient>
+    <radialGradient id="glow" cx="70%" cy="32%" r="70%">
+      <stop offset="0" stop-color="#d4af37" stop-opacity=".18"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
   </defs>
-  <rect width="1200" height="630" fill="url(#bg)"/>
-  <circle cx="1000" cy="120" r="140" fill="#ffffff" opacity=".45"/>
-  <circle cx="180" cy="520" r="180" fill="#ffffff" opacity=".32"/>
-  <path d="M145 455c92-180 245-285 424-317-29 98-30 208-1 331-161 64-303 57-423-14Z" fill="url(#accentWarm)"/>
-  <path d="M280 150c115 16 222 84 315 209-129-14-240 21-323 104-46-116-44-220 8-313Z" fill="url(#accentCool)" opacity=".95"/>
-  <g fill="#1e1a16">
-    <text x="610" y="230" font-family="Manrope, Arial, sans-serif" font-size="32" font-weight="800" letter-spacing="6">FRANK CREATIONS LLC</text>
-    <text x="610" y="312" font-family="'Playfair Display', Georgia, serif" font-size="72" font-weight="700">Creative events,</text>
-    <text x="610" y="390" font-family="'Playfair Display', Georgia, serif" font-size="72" font-weight="700">music, and family</text>
-    <text x="610" y="468" font-family="'Playfair Display', Georgia, serif" font-size="72" font-weight="700">experiences</text>
-    <text x="610" y="536" font-family="Manrope, Arial, sans-serif" font-size="28" font-weight="600" fill="#655b53">Wine &amp; Canvas Toledo • A Change Of Plans • Cookies &amp; Canvas</text>
+  <rect width="1200" height="630" fill="#050505"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <path d="M0 535h1200" stroke="#d4af37" stroke-opacity=".35"/>
+  <circle cx="210" cy="276" r="132" fill="none" stroke="url(#gold)" stroke-width="12"/>
+  <circle cx="210" cy="276" r="105" fill="#0b0b0b" stroke="#d4af37" stroke-opacity=".25" stroke-width="2"/>
+  <text x="210" y="321" text-anchor="middle" font-family="Arial, sans-serif" font-size="132" font-weight="700" font-style="italic" fill="#ffffff">F</text>
+  <text x="245" y="321" text-anchor="middle" font-family="Arial, sans-serif" font-size="108" font-weight="700" font-style="italic" fill="#d4af37">C</text>
+  <g font-family="Arial, sans-serif">
+    <text x="420" y="182" font-size="26" font-weight="700" fill="#e5c76b">NORTHWEST OHIO • SOUTHEAST MICHIGAN</text>
+    <text x="420" y="273" font-size="70" font-weight="800" fill="#ffffff">FRANK CREATIONS</text>
+    <text x="424" y="328" font-size="31" font-weight="700" fill="#d4af37">EVENTS • ENTERTAINMENT • EXPERIENCES</text>
+    <text x="420" y="414" font-size="32" font-weight="600" fill="#d8d8d8">Photo booths • Live music • Paint parties</text>
+    <text x="420" y="461" font-size="32" font-weight="600" fill="#d8d8d8">Tents • Uplighting • Event audio</text>
+    <text x="62" y="582" font-size="24" font-weight="700" fill="#ffffff">FRANKCREATIONSLLC.COM</text>
   </g>
 </svg>

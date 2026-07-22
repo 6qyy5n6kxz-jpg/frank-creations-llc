@@ -1,25 +1,25 @@
+import { trackConversion } from "./analytics.js";
+
 const contactForm = document.querySelector("[data-contact-form]");
 const contactFeedback = document.querySelector("[data-contact-feedback]");
 
 if (contactForm && contactFeedback) {
   const submitButton = contactForm.querySelector('button[type="submit"]');
   const serviceInputs = [...contactForm.querySelectorAll('input[name="requestedServices"]')];
-  const conditionalSections = [...contactForm.querySelectorAll("[data-conditional]")];
   const query = new URLSearchParams(window.location.search);
 
   const eventTypeField = contactForm.querySelector('input[name="eventType"]');
   if (eventTypeField && query.has("eventType")) eventTypeField.value = query.get("eventType");
 
+  const eventDateField = contactForm.querySelector('input[name="eventDate"]');
+  if (eventDateField) {
+    const today = new Date();
+    const localToday = new Date(today.getTime() - today.getTimezoneOffset() * 60000).toISOString().split("T")[0];
+    eventDateField.min = localToday;
+  }
+
   const sourcePageField = contactForm.querySelector("[data-source-page]");
   if (sourcePageField && query.has("source")) sourcePageField.value = query.get("source");
-
-  const updateConditionalFields = () => {
-    const selected = serviceInputs.filter((input) => input.checked).map((input) => input.value);
-    conditionalSections.forEach((section) => {
-      const key = section.dataset.conditional;
-      section.hidden = !selected.some((service) => service.includes(key));
-    });
-  };
 
   const requestedServices = (query.get("services") || "").split(",").map((item) => item.trim()).filter(Boolean);
   requestedServices.forEach((service) => {
@@ -48,11 +48,14 @@ if (contactForm && contactFeedback) {
     estimateField.value = Number.isFinite(estimate) ? `$${estimate.toLocaleString("en-US")}` : query.get("estimate");
   }
 
-  serviceInputs.forEach((input) => input.addEventListener("change", updateConditionalFields));
-  updateConditionalFields();
-
   contactForm.addEventListener("submit", async (event) => {
     event.preventDefault();
+
+    if (!serviceInputs.some((input) => input.checked)) {
+      contactFeedback.textContent = "Choose at least one requested service, or select Not sure yet.";
+      serviceInputs[0]?.focus();
+      return;
+    }
 
     // Paste your live Formspree endpoint into data-formspree-endpoint in contact.html.
     // Example: data-formspree-endpoint="https://formspree.io/f/yourFormId"
@@ -70,7 +73,7 @@ if (contactForm && contactFeedback) {
 
     if (submitButton) {
       submitButton.disabled = true;
-      submitButton.textContent = "Sending...";
+      submitButton.textContent = "Requesting Availability...";
     }
 
     contactFeedback.textContent = "Submitting your inquiry...";
@@ -99,15 +102,19 @@ if (contactForm && contactFeedback) {
         throw new Error(errorMessage);
       }
 
+      const selectedServices = serviceInputs.filter((input) => input.checked).map((input) => input.value);
+      trackConversion("contact_form_submission", {
+        services: selectedServices.join(", ") || "Not sure yet",
+        source: formData.get("sourcePage") || window.location.pathname
+      });
       contactForm.reset();
-      updateConditionalFields();
       contactFeedback.textContent = "Thank you. Your inquiry was sent successfully, and someone will follow up soon.";
     } catch (error) {
       contactFeedback.textContent = error.message || "There was a problem sending your inquiry. Please try again in a few minutes.";
     } finally {
       if (submitButton) {
         submitButton.disabled = false;
-        submitButton.textContent = "Send Inquiry";
+        submitButton.textContent = "Request Availability";
       }
     }
   });

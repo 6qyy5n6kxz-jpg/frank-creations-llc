@@ -1,3 +1,5 @@
+import { trackConversion } from "./analytics.js";
+
 const builder = document.querySelector("[data-package-builder]");
 
 if (builder) {
@@ -31,5 +33,12 @@ if (builder) {
   };
 
   inputs.forEach((input) => input.addEventListener("change", updateEstimate));
+  inquiryLink.addEventListener("click", () => {
+    const selected = inputs.filter((input) => input.checked).map((input) => input.value);
+    trackConversion("package_builder_transfer", {
+      services: selected.join(", ") || "No services selected",
+      estimate: totalOutput.textContent
+    });
+  });
   updateEstimate();
 }

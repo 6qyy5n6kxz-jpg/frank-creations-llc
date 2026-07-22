@@ -25,7 +25,13 @@
 - Confirm that A Change Of Plans links open `https://achangeofplansmusic.com/` and that the local page remains a concise Frank Creations service overview.
 - Review shop inventory in [data/shop.json](/Volumes/Backup Plus/frank-creations-llc/data/shop.json).
 - Confirm service area, booking language, and any contact details on the page copy.
-- Replace [images/social-preview.svg](/Volumes/Backup Plus/frank-creations-llc/images/social-preview.svg) if you want a branded social-sharing image.
+- Confirm that link-preview tools load the branded 1200 × 630 image at `/images/social-preview.png`.
+
+## Analytics
+
+- Follow [ANALYTICS-SETUP.md](/Volumes/Backup Plus/frank-creations-llc/ANALYTICS-SETUP.md) to enable Cloudflare Web Analytics and Zaraz.
+- Verify contact submissions, package-builder transfers, email clicks, phone clicks, and the two outbound destination events in Zaraz debug mode.
+- Confirm that no names, email addresses, phone numbers, event locations, or message text are sent to analytics.
 
 ## Form delivery
 

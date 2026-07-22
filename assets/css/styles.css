@@ -4804,11 +4804,16 @@ body[data-page="graduation"] .section {
   }
 
   .home-master-logo {
-    width: min(100%, 220px);
+    width: min(100%, 140px);
+    margin-bottom: 0.75rem;
+  }
+
+  .home-positioning {
+    margin-bottom: 0.8rem;
   }
 
   .home-hero-copy h1 {
-    font-size: clamp(2.55rem, 13vw, 3.7rem);
+    font-size: clamp(2.35rem, 12vw, 3.2rem);
   }
 
   .home-hero-copy .button-row .button {
@@ -4831,5 +4836,142 @@ body[data-page="graduation"] .section {
   .home-final-actions,
   .home-final-actions .button {
     width: 100%;
+  }
+}
+
+/* Phase 1 customer-experience additions */
+.home-service-graphic {
+  min-height: 15rem;
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  gap: 1rem;
+  padding: 1.5rem;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 50% 35%, rgba(229, 199, 107, 0.16), transparent 42%),
+    linear-gradient(145deg, rgba(212, 175, 55, 0.12), rgba(255, 255, 255, 0.025)),
+    #050505;
+  color: var(--brand-dark);
+}
+
+.home-service-graphic svg,
+.service-directory-icon svg {
+  width: 6.5rem;
+  height: 6.5rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.home-service-graphic strong {
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 0.78rem;
+  font-weight: 900;
+}
+
+.services-directory-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.service-directory-card {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1.45rem;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.075), rgba(255, 255, 255, 0.03)),
+    #111111;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.service-directory-card h3 {
+  margin: 0 0 0.65rem;
+  color: #ffffff;
+}
+
+.service-directory-card p:not(.card-kicker) {
+  color: var(--muted);
+}
+
+.service-directory-card .button {
+  width: fit-content;
+  margin-top: auto;
+}
+
+.service-directory-icon {
+  width: 5rem;
+  height: 5rem;
+  display: grid;
+  place-items: center;
+  margin-bottom: 1rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: rgba(212, 175, 55, 0.1);
+  color: var(--brand-dark);
+}
+
+.service-directory-icon svg {
+  width: 3.4rem;
+  height: 3.4rem;
+  stroke-width: 5;
+}
+
+.form-privacy {
+  max-width: 46rem;
+  margin: 0 0 1rem;
+  color: var(--muted);
+  font-size: 0.84rem;
+}
+
+.form-service-selection {
+  min-width: 0;
+  padding: 1.25rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+}
+
+.form-service-selection legend {
+  padding: 0 0.4rem;
+  color: #ffffff;
+  font-weight: 800;
+}
+
+.contact-fallback {
+  margin-top: 1.5rem;
+  padding: 1.45rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.045);
+}
+
+.contact-fallback h2 {
+  margin: 0 0 0.9rem;
+  color: #ffffff;
+  font-size: clamp(1.35rem, 3vw, 1.8rem);
+}
+
+.contact-fallback p:not(.eyebrow) {
+  margin: 0.35rem 0;
+}
+
+@media (min-width: 680px) {
+  .services-directory-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1100px) {
+  .services-directory-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .services-directory-grid-three {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }

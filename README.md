@@ -7,6 +7,7 @@ Production-ready umbrella website for Frank Creations LLC, built with semantic H
 ```text
 /
 ├── index.html
+├── services/index.html
 ├── a-change-of-plans/index.html
 ├── wine-and-canvas-toledo/index.html
 ├── cookies-and-canvas/index.html
@@ -23,6 +24,7 @@ Production-ready umbrella website for Frank Creations LLC, built with semantic H
 │   │   └── styles.css
 │   └── js/
 │       ├── main.js
+│       ├── analytics.js
 │       ├── shop.js
 │       └── contact.js
 ├── data/
@@ -106,6 +108,12 @@ Fields:
 - Verify each endpoint, destination inbox, spam handling, and success flow after deployment.
 - The JSON-driven shop works on GitHub Pages because it loads inventory with a relative `fetch()` call from `/data/`.
 
+## Analytics
+
+- The site does not include an advertising tracker or a hard-coded analytics token.
+- Privacy-respecting conversion events are prepared for Cloudflare Zaraz in [`assets/js/analytics.js`](/Volumes/Backup Plus/frank-creations-llc/assets/js/analytics.js).
+- Follow [`ANALYTICS-SETUP.md`](/Volumes/Backup Plus/frank-creations-llc/ANALYTICS-SETUP.md) to enable Cloudflare Web Analytics and configure the conversion events in the Cloudflare dashboard.
+
 ## Portfolio as a future phase
 
 - The `portfolio/` folder remains reserved for a later Wine & Canvas Toledo portfolio migration.
@@ -116,5 +124,5 @@ Fields:
 
 - Verify the published Formspree workflows on [`contact/index.html`](/Volumes/Backup Plus/frank-creations-llc/contact/index.html) and [`shop/index.html`](/Volumes/Backup Plus/frank-creations-llc/shop/index.html).
 - Confirm that the A Change Of Plans overview and related service links lead to `https://achangeofplansmusic.com/` where intended.
-- Replace the temporary social preview asset in [`images/social-preview.svg`](/Volumes/Backup Plus/frank-creations-llc/images/social-preview.svg) with a branded sharing image if you want richer link previews.
+- Validate the branded 1200 × 630 social preview at [`images/social-preview.png`](/Volumes/Backup Plus/frank-creations-llc/images/social-preview.png) with the major platform preview tools after deployment.
 - Replace the future-phase content in [`portfolio/index.html`](/Volumes/Backup Plus/frank-creations-llc/portfolio/index.html) when portfolio migration begins.
