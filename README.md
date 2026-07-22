@@ -88,9 +88,10 @@ Fields:
 
 ### Studio display event sync
 
-- `studio-display.html` now prefers [`data/studio-display-events.json`](/Volumes/Backup Plus/frank-creations-llc/data/studio-display-events.json) for upcoming public Toledo events when the page is hosted off the Wine & Canvas domain.
+- When hosted off the Wine & Canvas domain, `studio-display.html` prefers the current event snapshot from the `studio-display-sync` branch. [`data/studio-display-events.json`](/Volumes/Backup Plus/frank-creations-llc/data/studio-display-events.json) on `main` is its last-known-good fallback.
 - Refresh the snapshot locally with `python3 scripts/sync-studio-display-events.py`.
-- The scheduled workflow at [`.github/workflows/sync-studio-display-events.yml`](/Volumes/Backup Plus/frank-creations-llc/.github/workflows/sync-studio-display-events.yml) updates that JSON hourly from `https://wineandcanvas.com/toledo/events/` via the Toledo events API.
+- The scheduled workflow at [`.github/workflows/sync-studio-display-events.yml`](/Volumes/Backup Plus/frank-creations-llc/.github/workflows/sync-studio-display-events.yml) publishes a refreshed JSON snapshot to the data-only `studio-display-sync` branch every six hours. It never commits generated snapshots to `main`.
+- The display fetches the current snapshot from `studio-display-sync` and re-checks it every five minutes. The copy on `main` remains a last-known-good fallback if the remote snapshot is temporarily unavailable.
 - If the display is ever hosted on the Wine & Canvas origin itself, the page still keeps its direct live WordPress event fetch as a fallback path.
 
 ## Current launch scope

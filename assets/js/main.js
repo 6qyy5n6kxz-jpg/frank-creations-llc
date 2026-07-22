@@ -156,8 +156,15 @@ if (footerTarget) {
           </div>
           <div>
             <h3>Brand Family</h3>
-            <p>Frank Creations LLC is the parent company behind photo booth rentals, live music, paint parties, kids art events, and creative experiences throughout Northwest Ohio and Southeast Michigan.</p>
-            <a class="button button-primary footer-cta" href="${resolveSitePath("/contact/")}">Start a Booking Inquiry</a>
+            <p>Frank Creations LLC brings together event rentals, live music, paint parties, kids art events, and creative experiences across Northwest Ohio and Southeast Michigan.</p>
+            <a class="button button-primary footer-cta" href="${resolveSitePath("/contact/")}">Request Availability</a>
+            <nav class="footer-contact-links" aria-label="Contact and social links">
+              <a href="https://www.facebook.com/AChangeOfPlans419" target="_blank" rel="noreferrer">Facebook</a>
+              <a href="https://www.instagram.com/AChangeofPlansduo" target="_blank" rel="noreferrer">Instagram</a>
+              <a href="mailto:infotoledo@wineandcanvas.com">Email</a>
+              <a href="tel:+14197050911">Phone</a>
+              <a href="${resolveSitePath("/contact/#privacy")}">Privacy</a>
+            </nav>
           </div>
         </div>
         <p class="footer-legal">&copy; <span data-current-year></span> Frank Creations LLC.</p>

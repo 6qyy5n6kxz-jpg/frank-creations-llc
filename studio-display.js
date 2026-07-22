@@ -456,6 +456,12 @@ const CONFIG = {
 
 const RUNTIME_CONFIG = window.STUDIO_DISPLAY_CONFIG || {};
 
+// Automated snapshots live on a data-only branch so scheduled refreshes never
+// rewrite the website's main branch. Keep the main-branch file as an offline and
+// first-run fallback until studio-display-sync has been published successfully.
+const REMOTE_EVENT_SNAPSHOT_URL = "https://raw.githubusercontent.com/6qyy5n6kxz-jpg/frank-creations-llc/studio-display-sync/data/studio-display-events.json";
+const LOCAL_EVENT_SNAPSHOT_URL = "data/studio-display-events.json";
+
 const WORDPRESS_CONFIG = {
   // Integration point:
   // Change `wpBasePath` if WordPress is not mounted at `/toledo`.
@@ -466,7 +472,10 @@ const WORDPRESS_CONFIG = {
 };
 
 const EVENT_SNAPSHOT_CONFIG = {
-  url: RUNTIME_CONFIG.eventSnapshotUrl || "data/studio-display-events.json"
+  urls: Array.from(new Set([
+    RUNTIME_CONFIG.eventSnapshotUrl || REMOTE_EVENT_SNAPSHOT_URL,
+    LOCAL_EVENT_SNAPSHOT_URL
+  ]))
 };
 
 const state = {
@@ -1620,25 +1629,31 @@ async function fetchLiveEvents() {
 }
 
 async function fetchSnapshotEvents() {
-  const snapshotUrl = buildSnapshotUrl(EVENT_SNAPSHOT_CONFIG.url);
+  let lastError = null;
 
-  try {
-    const payload = await fetchJsonWithTimeout(snapshotUrl);
+  for (const configuredUrl of EVENT_SNAPSHOT_CONFIG.urls) {
+    const snapshotUrl = buildSnapshotUrl(configuredUrl);
 
-    return {
-      ok: true,
-      items: Array.isArray(payload?.upcomingEvents) ? payload.upcomingEvents : [],
-      sourceUrl: snapshotUrl,
-      sourceKind: "snapshot",
-      syncedAt: parseDateValue(firstUsable(payload?.generatedAt, payload?.syncedAt, payload?.updatedAt))
-    };
-  } catch (error) {
-    console.warn(`[studio-display] Snapshot events unavailable. ${error.message}`);
-    return {
-      ok: false,
-      error
-    };
+    try {
+      const payload = await fetchJsonWithTimeout(snapshotUrl);
+
+      return {
+        ok: true,
+        items: Array.isArray(payload?.upcomingEvents) ? payload.upcomingEvents : [],
+        sourceUrl: snapshotUrl,
+        sourceKind: "snapshot",
+        syncedAt: parseDateValue(firstUsable(payload?.generatedAt, payload?.syncedAt, payload?.updatedAt))
+      };
+    } catch (error) {
+      lastError = error;
+    }
   }
+
+  console.warn(`[studio-display] Snapshot events unavailable. ${lastError?.message || "No snapshot URL responded."}`);
+  return {
+    ok: false,
+    error: lastError || new Error("No snapshot URL responded")
+  };
 }
 
 async function fetchBestEvents() {
