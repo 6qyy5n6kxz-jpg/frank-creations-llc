@@ -7,6 +7,7 @@ const navItems = [
   { id: "services", label: "Services", href: "/services/", activePages: ["wine", "cookies", "music"] },
   { id: "enhancements", label: "Event Enhancements", href: "/event-enhancements/", activePages: ["enhancements", "photo-booth"] },
   { id: "packages", label: "Packages", href: "/packages/" },
+  { id: "about", label: "About", href: "/about/" },
   { id: "contact", label: "Contact", href: "/contact/" }
 ];
 
@@ -152,6 +153,8 @@ if (footerTarget) {
             <p><a href="${resolveSitePath("/wine-and-canvas-toledo/")}">Wine & Canvas Toledo</a></p>
             <p><a href="${resolveSitePath("/cookies-and-canvas/")}">Cookies & Canvas</a></p>
             <p><a href="https://achangeofplansmusic.com/">A Change Of Plans Music</a></p>
+            <p><a href="${resolveSitePath("/about/")}">About</a></p>
+            <p><a href="${resolveSitePath("/resources/")}">Resources</a></p>
             <p><a href="${resolveSitePath("/contact/")}">Contact</a></p>
           </div>
           <div>
