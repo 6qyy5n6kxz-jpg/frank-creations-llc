@@ -10,6 +10,13 @@ node_modules/
 .yarn
 .pnpm-store
 
+# npm and yarn logs
+npm-debug.log*
+npm-error.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
 # Python artifacts
 __pycache__/
 *.py[cod]
@@ -39,12 +46,29 @@ wheels/
 *.swp
 *.swo
 *~
-.DS_Store
 
 # Environment variables
 .env
 .env.local
 .env.*.local
+
+# Test and coverage
+coverage/
+.nyc_output/
+.coverage
+.coverage.*
+htmlcov/
+
+# Playwright and browser automation
+playwright-report/
+test-results/
+
+# Temporary files and caches
+.cache/
+.tmp/
+temp/
+tmp/
+*.tmp
 
 # OS temporary files
 Thumbs.db
