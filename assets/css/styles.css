@@ -5928,7 +5928,7 @@ body[data-page="photo-booth"] .button-secondary:hover {
   display: grid;
   grid-template-columns: 48px 1fr;
   gap: 1rem;
-  padding: 1.35rem 0;
+  padding: 1rem 0;
   border-bottom: 1px solid rgba(255,255,255,0.12);
 }
 
@@ -5977,12 +5977,12 @@ body[data-page="photo-booth"] .button-secondary:hover {
 .pb-price-card-featured h3,
 .pb-price-card-featured .pb-price,
 .pb-price-card-featured p {
-  color: #fff;
+  color: #fff !important;
 }
 
 .pb-price-card-featured .pb-card-label,
 .pb-price-card-featured .pb-price span {
-  color: #e8c563;
+  color: #e8c563 !important;
 }
 
 .pb-card-label {
