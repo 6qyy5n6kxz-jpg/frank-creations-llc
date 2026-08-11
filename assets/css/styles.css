@@ -5116,6 +5116,11 @@ body[data-page="graduation"] .section {
   margin-top: auto;
 }
 
+.service-directory-card .text-link {
+  width: fit-content;
+  margin-top: 0.85rem;
+}
+
 .service-directory-icon {
   width: 5rem;
   height: 5rem;
@@ -5230,6 +5235,11 @@ body[data-page="graduation"] .section {
   color: var(--muted);
   font-size: 0.95rem;
   line-height: 1.6;
+}
+
+.about-brand-card .text-link {
+  display: inline-block;
+  margin-top: 0.85rem;
 }
 
 /* Resources and Article Styles */

@@ -4,11 +4,13 @@ Audit date: July 20, 2026
 
 Status update, July 21, 2026: A Change Of Plans launched at `https://achangeofplansmusic.com/`. The Frank Creations page is now a concise umbrella-service overview; the detailed schedule, song catalog, request form, pricing, and direct music-booking experience moved to the standalone site. Historical findings below describe the site as it existed on the original audit date.
 
+Status update, August 10, 2026: Duplicate local Wine & Canvas Toledo and Cookies & Canvas landing pages were retired. Frank Creations now routes those services to `https://wineandcanvas.com/toledo/`, and solo Devin Frank references route to `https://devinfranklive.com/`. GitHub Pages cannot define permanent external 301 redirects from repository files, so no meta-refresh or JavaScript redirect substitutes were added.
+
 ## Scope and approach
 
 This audit covers every public or directly reachable HTML page in the repository, along with shared CSS and JavaScript, `sitemap.xml`, forms, structured data, images, and launch documentation. Safe corrections were implemented only where the repository or an official business source established the correct value. The site's visual structure and overall design were preserved.
 
-The canonical public pages are the homepage plus the directory URLs for A Change Of Plans, contact, Cookies & Canvas, event enhancements, graduation parties, packages, photo booth, shop, and Wine & Canvas Toledo. The portfolio placeholder, display utility, 404 page, and six legacy root-level `.html` copies were also reviewed.
+The canonical public pages are the homepage plus the directory URLs for A Change Of Plans, contact, event enhancements, graduation parties, packages, photo booth, services, shop, about, and resources. Wine & Canvas Toledo and Cookies & Canvas use the authoritative Wine & Canvas Toledo website. The portfolio placeholder, display utility, 404 page, and remaining legacy root-level copies were also reviewed.
 
 Official source checks used for mutable business facts:
 
@@ -21,18 +23,16 @@ Official source checks used for mutable business facts:
 
 ### 1. Replace legacy duplicate pages with server-side redirects
 
-The repository contains six legacy root-level copies:
+At the time of the original audit, the repository contained several legacy root-level copies. The remaining copies are:
 
 - `a-change-of-plans.html`
 - `contact.html`
-- `cookies-and-canvas.html`
 - `photo-booth.html`
 - `shop.html`
-- `wine-and-canvas-toledo.html`
 
 Their canonical URLs point to the corresponding directory pages, but the legacy copies still contain independently maintained and partly stale body content. They now have `noindex,follow`, and the shared metadata script now respects their declared canonical tags instead of replacing them with self-canonicals. This is an interim safeguard, not a substitute for redirects.
 
-Recommendation: configure permanent HTTP 301 redirects from each root `.html` URL to its directory URL, verify them after deployment, then remove the duplicate files if the hosting platform permits it. The redirect mechanism depends on the production host and was intentionally not guessed.
+Recommendation: configure permanent HTTP 301 redirects for retired routes at a compatible hosting or edge layer. GitHub Pages cannot express these redirects through the repository, and unreliable client-side redirects should not be used as a substitute.
 
 ### 2. Confirm package pricing and inclusions
 
@@ -109,7 +109,7 @@ Recommendation: test representative pages at 200% and 400% zoom and run automate
 
 ## Low priority
 
-- After redirects are proven, delete the six legacy copies to eliminate future metadata and content drift.
+- After redirects are proven, delete any remaining legacy copies to eliminate future metadata and content drift.
 - Add an automated check for unique titles/descriptions, one H1, valid JSON-LD, resolvable internal links, and sitemap-to-file consistency.
 - Recheck mutable facts—studio addresses, business hours, contact routing, pricing, and policies—on a scheduled basis.
 - Consider a lightweight content field or data file for shared business facts so visible copy and structured data draw from one maintained source.
@@ -197,8 +197,8 @@ Visual browser behavior, production response headers, Core Web Vitals, third-par
 ## Files changed by this audit
 
 - Root/support: `index.html`, `404.html`, `README.md`, `LAUNCH-CHECKLIST.md`, `robots.txt`, `SEO-AUDIT.md`
-- Canonical pages: `a-change-of-plans/index.html`, `contact/index.html`, `cookies-and-canvas/index.html`, `event-enhancements/index.html`, `graduation-parties/index.html`, `packages/index.html`, `photo-booth/index.html`, `portfolio/index.html`, `shop/index.html`, `wine-and-canvas-toledo/index.html`
-- Legacy duplicate safeguards: `a-change-of-plans.html`, `contact.html`, `cookies-and-canvas.html`, `photo-booth.html`, `shop.html`, `wine-and-canvas-toledo.html`
+- Canonical pages: `a-change-of-plans/index.html`, `contact/index.html`, `event-enhancements/index.html`, `graduation-parties/index.html`, `packages/index.html`, `photo-booth/index.html`, `portfolio/index.html`, `services/index.html`, `shop/index.html`
+- Legacy duplicate safeguards: `a-change-of-plans.html`, `contact.html`, `photo-booth.html`, `shop.html`
 - Shared assets/utilities: `assets/css/styles.css`, `assets/js/main.js`, `studio-display.html`
 
 `data/events.json` was already modified in the working tree before this audit and was intentionally not changed as part of this work.

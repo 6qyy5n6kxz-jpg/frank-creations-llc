@@ -4,7 +4,7 @@ const page = document.body.dataset.page || "";
 const siteRoot = document.body.dataset.siteRoot || ".";
 
 const navItems = [
-  { id: "services", label: "Services", href: "/services/", activePages: ["wine", "cookies", "music"] },
+  { id: "services", label: "Services", href: "/services/", activePages: ["music"] },
   { id: "enhancements", label: "Event Enhancements", href: "/event-enhancements/", activePages: ["enhancements", "photo-booth"] },
   { id: "packages", label: "Packages", href: "/packages/" },
   { id: "about", label: "About", href: "/about/" },
@@ -150,8 +150,9 @@ if (footerTarget) {
             <p><a href="${resolveSitePath("/packages/")}">Packages</a></p>
             <p><a href="${resolveSitePath("/graduation-parties/")}">Graduation Parties</a></p>
             <p><a href="${resolveSitePath("/photo-booth/")}">Photo Booth Rentals</a></p>
-            <p><a href="${resolveSitePath("/wine-and-canvas-toledo/")}">Wine & Canvas Toledo</a></p>
-            <p><a href="${resolveSitePath("/cookies-and-canvas/")}">Cookies & Canvas</a></p>
+            <p><a href="https://wineandcanvas.com/toledo/" target="_blank" rel="noopener noreferrer">Wine & Canvas Toledo ↗</a></p>
+            <p><a href="https://wineandcanvas.com/toledo/" target="_blank" rel="noopener noreferrer">Cookies & Canvas ↗</a></p>
+            <p><a href="https://devinfranklive.com/" target="_blank" rel="noopener noreferrer">Devin Frank Live ↗</a></p>
             <p><a href="https://achangeofplansmusic.com/">A Change Of Plans Music</a></p>
             <p><a href="${resolveSitePath("/about/")}">About</a></p>
             <p><a href="${resolveSitePath("/resources/")}">Resources</a></p>
@@ -162,8 +163,8 @@ if (footerTarget) {
             <p>Frank Creations LLC brings together event rentals, live music, paint parties, kids art events, and creative experiences across Northwest Ohio and Southeast Michigan.</p>
             <a class="button button-primary footer-cta" href="${resolveSitePath("/contact/")}">Request Availability</a>
             <nav class="footer-contact-links" aria-label="Contact and social links">
-              <a href="https://www.facebook.com/AChangeOfPlans419" target="_blank" rel="noreferrer">Facebook</a>
-              <a href="https://www.instagram.com/AChangeofPlansduo" target="_blank" rel="noreferrer">Instagram</a>
+              <a href="https://www.facebook.com/AChangeOfPlans419" target="_blank" rel="noopener noreferrer">Facebook</a>
+              <a href="https://www.instagram.com/AChangeofPlansduo" target="_blank" rel="noopener noreferrer">Instagram</a>
               <a href="mailto:infotoledo@wineandcanvas.com">Email</a>
               <a href="tel:+14197050911">Phone</a>
               <a href="${resolveSitePath("/contact/#privacy")}">Privacy</a>

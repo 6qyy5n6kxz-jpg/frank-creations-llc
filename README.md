@@ -9,8 +9,6 @@ Production-ready umbrella website for Frank Creations LLC, built with semantic H
 ├── index.html
 ├── services/index.html
 ├── a-change-of-plans/index.html
-├── wine-and-canvas-toledo/index.html
-├── cookies-and-canvas/index.html
 ├── photo-booth/index.html
 ├── event-enhancements/index.html
 ├── graduation-parties/index.html
@@ -98,8 +96,8 @@ Fields:
 
 - Home page for the umbrella brand
 - Concise A Change Of Plans service overview linking to `https://achangeofplansmusic.com/`
-- Wine & Canvas Toledo service page with native featured-work content
-- Cookies & Canvas overview page
+- External brand routing to `https://wineandcanvas.com/toledo/` for Wine & Canvas Toledo and Cookies & Canvas
+- Devin Frank solo-performance routing to `https://devinfranklive.com/`
 - Static shop catalog for local pickup
 - Contact form UI ready for backend connection
 
@@ -108,6 +106,7 @@ Fields:
 - The event inquiry and local-pickup reservation forms submit to configured Formspree endpoints.
 - Verify each endpoint, destination inbox, spam handling, and success flow after deployment.
 - The JSON-driven shop works on GitHub Pages because it loads inventory with a relative `fetch()` call from `/data/`.
+- GitHub Pages does not support repository-configured HTTP 301 redirects. Retired brand landing-page routes therefore return the site's 404 response until redirects are configured at a compatible hosting or edge layer.
 
 ## Analytics
 

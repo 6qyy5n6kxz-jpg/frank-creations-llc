@@ -2287,7 +2287,7 @@ function renderActionRail(data) {
   const secondary = data.actionRail.secondary;
 
   elements.primaryQr.innerHTML = `
-    <a class="qr-card qr-card-primary" href="${escapeHtml(primary.url)}" target="_blank" rel="noreferrer">
+    <a class="qr-card qr-card-primary" href="${escapeHtml(primary.url)}" target="_blank" rel="noopener noreferrer">
       <p class="module-eyebrow">Primary QR</p>
       <h3 class="rail-card-title">${escapeHtml(primary.title)}</h3>
       <p class="rail-card-copy">${escapeHtml(primary.copy)}</p>
@@ -2300,7 +2300,7 @@ function renderActionRail(data) {
   `;
 
   elements.secondaryCtas.innerHTML = secondary.map((item) => `
-    <a class="secondary-cta" href="${escapeHtml(item.url)}" target="_blank" rel="noreferrer">
+    <a class="secondary-cta" href="${escapeHtml(item.url)}" target="_blank" rel="noopener noreferrer">
       <div class="secondary-body">
         <p class="module-eyebrow">${escapeHtml(item.note)}</p>
         <h3 class="secondary-title">${escapeHtml(item.title)}</h3>
@@ -2366,7 +2366,7 @@ function renderEventCard(event) {
           <span>${escapeHtml(formatPriceDisplay(event.price))}</span>
         </div>
         <p class="event-availability">${escapeHtml(event.availabilityText)}</p>
-        <a class="cta-button" href="${escapeHtml(event.ctaUrl)}" target="_blank" rel="noreferrer">${escapeHtml(event.ctaLabel)}</a>
+        <a class="cta-button" href="${escapeHtml(event.ctaUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(event.ctaLabel)}</a>
       </div>
     </article>
   `;
@@ -2386,7 +2386,7 @@ function renderNoEventsModule(data) {
               <span class="summary-chip">No experience needed</span>
               <span class="summary-chip">BYOB fun</span>
             </div>
-            <a class="module-action" href="${escapeHtml(data.qrLinks.booking)}" target="_blank" rel="noreferrer">Scan to Book</a>
+            <a class="module-action" href="${escapeHtml(data.qrLinks.booking)}" target="_blank" rel="noopener noreferrer">Scan to Book</a>
           </div>
           <figure class="module-visual">
             ${renderManagedImage({
@@ -2440,7 +2440,7 @@ function renderEventsGridModule(data) {
               <span class="summary-chip">${availabilityChip}</span>
               <span class="summary-chip">No experience? Perfect.</span>
             </div>
-            <a class="module-action" href="${escapeHtml(data.qrLinks.booking)}" target="_blank" rel="noreferrer">Scan to Book</a>
+            <a class="module-action" href="${escapeHtml(data.qrLinks.booking)}" target="_blank" rel="noopener noreferrer">Scan to Book</a>
           </div>
           <figure class="module-visual">
             ${renderManagedImage({
@@ -2492,7 +2492,7 @@ function renderEventsSpotlightModule(data) {
             <div class="detail-card"><span>Price</span><strong>${escapeHtml(formatPriceDisplay(spotlight.price))}</strong></div>
             <div class="detail-card"><span>Availability</span><strong>${escapeHtml(spotlight.availabilityText)}</strong></div>
           </div>
-          <a class="module-action" href="${escapeHtml(spotlight.ctaUrl)}" target="_blank" rel="noreferrer">${escapeHtml(spotlight.ctaLabel)}</a>
+          <a class="module-action" href="${escapeHtml(spotlight.ctaUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(spotlight.ctaLabel)}</a>
           <div class="spotlight-subgrid">
             ${nextEvents.map((event) => `
               <article class="mini-event-card">
@@ -2529,7 +2529,7 @@ function renderFeaturedArtModule(data) {
               <span class="pill-chip">Ready-made art</span>
               <span class="pill-chip">Great gift move</span>
             </div>
-            <a class="module-action" href="${escapeHtml(featured.ctaUrl)}" target="_blank" rel="noreferrer">${escapeHtml(featured.ctaLabel)}</a>
+            <a class="module-action" href="${escapeHtml(featured.ctaUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(featured.ctaLabel)}</a>
           </div>
           <div class="art-feature">
             <figure class="art-feature-visual">
@@ -2588,7 +2588,7 @@ function renderPromoModule(data, promoId) {
     : "";
   const promoAction = promo.type === "social"
     ? ""
-    : `<a class="module-action" href="${escapeHtml(promo.ctaUrl)}" target="_blank" rel="noreferrer">${escapeHtml(promo.ctaLabel)}</a>`;
+    : `<a class="module-action" href="${escapeHtml(promo.ctaUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(promo.ctaLabel)}</a>`;
 
   return `
     <article class="module theme-${escapeHtml(promo.theme)}${promo.type === "social" ? " module-social-promo" : ""}">
