@@ -6246,3 +6246,162 @@ body[data-page="photo-booth"] .pb-experience-card figcaption span {
     min-height: 360px;
   }
 }
+/* =========================================================
+   HOME — LIGHT HERO + PROFESSIONAL PHOTO BOOTH IMAGERY
+   Paste at the bottom of assets/css/styles.css
+   ========================================================= */
+
+body[data-page="home"] .home-hero-refresh {
+  padding: clamp(4rem, 8vw, 7rem) 0;
+  background:
+    radial-gradient(circle at 10% 12%, rgba(199, 154, 43, 0.13), transparent 28%),
+    linear-gradient(180deg, #fbf7f0 0%, #f3ecdf 100%);
+  border-bottom: 1px solid rgba(67, 54, 42, 0.11);
+}
+
+body[data-page="home"] .home-hero-refresh-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(330px, 0.8fr);
+  gap: clamp(2.5rem, 6vw, 6rem);
+  align-items: center;
+}
+
+body[data-page="home"] .home-hero-refresh-copy h1 {
+  margin: 0 0 1.35rem;
+  max-width: 800px;
+  font-family: "Playfair Display", serif;
+  font-size: clamp(3rem, 6.5vw, 6rem);
+  line-height: 1.01;
+  letter-spacing: -0.035em;
+  color: #231f1b;
+}
+
+body[data-page="home"] .home-hero-refresh-copy .eyebrow {
+  color: #8b6915;
+}
+
+body[data-page="home"] .home-hero-refresh-lead {
+  max-width: 660px;
+  margin: 0;
+  color: #554d45;
+  font-size: clamp(1.05rem, 1.7vw, 1.25rem);
+  line-height: 1.72;
+}
+
+body[data-page="home"] .home-hero-photo-booth {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  min-height: 610px;
+  border: 1px solid rgba(67, 54, 42, 0.12);
+  border-radius: 30px;
+  background: #e9e1d7;
+  box-shadow: 0 28px 68px rgba(38, 30, 23, 0.16);
+  text-decoration: none;
+}
+
+body[data-page="home"] .home-hero-photo-booth img {
+  width: 100%;
+  height: 100%;
+  min-height: 610px;
+  object-fit: cover;
+  transition: transform 300ms ease;
+}
+
+body[data-page="home"] .home-hero-photo-booth::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0;
+  height: 48%;
+  background: linear-gradient(180deg, transparent, rgba(22, 19, 16, 0.84));
+  pointer-events: none;
+}
+
+body[data-page="home"] .home-hero-photo-booth:hover img,
+body[data-page="home"] .home-hero-photo-booth:focus-visible img {
+  transform: scale(1.025);
+}
+
+body[data-page="home"] .home-hero-photo-caption {
+  position: absolute;
+  z-index: 1;
+  right: 1.5rem;
+  bottom: 1.5rem;
+  left: 1.5rem;
+  display: grid;
+  gap: 0.3rem;
+  color: #fff;
+}
+
+body[data-page="home"] .home-hero-photo-caption small {
+  color: #e2c974;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+body[data-page="home"] .home-hero-photo-caption strong {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(1.45rem, 2.5vw, 2.25rem);
+  line-height: 1.1;
+}
+
+body[data-page="home"] .home-hero-photo-caption > span {
+  color: rgba(255, 255, 255, 0.83);
+  font-size: 0.88rem;
+  line-height: 1.45;
+}
+
+body[data-page="home"] .home-experience-card-photo .home-experience-image {
+  display: block;
+  overflow: hidden;
+  min-height: 255px;
+  background: #eee7de;
+}
+
+body[data-page="home"] .home-experience-card-photo .home-experience-image img {
+  width: 100%;
+  height: 100%;
+  min-height: 255px;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  transition: transform 260ms ease;
+}
+
+body[data-page="home"] .home-experience-card-photo:hover .home-experience-image img,
+body[data-page="home"] .home-experience-card-photo:focus-within .home-experience-image img {
+  transform: scale(1.035);
+}
+
+@media (max-width: 900px) {
+  body[data-page="home"] .home-hero-refresh-grid {
+    grid-template-columns: 1fr;
+  }
+
+  body[data-page="home"] .home-hero-photo-booth,
+  body[data-page="home"] .home-hero-photo-booth img {
+    min-height: 520px;
+  }
+}
+
+@media (max-width: 640px) {
+  body[data-page="home"] .home-hero-refresh {
+    padding: 3.5rem 0;
+  }
+
+  body[data-page="home"] .home-hero-refresh-copy h1 {
+    font-size: clamp(2.7rem, 14vw, 4.4rem);
+  }
+
+  body[data-page="home"] .home-hero-photo-booth,
+  body[data-page="home"] .home-hero-photo-booth img {
+    min-height: 440px;
+  }
+
+  body[data-page="home"] .home-hero-photo-caption {
+    right: 1rem;
+    bottom: 1rem;
+    left: 1rem;
+  }
+}
