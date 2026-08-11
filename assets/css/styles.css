@@ -3791,15 +3791,16 @@ body[data-page="graduation"] .section {
 
 .savings-badge {
   display: inline-block;
-  padding: 0.65rem 0.9rem;
+  padding: 0.75rem 1rem;
   border-left: 3px solid var(--brand);
-  border-radius: 0 4px 4px 0;
-  background: rgba(30, 26, 22, 0.08);
-  color: var(--brand-dark);
+  border-radius: 4px;
+  background: rgba(30, 26, 22, 0.06);
+  color: white;
   font-weight: 700;
   font-size: 0.95rem;
   text-decoration: none;
   letter-spacing: 0.02em;
+  line-height: 1.4;
 }
 
 .pricing-grid {
@@ -4004,17 +4005,17 @@ body[data-page="graduation"] .section {
   display: flex;
   align-items: center;
   gap: 0.85rem;
-  padding: 1rem 1.1rem;
-  border: 2px solid rgba(184, 92, 56, 0.25);
+  padding: 1.1rem 1.2rem;
+  border: 2px solid rgba(184, 92, 56, 0.35);
   border-radius: var(--radius-sm);
-  background: rgba(30, 26, 22, 0.05);
+  background: rgba(30, 26, 22, 0.08);
   cursor: pointer;
   transition: all 0.2s ease;
 }
 
 .package-builder label:hover {
-  background: rgba(30, 26, 22, 0.08);
-  border-color: rgba(184, 92, 56, 0.45);
+  background: rgba(30, 26, 22, 0.12);
+  border-color: rgba(184, 92, 56, 0.55);
 }
 
 .package-builder label:focus-within {
@@ -4023,16 +4024,16 @@ body[data-page="graduation"] .section {
 }
 
 .package-builder input:checked + span {
-  color: var(--brand-dark);
+  color: white;
 }
 
 .package-builder input:checked ~ span {
-  color: var(--brand-dark);
+  color: white;
 }
 
 .package-builder label:has(input:checked) {
-  background: rgba(184, 92, 56, 0.08);
-  border-color: var(--brand);
+  background: rgba(184, 92, 56, 0.12);
+  border-color: rgba(184, 92, 56, 0.7);
 }
 
 .package-builder input {
