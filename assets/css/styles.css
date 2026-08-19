@@ -7503,3 +7503,386 @@ body[data-page="enhancements"] .enhancements-light-card .button-secondary:focus-
     width: 100%;
   }
 }
+
+/* ============================================================================
+   PACKAGES PAGE: Light/Dark rhythm, conversion-focused layout
+   ============================================================================ */
+
+/* Page-level overrides for packages light sections */
+body[data-page="packages"] .packages-hero-light h1,
+body[data-page="packages"] .packages-hero-light .eyebrow,
+body[data-page="packages"] .packages-light-section h1,
+body[data-page="packages"] .packages-light-section h2,
+body[data-page="packages"] .packages-light-section h3,
+body[data-page="packages"] .packages-final-cta h2 {
+  color: #231f1b;
+}
+
+body[data-page="packages"] .packages-hero-light .button-secondary,
+body[data-page="packages"] .packages-light-section .button-secondary,
+body[data-page="packages"] .packages-light-card .button-secondary {
+  background: rgba(255, 255, 255, 0.72);
+  border-color: rgba(67, 54, 42, 0.18);
+  color: #231f1b;
+}
+
+body[data-page="packages"] .packages-hero-light .button-secondary:hover,
+body[data-page="packages"] .packages-hero-light .button-secondary:focus-visible,
+body[data-page="packages"] .packages-light-section .button-secondary:hover,
+body[data-page="packages"] .packages-light-section .button-secondary:focus-visible,
+body[data-page="packages"] .packages-light-card .button-secondary:hover,
+body[data-page="packages"] .packages-light-card .button-secondary:focus-visible {
+  background: rgba(255, 255, 255, 0.88);
+  border-color: rgba(67, 54, 42, 0.28);
+  color: #231f1b;
+}
+
+/* Hero section: light treatment */
+.packages-hero-light {
+  background: #f7f1e7;
+  color: #231f1b;
+}
+
+.packages-hero-light h1 {
+  color: #231f1b;
+}
+
+.packages-hero-light .eyebrow {
+  color: #795914;
+}
+
+.packages-hero-light .hero-text {
+  color: #62584f;
+}
+
+/* Light section styling */
+.packages-light-section {
+  background: #f7f1e7;
+  color: #231f1b;
+  border-top: 1px solid rgba(67, 54, 42, 0.11);
+  border-bottom: 1px solid rgba(67, 54, 42, 0.11);
+}
+
+.packages-light-section:nth-of-type(even) {
+  background: #fbf7f0;
+}
+
+.packages-light-section .section-heading h2,
+.packages-light-section h2,
+.packages-light-section h3 {
+  color: #231f1b;
+}
+
+.packages-light-section .section-heading p,
+.packages-light-section p:not(.eyebrow) {
+  color: #62584f;
+}
+
+.packages-light-section .eyebrow,
+.packages-light-section .card-kicker {
+  color: #795914;
+}
+
+.packages-light-section .text-link {
+  color: #795914;
+}
+
+.packages-light-section .text-link:hover,
+.packages-light-section .text-link:focus-visible {
+  color: #231f1b;
+}
+
+/* Dark section styling */
+.packages-dark-section {
+  background: #080808;
+  color: #ffffff;
+  border-top: 1px solid rgba(212, 175, 55, 0.22);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.22);
+}
+
+.packages-dark-section .section-heading h2,
+.packages-dark-section h2,
+.packages-dark-section h3 {
+  color: #ffffff;
+}
+
+.packages-dark-section .section-heading p,
+.packages-dark-section p:not(.eyebrow):not(.card-kicker) {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.packages-dark-section .eyebrow,
+.packages-dark-section .card-kicker {
+  color: rgba(212, 175, 55, 0.88);
+}
+
+/* Dark package card styling */
+.packages-dark-card {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1.4rem;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(212, 175, 55, 0.15);
+  border-radius: var(--radius);
+}
+
+.packages-dark-card .card-kicker {
+  color: rgba(212, 175, 55, 0.88);
+  font-size: 0.78rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.packages-dark-card h3 {
+  margin: 0 0 0.65rem;
+  font-size: 1.15rem;
+  line-height: 1.3;
+  color: #ffffff;
+}
+
+.packages-dark-card .price {
+  margin: 0 0 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: rgba(212, 175, 55, 0.88);
+}
+
+.packages-dark-card .price span {
+  font-size: 0.85rem;
+  display: block;
+  margin-bottom: 0.25rem;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.packages-dark-card .price-label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: rgba(212, 175, 55, 0.88);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.packages-dark-card ul {
+  margin: 0 0 1.25rem;
+  padding-left: 1.25rem;
+}
+
+.packages-dark-card li {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 0.35rem;
+}
+
+.packages-dark-card .savings-callout {
+  background: rgba(212, 175, 55, 0.12);
+  border: 1px solid rgba(212, 175, 55, 0.25);
+  border-radius: var(--radius);
+  padding: 0.75rem;
+  margin: 0 0 1rem;
+  font-size: 0.9rem;
+  color: rgba(212, 175, 55, 0.95);
+}
+
+.packages-dark-card .savings-label {
+  font-weight: 700;
+  display: block;
+}
+
+.packages-dark-card .savings-description {
+  font-size: 0.8rem;
+  color: rgba(212, 175, 55, 0.8);
+  display: block;
+}
+
+.packages-dark-card .best-fit {
+  margin: 0 0 1rem;
+  font-size: 0.88rem;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.5;
+}
+
+.packages-dark-card .text-link {
+  color: rgba(212, 175, 55, 0.88);
+  display: block;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.packages-dark-card .text-link:hover,
+.packages-dark-card .text-link:focus-visible {
+  color: rgba(212, 175, 55, 0.95);
+}
+
+.packages-dark-card .button {
+  margin-top: auto;
+}
+
+.packages-dark-card .button-primary {
+  background: rgba(212, 175, 55, 0.95);
+  color: #080808;
+  border-color: rgba(212, 175, 55, 0.95);
+}
+
+.packages-dark-card .button-primary:hover,
+.packages-dark-card .button-primary:focus-visible {
+  background: #d4af37;
+  border-color: #d4af37;
+}
+
+/* Final CTA section: light treatment */
+.packages-final-cta {
+  background: #f7f1e7;
+  border: none;
+  box-shadow: none;
+  color: #231f1b;
+  padding: 2rem 1.5rem;
+  border-radius: 0;
+}
+
+.packages-final-cta > div:first-child {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.packages-final-cta .eyebrow {
+  color: #795914;
+  margin: 0 0 0.5rem;
+}
+
+.packages-final-cta h2 {
+  color: #231f1b;
+  margin: 0 0 0.75rem;
+  font-size: clamp(1.5rem, 4vw, 2.2rem);
+}
+
+.packages-final-cta p:not(.eyebrow) {
+  color: #62584f;
+  max-width: 50rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.packages-final-cta .button-primary {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: fit-content;
+  margin-top: 1.25rem;
+}
+
+/* Package grid with intentional centering for 2-card second row */
+.packages-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.packages-grid-item:nth-child(4),
+.packages-grid-item:nth-child(5) {
+  grid-column: 1 / 2;
+}
+
+@supports (grid-template-columns: subgrid) {
+  .packages-grid {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
+  .packages-grid-item {
+    grid-column: span 2;
+  }
+
+  .packages-grid-item:nth-child(4),
+  .packages-grid-item:nth-child(5) {
+    grid-column: span 2;
+  }
+
+  .packages-grid-item:nth-child(4) {
+    grid-column: 2 / 4;
+  }
+
+  .packages-grid-item:nth-child(5) {
+    grid-column: 4 / 6;
+  }
+}
+
+/* Planning note: compact styling */
+.packages-planning-note {
+  padding: 1.5rem 1rem;
+}
+
+.packages-planning-note h3 {
+  color: #231f1b;
+  margin-top: 0;
+  font-size: 1.05rem;
+}
+
+.packages-planning-note p {
+  color: #62584f;
+  font-size: 0.95rem;
+  margin-bottom: 0.75rem;
+}
+
+.packages-planning-note p:last-child {
+  margin-bottom: 0;
+}
+
+/* Responsive behavior */
+@media (max-width: 919px) {
+  .packages-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  @supports (grid-template-columns: subgrid) {
+    .packages-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .packages-grid-item {
+      grid-column: span 1;
+    }
+
+    .packages-grid-item:nth-child(4),
+    .packages-grid-item:nth-child(5) {
+      grid-column: span 1;
+    }
+
+    .packages-grid-item:nth-child(4) {
+      grid-column: 1;
+    }
+
+    .packages-grid-item:nth-child(5) {
+      grid-column: 2;
+    }
+  }
+}
+
+@media (max-width: 619px) {
+  .packages-grid {
+    grid-template-columns: 1fr;
+  }
+
+  @supports (grid-template-columns: subgrid) {
+    .packages-grid-item,
+    .packages-grid-item:nth-child(4),
+    .packages-grid-item:nth-child(5) {
+      grid-column: span 1;
+    }
+  }
+
+  .packages-final-cta {
+    padding: 1.5rem;
+  }
+
+  .packages-final-cta .button-primary {
+    width: 100%;
+  }
+}
