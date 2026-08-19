@@ -7537,6 +7537,12 @@ body[data-page="packages"] .packages-light-card .button-secondary:focus-visible 
   color: #231f1b;
 }
 
+/* Page-level overrides for contact light hero */
+body[data-page="contact"] .contact-hero-light h1,
+body[data-page="contact"] .contact-hero-light .eyebrow {
+  color: #231f1b;
+}
+
 /* Hero section: light treatment */
 .packages-hero-light {
   background: #f7f1e7;
@@ -7552,6 +7558,24 @@ body[data-page="packages"] .packages-light-card .button-secondary:focus-visible 
 }
 
 .packages-hero-light .hero-text {
+  color: #62584f;
+}
+
+/* Contact hero: light treatment */
+.contact-hero-light {
+  background: #f7f1e7;
+  color: #231f1b;
+}
+
+.contact-hero-light h1 {
+  color: #231f1b;
+}
+
+.contact-hero-light .eyebrow {
+  color: #795914;
+}
+
+.contact-hero-light .hero-text {
   color: #62584f;
 }
 

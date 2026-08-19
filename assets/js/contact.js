@@ -31,11 +31,18 @@ if (contactForm && contactFeedback) {
     if (/booth/i.test(service)) aliases.push("Photo Booth");
     if (/tent/i.test(service)) aliases.push("High Peak Tent");
     if (/graduation celebration package/i.test(service)) aliases.push("High Peak Tent", "Photo Booth");
-    if (/backyard party package/i.test(service)) aliases.push("High Peak Tent", "Speaker", "Wireless Microphone");
-    if (/wedding enhancement package/i.test(service)) aliases.push("Photo Booth", "Uplighting", "Speaker", "Wireless Microphone");
-    if (/complete outdoor celebration package/i.test(service)) aliases.push("High Peak Tent", "Photo Booth", "Uplighting", "Speaker", "Wireless Microphone");
-    if (/a change of plans/i.test(service)) aliases.push("A Change Of Plans Live Music");
-    if (/live event package/i.test(service)) aliases.push("A Change Of Plans Live Music", "Photo Booth");
+    if (/backyard party package/i.test(service)) aliases.push("High Peak Tent", "Event Audio / Speaker", "Wireless Microphone");
+    if (/wedding enhancement package/i.test(service)) aliases.push("Photo Booth", "Uplighting", "Event Audio / Speaker", "Wireless Microphone");
+    if (/complete outdoor celebration package/i.test(service)) aliases.push("High Peak Tent", "Photo Booth", "Uplighting", "Event Audio / Speaker", "Wireless Microphone");
+    if (/speaker/i.test(service)) aliases.push("Event Audio / Speaker");
+    if (/audio/i.test(service) && !/ceremony/i.test(service)) aliases.push("Event Audio / Speaker");
+    if (/ceremony/i.test(service)) aliases.push("Ceremony Audio");
+    if (/a change of plans|duo.*music|duo.*live/i.test(service)) aliases.push("Duo Live Music — A Change Of Plans");
+    if (/solo.*music|solo.*live|devin.*frank/i.test(service)) aliases.push("Solo Live Music — Devin Frank");
+    if (/live.*music|live.*event/i.test(service) && !/duo|solo|a change/i.test(service)) {
+      // Default to duo for generic "live music" or "live event" references
+      aliases.push("Duo Live Music — A Change Of Plans");
+    }
     aliases.forEach((alias) => {
       const input = serviceInputs.find((item) => item.value === alias);
       if (input) input.checked = true;
