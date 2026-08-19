@@ -22,7 +22,7 @@
 
 ## Content and business details
 
-- Confirm that A Change Of Plans links open `https://achangeofplansmusic.com/` and that the local page remains a concise Frank Creations service overview.
+- Confirm that A Change Of Plans, Devin Frank Live, and Wine & Canvas Toledo links open their external brand websites (no local Frank Creations duplicates).
 - Review shop inventory in [data/shop.json](/Volumes/Backup Plus/frank-creations-llc/data/shop.json).
 - Confirm service area, booking language, and any contact details on the page copy.
 - Confirm that link-preview tools load the branded 1200 × 630 image at `/images/social-preview.png`.

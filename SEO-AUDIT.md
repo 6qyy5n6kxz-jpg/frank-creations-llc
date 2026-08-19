@@ -25,14 +25,13 @@ Official source checks used for mutable business facts:
 
 At the time of the original audit, the repository contained several legacy root-level copies. The remaining copies are:
 
-- `a-change-of-plans.html`
 - `contact.html`
 - `photo-booth.html`
 - `shop.html`
 
 Their canonical URLs point to the corresponding directory pages, but the legacy copies still contain independently maintained and partly stale body content. They now have `noindex,follow`, and the shared metadata script now respects their declared canonical tags instead of replacing them with self-canonicals. This is an interim safeguard, not a substitute for redirects.
 
-Recommendation: configure permanent HTTP 301 redirects for retired routes at a compatible hosting or edge layer. GitHub Pages cannot express these redirects through the repository, and unreliable client-side redirects should not be used as a substitute.
+**August 2026 update:** The `a-change-of-plans.html` redirect file was removed as A Change Of Plans is now entirely external at `https://achangeofplansmusic.com/`. All Frank Creations links now point to the dedicated external music website.
 
 ### 2. Confirm package pricing and inclusions
 
@@ -197,8 +196,9 @@ Visual browser behavior, production response headers, Core Web Vitals, third-par
 ## Files changed by this audit
 
 - Root/support: `index.html`, `404.html`, `README.md`, `LAUNCH-CHECKLIST.md`, `robots.txt`, `SEO-AUDIT.md`
-- Canonical pages: `a-change-of-plans/index.html`, `contact/index.html`, `event-enhancements/index.html`, `graduation-parties/index.html`, `packages/index.html`, `photo-booth/index.html`, `portfolio/index.html`, `services/index.html`, `shop/index.html`
-- Legacy duplicate safeguards: `a-change-of-plans.html`, `contact.html`, `photo-booth.html`, `shop.html`
+- Canonical pages: `contact/index.html`, `event-enhancements/index.html`, `graduation-parties/index.html`, `packages/index.html`, `photo-booth/index.html`, `portfolio/index.html`, `services/index.html`, `shop/index.html`
+- Legacy duplicate safeguards: `contact.html`, `photo-booth.html`, `shop.html`
+- External music brands (A Change Of Plans and Devin Frank Live) are not included in the sitemap; Frank Creations links route to their dedicated external sites.
 - Shared assets/utilities: `assets/css/styles.css`, `assets/js/main.js`, `studio-display.html`
 
 `data/events.json` was already modified in the working tree before this audit and was intentionally not changed as part of this work.

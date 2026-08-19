@@ -8,7 +8,6 @@ Production-ready umbrella website for Frank Creations LLC, built with semantic H
 /
 ├── index.html
 ├── services/index.html
-├── a-change-of-plans/index.html
 ├── photo-booth/index.html
 ├── event-enhancements/index.html
 ├── graduation-parties/index.html
@@ -95,9 +94,10 @@ Fields:
 ## Current launch scope
 
 - Home page for the umbrella brand
-- Concise A Change Of Plans service overview linking to `https://achangeofplansmusic.com/`
+- External music-service routing to dedicated brand websites:
+  - Devin Frank Live solo performances at `https://devinfranklive.com/`
+  - A Change Of Plans duo at `https://achangeofplansmusic.com/`
 - External brand routing to `https://wineandcanvas.com/toledo/` for Wine & Canvas Toledo and Cookies & Canvas
-- Devin Frank solo-performance routing to `https://devinfranklive.com/`
 - Static shop catalog for local pickup
 - Contact form UI ready for backend connection
 
