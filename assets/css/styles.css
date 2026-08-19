@@ -6856,3 +6856,231 @@ body[data-page="home"] .home-final-actions {
     min-height: 0;
   }
 }
+
+/* ============================================================================
+   SERVICES PAGE: Light/Dark rhythm to match homepage design system
+   ============================================================================ */
+
+/* Hero section: light treatment */
+.services-hero-light {
+  background: #f7f1e7;
+  color: #231f1b;
+}
+
+.services-hero-light h1,
+.services-hero-light .eyebrow {
+  color: #231f1b;
+}
+
+.services-hero-light .eyebrow {
+  color: #795914;
+}
+
+.services-hero-light .hero-text {
+  color: #62584f;
+}
+
+.services-hero-light .button-secondary {
+  background: rgba(255, 255, 255, 0.72);
+  border-color: rgba(67, 54, 42, 0.18);
+  color: #231f1b;
+}
+
+.services-hero-light .button-secondary:hover,
+.services-hero-light .button-secondary:focus-visible {
+  background: rgba(255, 255, 255, 0.88);
+  border-color: rgba(67, 54, 42, 0.28);
+}
+
+/* Light section: Rentals & Guest Experiences */
+.services-light-section {
+  background: #f7f1e7;
+  color: #231f1b;
+  border-top: 1px solid rgba(67, 54, 42, 0.11);
+  border-bottom: 1px solid rgba(67, 54, 42, 0.11);
+}
+
+.services-light-section:nth-of-type(even) {
+  background: #fbf7f0;
+}
+
+.services-light-section .section-heading h2,
+.services-light-section h2,
+.services-light-section h3 {
+  color: #231f1b;
+}
+
+.services-light-section .section-heading p,
+.services-light-section p:not(.eyebrow) {
+  color: #62584f;
+}
+
+.services-light-section .eyebrow,
+.services-light-section .card-kicker {
+  color: #795914;
+}
+
+.services-light-section .text-link {
+  color: #795914;
+}
+
+.services-light-section .text-link:hover,
+.services-light-section .text-link:focus-visible {
+  color: #231f1b;
+}
+
+.services-light-section .button-secondary {
+  background: rgba(255, 255, 255, 0.72);
+  border-color: rgba(67, 54, 42, 0.18);
+  color: #231f1b;
+}
+
+.services-light-section .button-secondary:hover,
+.services-light-section .button-secondary:focus-visible {
+  background: rgba(255, 255, 255, 0.88);
+  border-color: rgba(67, 54, 42, 0.28);
+}
+
+/* Light card styling: Rentals section */
+.services-light-card {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1.4rem;
+  background: #fffdf9;
+  border: 1px solid rgba(157, 115, 31, 0.2);
+  border-radius: var(--radius);
+  box-shadow: 0 14px 34px rgba(47, 35, 25, 0.075);
+}
+
+.services-light-card h3 {
+  margin: 0 0 0.65rem;
+  font-size: 1.15rem;
+  line-height: 1.3;
+  color: #231f1b;
+}
+
+.services-light-card p {
+  margin: 0 0 0.8rem;
+  font-size: 0.9rem;
+  line-height: 1.58;
+  color: #62584f;
+}
+
+.services-light-card .card-kicker {
+  color: #795914;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.services-light-card .button {
+  margin-top: auto;
+}
+
+/* Dark section: Creative Experiences & Entertainment */
+.services-dark-section {
+  background: #080808;
+  color: #ffffff;
+  border-top: 1px solid rgba(212, 175, 55, 0.22);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.22);
+}
+
+.services-dark-section .section-heading h2,
+.services-dark-section h2,
+.services-dark-section h3 {
+  color: #ffffff;
+}
+
+.services-dark-section .section-heading p,
+.services-dark-section p:not(.eyebrow):not(.card-kicker) {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.services-dark-section .eyebrow,
+.services-dark-section .card-kicker {
+  color: rgba(212, 175, 55, 0.88);
+}
+
+.services-dark-section .button-secondary {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(212, 175, 55, 0.28);
+  color: #ffffff;
+}
+
+.services-dark-section .button-secondary:hover,
+.services-dark-section .button-secondary:focus-visible {
+  background: rgba(212, 175, 55, 0.15);
+  border-color: rgba(212, 175, 55, 0.5);
+}
+
+/* Music links container: side-by-side brand links */
+.services-music-links {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: auto;
+}
+
+.services-music-links .button-secondary {
+  flex: 1;
+  text-align: center;
+}
+
+/* Final CTA section: light treatment */
+.services-final-cta {
+  background: #f7f1e7;
+  border-color: rgba(67, 54, 42, 0.11);
+  color: #231f1b;
+}
+
+.services-final-cta > div:first-child {
+  text-align: center;
+}
+
+.services-final-cta .eyebrow {
+  color: #795914;
+}
+
+.services-final-cta h2 {
+  color: #231f1b;
+}
+
+.services-final-cta p:not(.eyebrow) {
+  color: #62584f;
+  max-width: 50rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.services-final-cta .button-primary {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Responsive: ensure rentals cards don't get too narrow */
+@media (max-width: 919px) {
+  .services-directory-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 619px) {
+  .services-directory-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .services-music-links {
+    flex-direction: column;
+  }
+
+  .services-music-links .button-secondary {
+    flex: auto;
+  }
+
+  .services-final-cta {
+    padding: 1.5rem;
+  }
+
+  .services-final-cta .button-primary {
+    width: 100%;
+  }
+}
