@@ -6,17 +6,18 @@ Status update, July 21, 2026: A Change Of Plans launched at `https://achangeofpl
 
 Status update, August 10, 2026: Duplicate local Wine & Canvas Toledo and Cookies & Canvas landing pages were retired. Frank Creations now routes those services to `https://wineandcanvas.com/toledo/`, and solo Devin Frank references route to `https://devinfranklive.com/`. GitHub Pages cannot define permanent external 301 redirects from repository files, so no meta-refresh or JavaScript redirect substitutes were added.
 
+Status update, August 19, 2026: Cookies & Canvas is no longer actively promoted as a Frank Creations brand or service offering. References have been removed from the homepage, services directory, About page, inquiry forms, and footer. Wine & Canvas Toledo remains an active connected brand.
+
 ## Scope and approach
 
 This audit covers every public or directly reachable HTML page in the repository, along with shared CSS and JavaScript, `sitemap.xml`, forms, structured data, images, and launch documentation. Safe corrections were implemented only where the repository or an official business source established the correct value. The site's visual structure and overall design were preserved.
 
-The canonical public pages are the homepage plus the directory URLs for A Change Of Plans, contact, event enhancements, graduation parties, packages, photo booth, services, shop, about, and resources. Wine & Canvas Toledo and Cookies & Canvas use the authoritative Wine & Canvas Toledo website. The portfolio placeholder, display utility, 404 page, and remaining legacy root-level copies were also reviewed.
+The canonical public pages are the homepage plus the directory URLs for A Change Of Plans, contact, event enhancements, graduation parties, packages, photo booth, services, shop, about, and resources. Wine & Canvas Toledo remains an active connected brand and uses the authoritative Wine & Canvas Toledo website. The portfolio placeholder, display utility, 404 page, and remaining legacy root-level copies were also reviewed.
 
 Official source checks used for mutable business facts:
 
 - [Wine & Canvas Toledo contact information and hours](https://wineandcanvas.com/toledo/contact-us/)
 - [Wine & Canvas Toledo private-party terms](https://wineandcanvas.com/toledo/parties/)
-- [Cookies & Canvas Toledo program details](https://wineandcanvas.com/toledo/cookies-canvas/)
 - Current event examples at [2806 West Sylvania Avenue](https://wineandcanvas.com/toledo/event/toledo-paint-and-sip-party-aurora-point-lighthouse/) and [5248 Monroe Street](https://wineandcanvas.com/toledo/event/toledo-paint-and-sip-party-dreamy-wine/)
 
 ## High priority — business decisions or hosting work required
@@ -56,7 +57,6 @@ Recommendation: confirm whether Frank Creations should describe one studio, two 
 The following visible claims may be correct, but they are not established consistently enough to auto-edit:
 
 - Wine & Canvas private events have a maximum of 20 guests. The current official party page establishes a 10-guest starting point but does not state that maximum.
-- Cookies & Canvas offers discounted school/nonprofit pricing and can supply W-9s and invoices. The current official page does not publish those terms.
 - A Change Of Plans is the house band at The Mockingbird. Public material confirms the acoustic duo, but this specific relationship needs business confirmation.
 - General Frank Creations inquiries route to `infotoledo@wineandcanvas.com`. This is internally consistent, but confirm that the cross-brand mailbox is the intended long-term contact address.
 
@@ -120,9 +120,9 @@ Recommendation: test representative pages at 200% and 400% zoom and run automate
 
 - Rewrote every canonical title and meta description to be unique, readable, location-aware, and within the requested approximate lengths.
 - Synchronized Open Graph and X/Twitter metadata where present and filled the missing social metadata on packages and event enhancements.
-- Added concise factual homepage content explaining how Frank Creations relates to Wine & Canvas Toledo, Cookies & Canvas, A Change Of Plans, photo booth rentals, and event enhancements.
+- Added concise factual homepage content explaining how Frank Creations relates to Wine & Canvas Toledo, A Change Of Plans, photo booth rentals, and event enhancements.
 - Added natural Northwest Ohio and Southeast Michigan service-area language to primary discovery/contact content without repeating city lists across every page.
-- Added valid JSON-LD for the website, Frank Creations, the main service catalog, photo booth rentals, event enhancements, A Change Of Plans, Wine & Canvas Toledo, Cookies & Canvas, and selected visible graduation FAQs.
+- Added valid JSON-LD for the website, Frank Creations, the main service catalog, photo booth rentals, event enhancements, A Change Of Plans, and Wine & Canvas Toledo with selected visible graduation FAQs.
 - Used only visible or corroborated facts; no reviews, ratings, availability, or unsupported prices were invented.
 
 ### Indexing and canonicalization
@@ -163,7 +163,6 @@ Recommendation: test representative pages at 200% and 400% zoom and run automate
 | Event Enhancements | Metadata/social tags and Service schema added; component prices preserved. |
 | A Change Of Plans | Metadata, MusicGroup/Service schema, and image dimensions improved. “House band” claim remains for confirmation. |
 | Wine & Canvas Toledo | Metadata and corroborated LocalBusiness/contact-hours schema improved. Venue/address model and 20-person maximum remain for confirmation. |
-| Cookies & Canvas | Metadata and Service schema improved. Discount, W-9, and invoicing claims remain for confirmation. |
 | Contact | Metadata and local service-area wording improved; form labels and choices reviewed. Form delivery and shared mailbox require operational verification. |
 | Shop | Metadata improved. No speculative Product/Offer schema added because current inventory is not modeled in the repository. |
 | Portfolio | Placeholder kept out of the index pending a publish/redirect/removal decision. |

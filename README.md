@@ -97,7 +97,7 @@ Fields:
 - External music-service routing to dedicated brand websites:
   - Devin Frank Live solo performances at `https://devinfranklive.com/`
   - A Change Of Plans duo at `https://achangeofplansmusic.com/`
-- External brand routing to `https://wineandcanvas.com/toledo/` for Wine & Canvas Toledo and Cookies & Canvas
+- External brand routing to `https://wineandcanvas.com/toledo/` for Wine & Canvas Toledo
 - Static shop catalog for local pickup
 - Contact form UI ready for backend connection
 

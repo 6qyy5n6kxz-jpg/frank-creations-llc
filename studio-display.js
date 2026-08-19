@@ -610,7 +610,6 @@ function buildFallbackStudioDisplayData() {
       "Private Parties",
       "Girls' Night Out",
       "Team Events",
-      "Cookies & Canvas",
       "No Experience Needed",
       "BYOB Fun",
       "Wine Glass Painting",
@@ -759,27 +758,6 @@ function buildFallbackStudioDisplayData() {
         posterPalette: "dateNight"
       }),
       buildFallbackPromo({
-        id: "cookies-canvas",
-        type: "promo",
-        theme: "sun",
-        eyebrow: "Cookies & Canvas",
-        title: "Tiny artists. Big fridge-worthy energy.",
-        body: "Kid-friendly sessions keep things cheerful, guided, and very parent-approved. Think birthdays, school-break outings, scout troops, and creative afternoons with a little extra cookie-powered confidence.",
-        quote: "No experience? Perfect. Messy fun and proud smiles are both very on-brand here.",
-        chips: ["Kids Birthdays", "Family Outings", "School Break Fun", "Scout Groups"],
-        ctaLabel: "Scan for Kids Events",
-        ctaUrl: qrLinks.booking,
-        stats: [
-          { value: "Kid-friendly", label: "Low-pressure format" },
-          { value: "Bright themes", label: "Cheerful projects" },
-          { value: "Easy yes", label: "Beginner approved" }
-        ],
-        posterTitle: "Cookies & Canvas",
-        posterSubtitle: "Playful, colorful, and family-friendly",
-        posterTag: "Kids Promo",
-        posterPalette: "kids"
-      }),
-      buildFallbackPromo({
         id: "social-feature",
         type: "social",
         theme: "plum",
@@ -831,7 +809,6 @@ function buildFallbackStudioDisplayData() {
       { id: "events-spotlight", label: "Featured Event", type: "events-spotlight", weight: 2, theme: "event" },
       { id: "featured-art", label: "Featured Art", type: "featured-art", weight: 1, theme: "art" },
       { id: "promo-private-party", label: "Private Parties", type: "promo", promoId: "private-party", weight: 1, theme: "plum" },
-      { id: "promo-cookies-canvas", label: "Cookies & Canvas", type: "promo", promoId: "cookies-canvas", weight: 1, theme: "sun" },
       { id: "promo-social-feature", label: "Social Feature", type: "promo", promoId: "social-feature", weight: 1, theme: "plum" }
     ],
     meta: {
