@@ -7896,8 +7896,7 @@ body[data-page="about"] .about-hero-light h1,
 body[data-page="about"] .about-hero-light .eyebrow,
 body[data-page="about"] .about-light-section h1,
 body[data-page="about"] .about-light-section h2,
-body[data-page="about"] .about-light-section h3,
-body[data-page="about"] .about-final-cta h2 {
+body[data-page="about"] .about-light-section h3 {
   color: #231f1b;
 }
 
@@ -7955,6 +7954,35 @@ body[data-page="about"] .about-hero-light .button-secondary:focus-visible {
   color: #62584f;
 }
 
+/* Align wrapped paragraphs with section headings */
+.about-light-section > .container > div[style*="max-width"] {
+  max-width: 60rem !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Why section unified alignment */
+.about-why-wrapper {
+  max-width: 60rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-why-wrapper .section-heading {
+  margin-bottom: 1.5rem;
+}
+
+.about-why-wrapper > div:last-child p {
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #62584f;
+}
+
+.about-why-wrapper > div:last-child p:last-child {
+  margin-bottom: 0;
+}
+
 .about-light-section .eyebrow,
 .about-light-section .card-kicker {
   color: #795914;
@@ -7967,6 +7995,43 @@ body[data-page="about"] .about-hero-light .button-secondary:focus-visible {
 .about-light-section .text-link:hover,
 .about-light-section .text-link:focus-visible {
   color: #231f1b;
+}
+
+/* Event Services buttons in light section */
+.about-light-section .about-services-cta {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.about-light-section .about-services-cta .button-primary {
+  background: #795914;
+  border-color: #795914;
+  color: #ffffff;
+  margin-right: 0.75rem;
+  margin-bottom: 0.75rem;
+  text-decoration: none;
+}
+
+.about-light-section .about-services-cta .button-primary:hover,
+.about-light-section .about-services-cta .button-primary:focus-visible {
+  background: #62584f;
+  border-color: #62584f;
+  color: #ffffff;
+}
+
+.about-light-section .about-services-cta .button-secondary {
+  background: transparent;
+  border: 1px solid #795914;
+  color: #795914;
+  margin-bottom: 0.75rem;
+  text-decoration: none;
+}
+
+.about-light-section .about-services-cta .button-secondary:hover,
+.about-light-section .about-services-cta .button-secondary:focus-visible {
+  background: rgba(121, 89, 20, 0.08);
+  border-color: #795914;
+  color: #795914;
 }
 
 /* Dark section styling */
@@ -8031,20 +8096,51 @@ body[data-page="about"] .about-hero-light .button-secondary:focus-visible {
   text-decoration: underline;
 }
 
-/* Brand family grid */
+/* Brand family grid: balanced 2x2 layout */
 .about-brand-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+  max-width: 70rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Event services grid: 3 top, 2 centered bottom */
+.about-services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1.5rem;
   margin: 1.5rem 0;
 }
 
-/* Event services grid */
-.about-services-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1.5rem;
-  margin: 1.5rem 0;
+.about-service-item:nth-child(4),
+.about-service-item:nth-child(5) {
+  grid-column: 1;
+}
+
+@supports (grid-template-columns: subgrid) {
+  .about-services-grid {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
+  .about-service-item {
+    grid-column: span 2;
+  }
+
+  .about-service-item:nth-child(4),
+  .about-service-item:nth-child(5) {
+    grid-column: span 2;
+  }
+
+  .about-service-item:nth-child(4) {
+    grid-column: 2 / 4;
+  }
+
+  .about-service-item:nth-child(5) {
+    grid-column: 4 / 6;
+  }
 }
 
 .about-service-item {
@@ -8189,12 +8285,55 @@ body[data-page="about"] .about-hero-light .button-secondary:focus-visible {
   .about-services-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
+  @supports (grid-template-columns: subgrid) {
+    .about-services-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .about-service-item {
+      grid-column: span 1;
+    }
+
+    .about-service-item:nth-child(4),
+    .about-service-item:nth-child(5) {
+      grid-column: span 1;
+    }
+
+    .about-service-item:nth-child(4) {
+      grid-column: 1;
+    }
+
+    .about-service-item:nth-child(5) {
+      grid-column: 2;
+    }
+  }
 }
 
 @media (max-width: 619px) {
   .about-brand-grid,
   .about-services-grid {
     grid-template-columns: 1fr;
+  }
+
+  @supports (grid-template-columns: subgrid) {
+    .about-service-item,
+    .about-service-item:nth-child(4),
+    .about-service-item:nth-child(5) {
+      grid-column: span 1;
+    }
+  }
+
+  .about-services-cta .button-primary,
+  .about-services-cta .button-secondary {
+    display: block;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 0.75rem;
+  }
+
+  .about-services-cta .button-primary:last-child {
+    margin-bottom: 0;
   }
 
   .about-final-cta .button-primary,
