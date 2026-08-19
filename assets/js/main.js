@@ -153,7 +153,7 @@ if (footerTarget) {
             <p><a href="https://wineandcanvas.com/toledo/" target="_blank" rel="noopener noreferrer">Wine & Canvas Toledo ↗</a></p>
             <p><a href="https://wineandcanvas.com/toledo/" target="_blank" rel="noopener noreferrer">Cookies & Canvas ↗</a></p>
             <p><a href="https://devinfranklive.com/" target="_blank" rel="noopener noreferrer">Devin Frank Live ↗</a></p>
-            <p><a href="https://achangeofplansmusic.com/">A Change Of Plans Music</a></p>
+            <p><a href="https://achangeofplansmusic.com/" target="_blank" rel="noopener noreferrer">A Change Of Plans Music ↗</a></p>
             <p><a href="${resolveSitePath("/about/")}">About</a></p>
             <p><a href="${resolveSitePath("/resources/")}">Resources</a></p>
             <p><a href="${resolveSitePath("/contact/")}">Contact</a></p>
