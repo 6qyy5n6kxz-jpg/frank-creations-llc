@@ -7886,3 +7886,326 @@ body[data-page="packages"] .packages-light-card .button-secondary:focus-visible 
     width: 100%;
   }
 }
+
+/* ============================================================================
+   ABOUT PAGE: Light/Dark rhythm, human-centered company story
+   ============================================================================ */
+
+/* Page-level overrides for about light sections */
+body[data-page="about"] .about-hero-light h1,
+body[data-page="about"] .about-hero-light .eyebrow,
+body[data-page="about"] .about-light-section h1,
+body[data-page="about"] .about-light-section h2,
+body[data-page="about"] .about-light-section h3,
+body[data-page="about"] .about-final-cta h2 {
+  color: #231f1b;
+}
+
+body[data-page="about"] .about-hero-light .button-secondary {
+  background: rgba(255, 255, 255, 0.72);
+  border-color: rgba(67, 54, 42, 0.18);
+  color: #231f1b;
+}
+
+body[data-page="about"] .about-hero-light .button-secondary:hover,
+body[data-page="about"] .about-hero-light .button-secondary:focus-visible {
+  background: rgba(255, 255, 255, 0.88);
+  border-color: rgba(67, 54, 42, 0.28);
+  color: #231f1b;
+}
+
+/* Hero section: light treatment */
+.about-hero-light {
+  background: #f7f1e7;
+  color: #231f1b;
+}
+
+.about-hero-light h1 {
+  color: #231f1b;
+}
+
+.about-hero-light .eyebrow {
+  color: #795914;
+}
+
+.about-hero-light .hero-text {
+  color: #62584f;
+}
+
+/* Light section styling */
+.about-light-section {
+  background: #f7f1e7;
+  color: #231f1b;
+  border-top: 1px solid rgba(67, 54, 42, 0.11);
+  border-bottom: 1px solid rgba(67, 54, 42, 0.11);
+}
+
+.about-light-section:nth-of-type(even) {
+  background: #fbf7f0;
+}
+
+.about-light-section .section-heading h2,
+.about-light-section h2,
+.about-light-section h3 {
+  color: #231f1b;
+}
+
+.about-light-section .section-heading p,
+.about-light-section p:not(.eyebrow) {
+  color: #62584f;
+}
+
+.about-light-section .eyebrow,
+.about-light-section .card-kicker {
+  color: #795914;
+}
+
+.about-light-section .text-link {
+  color: #795914;
+}
+
+.about-light-section .text-link:hover,
+.about-light-section .text-link:focus-visible {
+  color: #231f1b;
+}
+
+/* Dark section styling */
+.about-dark-section {
+  background: #080808;
+  color: #ffffff;
+  border-top: 1px solid rgba(212, 175, 55, 0.22);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.22);
+}
+
+.about-dark-section .section-heading h2,
+.about-dark-section h2,
+.about-dark-section h3 {
+  color: #ffffff;
+}
+
+.about-dark-section .section-heading p,
+.about-dark-section p:not(.eyebrow):not(.card-kicker) {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.about-dark-section .eyebrow,
+.about-dark-section .card-kicker {
+  color: rgba(212, 175, 55, 0.88);
+}
+
+/* Dark brand card styling */
+.about-brand-card {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1.4rem;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(212, 175, 55, 0.15);
+  border-radius: var(--radius);
+}
+
+.about-brand-card h3 {
+  margin: 0 0 0.65rem;
+  font-size: 1.15rem;
+  line-height: 1.3;
+  color: #ffffff;
+}
+
+.about-brand-card p {
+  margin: 0 0 0.8rem;
+  font-size: 0.9rem;
+  line-height: 1.58;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.about-brand-card .text-link {
+  color: rgba(212, 175, 55, 0.88);
+  font-size: 0.9rem;
+  margin-top: auto;
+  text-decoration: none;
+}
+
+.about-brand-card .text-link:hover,
+.about-brand-card .text-link:focus-visible {
+  color: rgba(212, 175, 55, 0.95);
+  text-decoration: underline;
+}
+
+/* Brand family grid */
+.about-brand-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+/* Event services grid */
+.about-services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.about-service-item {
+  padding: 1.2rem;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(67, 54, 42, 0.15);
+  border-radius: var(--radius);
+}
+
+.about-service-item h4 {
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+  color: #231f1b;
+}
+
+.about-service-item p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #62584f;
+  line-height: 1.5;
+}
+
+/* Brand promise section */
+.about-brand-promise {
+  text-align: center;
+}
+
+.about-brand-promise h2 {
+  font-size: clamp(1.8rem, 5vw, 2.4rem);
+  margin-bottom: 1rem;
+}
+
+.about-brand-promise p {
+  max-width: 50rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+/* About Devin section */
+.about-devin {
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+.about-devin h2 {
+  margin-bottom: 1.5rem;
+}
+
+.about-devin p {
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #62584f;
+}
+
+.about-devin p:last-child {
+  margin-bottom: 0;
+}
+
+/* Service area: compact */
+.about-service-area {
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+.about-service-area h3 {
+  color: #231f1b;
+  margin-top: 0;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.about-service-area p {
+  margin-bottom: 0.75rem;
+  font-size: 0.95rem;
+  color: #62584f;
+  line-height: 1.6;
+}
+
+.about-service-area p:last-child {
+  margin-bottom: 0;
+}
+
+/* Final CTA section: dark */
+.about-final-cta {
+  background: #080808;
+  border-top: 1px solid rgba(212, 175, 55, 0.22);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.22);
+}
+
+.about-final-cta-content {
+  text-align: center;
+  max-width: 50rem;
+  margin: 0 auto;
+}
+
+.about-final-cta .eyebrow {
+  color: rgba(212, 175, 55, 0.88);
+  margin-bottom: 0.5rem;
+}
+
+.about-final-cta h2 {
+  color: #ffffff;
+  margin: 0 0 0.75rem;
+  font-size: clamp(1.5rem, 4vw, 2rem);
+}
+
+.about-final-cta p {
+  color: rgba(255, 255, 255, 0.75);
+  margin: 0 0 1.5rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.about-final-cta .button-primary {
+  margin-right: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.about-final-cta .button-secondary {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(212, 175, 55, 0.28);
+  color: #ffffff;
+  margin-bottom: 0.75rem;
+}
+
+.about-final-cta .button-secondary:hover,
+.about-final-cta .button-secondary:focus-visible {
+  background: rgba(212, 175, 55, 0.15);
+  border-color: rgba(212, 175, 55, 0.5);
+}
+
+/* Responsive behavior */
+@media (max-width: 919px) {
+  .about-brand-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .about-services-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 619px) {
+  .about-brand-grid,
+  .about-services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-final-cta .button-primary,
+  .about-final-cta .button-secondary {
+    display: block;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 0.75rem;
+  }
+
+  .about-final-cta .button-primary:last-child {
+    margin-bottom: 0;
+  }
+}
