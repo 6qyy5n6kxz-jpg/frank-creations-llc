@@ -164,7 +164,7 @@ if (footerTarget) {
             <nav class="footer-contact-links" aria-label="Contact and social links">
               <a href="https://www.facebook.com/AChangeOfPlans419" target="_blank" rel="noopener noreferrer">Facebook</a>
               <a href="https://www.instagram.com/AChangeofPlansduo" target="_blank" rel="noopener noreferrer">Instagram</a>
-              <a href="mailto:infotoledo@wineandcanvas.com">Email</a>
+              <a href="mailto:info@frankcreationsllc.com">Email</a>
               <a href="tel:+14197050911">Phone</a>
               <a href="${resolveSitePath("/contact/#privacy")}">Privacy</a>
             </nav>

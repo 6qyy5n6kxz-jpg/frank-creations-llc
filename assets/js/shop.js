@@ -260,7 +260,7 @@ const handleReservationSubmit = async (event) => {
   formData.append("_subject", `Shop reservation: ${item.name}`);
   formData.append("_replyto", `${formData.get("email") || ""}`);
   formData.append("category", "Shop Reservation");
-  formData.append("recipient_email", reservationForm.dataset.recipientEmail || "infotoledo@wineandcanvas.com");
+  formData.append("recipient_email", reservationForm.dataset.recipientEmail || "info@frankcreationsllc.com");
   formData.append("message", message);
 
   submitButton.disabled = true;

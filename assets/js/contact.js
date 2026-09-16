@@ -76,7 +76,7 @@ if (contactForm && contactFeedback) {
     const formData = new FormData(contactForm);
     formData.append("_subject", `Frank Creations LLC inquiry: ${formData.get("category") || "General"}`);
     formData.append("_replyto", `${formData.get("email") || ""}`);
-    formData.append("recipient_email", contactForm.dataset.recipientEmail || "infotoledo@wineandcanvas.com");
+    formData.append("recipient_email", contactForm.dataset.recipientEmail || "info@frankcreationsllc.com");
 
     if (submitButton) {
       submitButton.disabled = true;
