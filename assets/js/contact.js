@@ -1,5 +1,29 @@
 import { trackConversion } from "./analytics.js";
 
+const CRM_INTAKE_URL = "https://krgvotkqeguvfiowammp.supabase.co/functions/v1/ingest-crm-lead";
+
+// Copies a submitted inquiry into the Command Center Leads list. Formspree still sends the email;
+// if this copy fails, the visitor's submission is unaffected.
+function sendLeadToCommandCenter(source, formData) {
+  try {
+    const payload = {};
+    formData.forEach((value, key) => {
+      if (typeof value !== "string" || (key.startsWith("_") && key !== "_gotcha")) return;
+      payload[key] = key in payload ? [].concat(payload[key], value) : value;
+    });
+    const id = window.crypto?.randomUUID ? window.crypto.randomUUID() : `${Date.now()}-${Math.random().toString(36).slice(2)}`;
+    fetch(CRM_INTAKE_URL, {
+      method: "POST",
+      keepalive: true,
+      headers: { "Content-Type": "text/plain" },
+      body: JSON.stringify({ source, source_submission_id: `${source}:${id}`, submitted_at: new Date().toISOString(), payload })
+    }).catch(() => {});
+  } catch {
+    // Never block the visitor's submission.
+  }
+}
+
+
 const contactForm = document.querySelector("[data-contact-form]");
 const contactFeedback = document.querySelector("[data-contact-feedback]");
 
@@ -108,6 +132,8 @@ if (contactForm && contactFeedback) {
 
         throw new Error(errorMessage);
       }
+
+      sendLeadToCommandCenter("frank_creations_website", formData);
 
       const selectedServices = serviceInputs.filter((input) => input.checked).map((input) => input.value);
       trackConversion("contact_form_submission", {
