@@ -170,11 +170,22 @@ if (footerTarget) {
             </nav>
           </div>
         </div>
+        <div class="footer-newsletter" data-newsletter-signup="frank-creations" data-title="Event ideas & rental specials" data-description="Seasonal rental specials, new photo booth backdrops and party ideas. A few emails a year." data-button="Sign me up" data-theme="dark"></div>
         <p class="footer-legal">&copy; <span data-current-year></span> Frank Creations LLC.</p>
       </div>
     </footer>
   `;
 }
+// Newsletter signup in the footer (Frank Creations Command Center widget). The visitor gets an
+// email to confirm before they're added to the list.
+if (footerTarget && !document.querySelector('script[data-frank-newsletter]')) {
+  const newsletterScript = document.createElement("script");
+  newsletterScript.src = "https://frank-creations-booking-center.vercel.app/newsletter-signup.js";
+  newsletterScript.defer = true;
+  newsletterScript.dataset.frankNewsletter = "1";
+  document.head.appendChild(newsletterScript);
+}
+
 
 applyLaunchMeta();
 initializeConversionTracking();
